@@ -8,61 +8,65 @@ html, body {
 	margin-top: 1px;
 	height: 50%;
 	padding: 0;
-	font-size: 2em;
 	color: white;
-	background: #ff0000;
+	background: #e74c3c;
 	border: 0;
-}
-.emergency:active {
-	background: #f00000;
+	width: 100%;
 }
 .emergency:hover {
-	background: #f00000;
+	background: red;
 }
 
 .rejection {
 	padding: 0;
-	font-size: 2em;
 	color: white;
-	background: blue;
+	background: #27ae60;
 	border: 0;
 	height: 50%;
 }
-.rejection:active {
-	background: blue;
-}
 .rejection:hover {
-	background: red;
+	background: #2ecc71;
 }
 
 
 .depression {
 	padding: 0;
-	font-size: 2em;
 	color: white;
-	background: blue;
+	background: #2980b9;
 	border: 0;
 	height: 50%;
 }
-.depression:active {
-	background: blue;
-}
 .depression:hover {
-	background: red;
+	background: #3498db;
 }
 
 .relapsed {
 	padding: 0;
-	font-size: 2em;
 	color: white;
-	background: blue;
+	background: #8e44ad;
 	border: 0;
 	height: 50%;
 }
-.relapsed:active {
-	background: blue;
-}
 .relapsed:hover {
-	background: red;
+	background: #9b59b6;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+	.emergency {
+		height: 40%;
+	}
+	.rejection {
+		height: 15%;
+	}
+	.depression {
+		height: 30%;
+	}
+	.relapsed {
+		height: 15%;
+	}
+}
+
+
 
