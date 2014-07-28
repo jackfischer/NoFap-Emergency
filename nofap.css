@@ -15,6 +15,7 @@ html, body {
 }
 .emergency:hover {
 	background: red;
+	text-shadow: 2px ;
 }
 
 .rejection {
