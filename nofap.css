@@ -52,7 +52,11 @@ html, body {
 	background: #9b59b6;
 }
 
-
+.cross {
+	height: 50%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
 
 @media only screen and (max-width: 768px) {
 	.emergency {
@@ -67,7 +71,9 @@ html, body {
 	.relapsed {
 		height: 15%;
 	}
+	.cross {
+		margin-right: 2%;
+	}
 }
-
 
 
