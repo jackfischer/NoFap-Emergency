@@ -18,5 +18,7 @@ $(relapsed).click(function() {
 		      window.location.href = data;
 		        });
 });
-
+$(about).click(function() {
+	window.location.href="about.html";
+});
 

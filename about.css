@@ -1,0 +1,19 @@
+html, body {
+	text-align: center;
+	height: 100%;
+	background: #e74c3c;
+}
+
+.cross {
+	opacity: .5;
+	position: absolute;
+	zoom: 120%;
+	left:0;
+	bottom:0;
+	margin-left:-50px;
+	margin-bottom:-50px;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+}

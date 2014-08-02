@@ -29,4 +29,10 @@ $result = mysql_query($query) or die('Query failed: ' . mysql_error());
 echo mysql_fetch_object($result)->link;
 }
 
+if ($_GET["cat"] == "bookmarklet") {
+$query='select link from posts where cat=\'em\' order by RAND() limit 1';
+$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+echo "<script> window.location.href=\"".mysql_fetch_object($result)->link."\";</script>";
+}
+
 ?>
