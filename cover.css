@@ -1,15 +1,17 @@
-html, body {
-	text-align: center;
-	height: 100%;
-	background: #e74c3c;
-}
 a, a:focus, a:hover {
 	color: #fff;
+}
+
+html,
+body {
+  height: 100%;
 }
 body {
   color: #fff;
   text-align: center;
 }
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
   width: 100%;
@@ -24,9 +26,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* Padding for spacing */
 .inner {
   padding: 30px;
 }
+
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
@@ -38,6 +43,8 @@ body {
 .cover {
   padding: 0 20px;
 }
+
+
 @media (min-width: 768px) {
   .site-wrapper-inner {
     vertical-align: middle;
@@ -46,21 +53,9 @@ body {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
 }
+
 @media (min-width: 992px) {
   .cover-container {
     width: 700px;
   }
 }
-.cross {
-	background-image:url("redcross.png");
-	background-repeat: no-repeat;
-	opacity: .35;
-	position: absolute;
-	left:0;
-	bottom:0;
-	margin-left:-50px;
-	margin-bottom:-50px;
-	width:518px;
-	height:511px;
-}
-
