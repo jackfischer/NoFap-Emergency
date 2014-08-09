@@ -62,7 +62,7 @@ html, body {
 	cursor:pointer;
 
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 	.emergency {
 		height: 40%;
 	}
