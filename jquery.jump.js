@@ -19,6 +19,7 @@ $(relapsed).click(function() {
 		        });
 });
 $(about).click(function() {
-	window.location.href="about.html";
+$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+  return false;
 });
 
