@@ -3,7 +3,6 @@ html, body {
 	height: 100%;
 }
 .emergency {
-	/*margin-top: 1px;*/
 	height: 50%;
 	padding: 0;
 	color: white;
@@ -65,7 +64,7 @@ html, body {
 	z-index: 2;
 	text-wrap: unrestricted;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
 	.emergency {
 		height: 40%;
 	}
