@@ -59,6 +59,7 @@ html, body {
 	padding-left: 10px;
 	padding-bottom: 10px;
 	cursor:pointer;
+	font-size: 1.1em;
 }
 .footer {
 	z-index: 2;
@@ -70,12 +71,15 @@ html, body {
 	}
 	.rejection {
 		height: 15%;
+		width: 100%;
 	}
 	.depression {
 		height: 30%;
+		width: 100%;
 	}
 	.relapsed {
 		height: 15%;
+		width: 100%;
 	}
 	.cross {
 		margin-right: 2%;
