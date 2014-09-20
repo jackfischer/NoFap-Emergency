@@ -34,21 +34,21 @@ background: #e74c3c;
   </head>
   <body>
 <br>
-<form role="form" class="" method="post" action="verify.php">
+<form method="post" action="verify.php">
 <div class="form-group">
-<input type="link" class="form-control" id="link" placeholder="Potential Link">
+<input class="form-control" name="link" placeholder="Potential Link">
 </div>
 <div class="form-group">
-<textarea class="form-control" rows="3" id="message" placeholder="Comments, suggested categories, email address if you want to hear back (we'll do our best)"></textarea>
+<textarea class="form-control" rows="3" name="message" placeholder="Comments, suggested categories, email address if you want to hear back (we'll do our best)"></textarea>
 </div>
-<div class="form-group" style="padding: 0px !important;">
+<div class="form-group">
 <?php
   require_once('recaptchalib.php');
   $publickey = "6LcboPoSAAAAAIH6t90C3ppYFQUnNLdvZwGc-eA3";
     echo recaptcha_get_html($publickey);
 ?>
 </div>
-<button type="submit" class="col-xs-12 btn btn-default">Submit</button>
+<button type="submit" name="submit" class="col-xs-12 btn btn-default">Submit</button>
 </form>
 
 
