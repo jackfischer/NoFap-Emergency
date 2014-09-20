@@ -11,6 +11,7 @@
     <link rel="apple-touch-icon" href="favicon.png">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="nofap.css" rel="stylesheet">
+    <link href="arrow.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -23,8 +24,11 @@
     <button type="submit" value="Rejection" id="rejection" class="rejection col-sm-3 col-xs-12">Rejection</button>
     <button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
     <button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
+    <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-12 col-xs-12">Suggest a Link</button>
 
     <span class="glyphicon glyphicon-info-sign about" id="about"></span>
+
+    <div class="arrow animated bounce" id="hint"></div>
 
     <span class="footer">Tool by <a href="http://trump6.com">Jack Fischer,</a> open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.org/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC.</span>
 
@@ -46,6 +50,7 @@
 	jQuery("#rejection").fitText(.9);
 	jQuery("#depression").fitText(.9);
 	jQuery("#relapsed").fitText(.9);
+	jQuery("#suggest").fitText(3.5);
  </script>
  <script>
 $(emergency).click(function() {
@@ -68,10 +73,20 @@ $(relapsed).click(function() {
 		      window.location.href = data;
 		        });
 });
+$(suggest).click(function() {
+		window.location.href = "http://emergency.nofap.org"
+		})
+
 $(about).click(function() {
 $("html, body").animate({ scrollTop: $(document).height() }, "fast");
-  return false;
 });
+
+$(hint).click(function() {
+$("html, body").animate({ scrollTop: $(document).height() }, "fast");
+$('#hint').fadeOut("fast");
+});
+
+$('#hint').delay(3000).fadeOut();
  </script>
 
  <script>
