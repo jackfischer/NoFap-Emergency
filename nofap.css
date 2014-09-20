@@ -44,6 +44,16 @@ html, body {
 .relapsed:hover {
 	background: #9b59b6;
 }
+.suggest {
+	padding: 0;
+	color: white;
+	background: #f39c12;
+	border: 0;
+	height: 15%;
+}
+.suggest:hover {
+	background: #f1c40f;
+}
 .cross {
 	height: 50%;
 	margin-right: 5%;
@@ -63,6 +73,9 @@ html, body {
 }
 .footer {
 	text-wrap: unrestricted;
+	padding-bottom: 5px;
+	font-size: 1.05em;
+	vertical-align: middle;
 }
 @media only screen and (max-width: 768px) {
 	.emergency {
@@ -82,6 +95,12 @@ html, body {
 	}
 	.cross {
 		margin-right: 2%;
+	}
+	.suggest {
+		display: none;
+	}
+	#hint {
+		display: none;
 	}
 	.about {
 		display: none;
