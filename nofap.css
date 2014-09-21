@@ -50,6 +50,7 @@ html, body {
 	background: #f39c12;
 	border: 0;
 	height: 15%;
+	z-index: 2;
 }
 .suggest:hover {
 	background: #f1c40f;

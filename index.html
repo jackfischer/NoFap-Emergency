@@ -56,26 +56,26 @@
 $(emergency).click(function() {
 	  $.get("director.php", { cat:"emergency" }, function(data) {
 		      window.location.href = data;
-		        });
+        });
 });
 $(depression).click(function() {
 	  $.get("director.php", { cat:"depression" }, function(data) {
 		      window.location.href = data;
-		        });
+        });
 });
 $(rejection).click(function() {
 	  $.get("director.php", { cat:"rejection" }, function(data) {
 		      window.location.href = data;
-		        });
+        });
 });
 $(relapsed).click(function() {
 	  $.get("director.php", { cat:"relapsed" }, function(data) {
 		      window.location.href = data;
-		        });
+        });
 });
 $(suggest).click(function() {
 		window.location.href = "http://emergency.nofap.org/suggestor.php"
-		})
+})
 
 $(about).click(function() {
 $("html, body").animate({ scrollTop: $(document).height() }, "fast");
@@ -83,16 +83,10 @@ $("html, body").animate({ scrollTop: $(document).height() }, "fast");
 
 $(hint).click(function() {
 $("html, body").animate({ scrollTop: $(document).height() }, "fast");
-$('#hint').fadeOut("fast");
 });
 
 $('#hint').delay(4000).fadeOut("slow");
 
-$(document).ready(function(){
-	   $(window).scroll(function(){
-	  $("#hint").fadeOut("fast");
-        })
-})
  </script>
 
  <script>
