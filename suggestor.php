@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="NoFap,reddit,porn,addiction,help,relapse prevention,panic,emergency">
-    <meta name="description" content="Panic Button for Nofap. NoFap Emergency helps successfully beat urges by getting you to the best possible content as quickly as possible.">
-    <title>NoFap Emergency</title>
+    <meta name="keywords" content="NoFap,submit,suggest,relapse prevention,emergency">
+    <meta name="description" content="Suggest a link for NoFap Emergency relapse prevention">
+    <title>NoFap Emergency - Suggest a Link</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -17,23 +17,19 @@
 <style>
 html, body {
     height: 100%;
-
 }
-
 html {
     display: table;
     margin: auto;
 }
-
 body {
     display: table-cell;
     vertical-align: middle;
 background: #e74c3c;
 }
 </style>
-  </head>
-  <body>
-<br>
+</head>
+<body>
 <form method="post" action="verify.php">
 <div class="form-group">
 <input class="form-control" name="link" placeholder="Potential Link">
@@ -51,8 +47,6 @@ background: #e74c3c;
 <button type="submit" name="submit" class="col-xs-12 btn btn-default">Submit</button>
 </form>
 
-
-
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -64,7 +58,5 @@ background: #e74c3c;
 ga('require', 'displayfeatures');
     ga('send', 'pageview');
  </script>
-
  </body>
-
 </html>

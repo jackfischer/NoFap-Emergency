@@ -20,7 +20,7 @@ $email_subject = "Website Contact Form";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nLink: " . $link . "\n\nMessage:\n" . $message;
 $headers = "From: trump6@gmail.com\n"; 
 mail($to,$email_subject,$email_body,$headers);
+echo "Thank you!";
 return true;
 }
-echo "Thank you!";
 ?>
