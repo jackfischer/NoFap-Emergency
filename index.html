@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="NoFap,reddit,porn,addiction,help,relapse prevention,panic,emergency">
     <meta name="description" content="Panic Button for Nofap. NoFap Emergency helps successfully beat urges by getting you to the best possible content as quickly as possible.">
+    <meta name="DC.Title" content="NoFap Emergency">
+    <meta name="DC.Creator" content="Jack Fischer">
+    <meta name="DC.Subject" content="NoFap Relapse Prevention Tool">
+    <meta name="DC.Description" content="Panic Button for Nofap. NoFap Emergency helps successfully beat urges by getting you to the best possible content as quickly as possible.">
+    <meta name="DC.Language" content="EN">
+
     <title>NoFap Emergency</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
@@ -28,7 +34,7 @@
 
     <span class="glyphicon glyphicon-info-sign about" id="about"></span>
 
-    <div class="arrow animated bounce" id="hint"></div>
+    <!--    <div class="arrow animated bounce" id="hint"></div> -->
 
     <span class="footer">Tool by <a href="http://trump6.com">Jack Fischer,</a> open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.org/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC.</span>
 
@@ -74,7 +80,7 @@ $(relapsed).click(function() {
         });
 });
 $(suggest).click(function() {
-		window.location.href = "http://emergency.nofap.org/suggestor.php"
+	window.location.href = "http://emergency.nofap.org/suggestor.php"
 })
 
 $(about).click(function() {
@@ -85,7 +91,7 @@ $(hint).click(function() {
 $("html, body").animate({ scrollTop: $(document).height() }, "fast");
 });
 
-$('#hint').delay(4000).fadeOut("slow");
+$('#hint').delay(2500).fadeOut("slow");
 
  </script>
 
