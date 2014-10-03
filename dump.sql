@@ -27,7 +27,7 @@ CREATE TABLE `posts` (
   `cat` varchar(10) DEFAULT NULL,
   `link` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=890 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=898 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -79,8 +79,6 @@ INSERT INTO `posts` VALUES (42,'em','http://www.reddit.com/r/NoFap/comments/18rm
 INSERT INTO `posts` VALUES (43,'em','http://i.imgur.com/oJ0dJSv.gif');
 INSERT INTO `posts` VALUES (61,'dep','http://www.reddit.com/r/NoFap/comments/1yp2sm/90_daysi_finally_found_myself/');
 INSERT INTO `posts` VALUES (62,'rej','http://www.reddit.com/r/NoFap/comments/1yp2sm/90_daysi_finally_found_myself/');
-INSERT INTO `posts` VALUES (63,'em','http://i.imgur.com/mbbpi.jpg');
-INSERT INTO `posts` VALUES (64,'rel','http://i.imgur.com/mbbpi.jpg');
 INSERT INTO `posts` VALUES (65,'dep','http://www.reddit.com/r/NoFap/comments/17sfwj/the_guide_to_nofap/');
 INSERT INTO `posts` VALUES (66,'em','http://imgur.com/a/ILOVY');
 INSERT INTO `posts` VALUES (67,'dep','http://imgur.com/a/ILOVY');
@@ -398,9 +396,6 @@ INSERT INTO `posts` VALUES (394,'em','http://i.imgur.com/qsNgtt5.jpg?1');
 INSERT INTO `posts` VALUES (395,'rel','http://i.imgur.com/qsNgtt5.jpg?1');
 INSERT INTO `posts` VALUES (396,'em','http://media.tumblr.com/d7e679ae67458b5c6c4db125f061f6a3/tumblr_inline_mx5atllhpo1rrc78e.gif');
 INSERT INTO `posts` VALUES (397,'em','http://fapstronaut.files.wordpress.com/2013/01/copy-fapstronaut3.png');
-INSERT INTO `posts` VALUES (398,'em','http://i.behappy.me/2083/preview.png');
-INSERT INTO `posts` VALUES (399,'rel','http://i.behappy.me/2083/preview.png');
-INSERT INTO `posts` VALUES (400,'rej','http://i.behappy.me/2083/preview.png');
 INSERT INTO `posts` VALUES (401,'em','http://i.imgur.com/APWSKgB.png');
 INSERT INTO `posts` VALUES (402,'em','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/life-goals.jpg');
 INSERT INTO `posts` VALUES (403,'dep','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/life-goals.jpg');
@@ -869,6 +864,14 @@ INSERT INTO `posts` VALUES (886,'em','http://www.reddit.com/r/NoFap/comments/2hl
 INSERT INTO `posts` VALUES (887,'rej','http://www.reddit.com/r/NoFap/comments/2hcnf7/today_i_asked_a_girl_out_and_she_said_no/');
 INSERT INTO `posts` VALUES (888,'dep','http://www.reddit.com/r/NoFap/comments/2hosfh/how_to_beat_depression_and_anxiety_on_nofap/');
 INSERT INTO `posts` VALUES (889,'dep','http://www.reddit.com/r/NoFap/comments/2hosfh/how_to_beat_depression_and_anxiety_on_nofap/');
+INSERT INTO `posts` VALUES (890,'em','http://www.reddit.com/r/NoFap/comments/2i3cfu/motivation_everything_is_a_choice/');
+INSERT INTO `posts` VALUES (891,'em','http://www.reddit.com/r/NoFap/comments/2i2sgo/me_3_months_ago_vs_me_now/');
+INSERT INTO `posts` VALUES (892,'rel','http://www.reddit.com/r/NoFap/comments/2i2sgo/me_3_months_ago_vs_me_now/');
+INSERT INTO `posts` VALUES (893,'em','https://www.facebook.com/HappyGoHappyGoLucky/photos/a.409020619188875.96083.406830599407877/713663012057966/');
+INSERT INTO `posts` VALUES (894,'rel','http://www.rouming.cz/upload/Difference980.jpg');
+INSERT INTO `posts` VALUES (895,'em','http://youtu.be/sIiTeYj0Ufc?t=4m40s');
+INSERT INTO `posts` VALUES (896,'em','http://youtu.be/Vb4vileb-u4?t=3m35s');
+INSERT INTO `posts` VALUES (897,'em','http://youtu.be/5TNhS81w4bM?t=1m30s');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -881,4 +884,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-09-30  9:54:44
+-- Dump completed on 2014-10-03 15:11:39

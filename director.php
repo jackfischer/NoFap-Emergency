@@ -1,5 +1,7 @@
 <?php
 
+graphdat_begin("ServeAPI");
+
 include 'credentials.php';
 
 mysql_connect($host, $user, $password) or die('Could not connect: ' . mysql_error());
@@ -52,5 +54,7 @@ $result = mysql_query($query) or die('Query failed: ' . mysql_error());
 
 echo "<script> window.location.href=\"".mysql_fetch_object($result)->link."\";</script>";
 }
+
+graphdat_end("ServeAPI");
 
 ?>
