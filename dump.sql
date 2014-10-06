@@ -16,6 +16,36 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `events`
+--
+
+DROP TABLE IF EXISTS `events`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cat` varchar(10) NOT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `events`
+--
+
+LOCK TABLES `events` WRITE;
+/*!40000 ALTER TABLE `events` DISABLE KEYS */;
+INSERT INTO `events` VALUES (1,'emergency','2014-10-06 18:25:57');
+INSERT INTO `events` VALUES (2,'depression','2014-10-06 18:28:38');
+INSERT INTO `events` VALUES (3,'rejection','2014-10-06 18:28:47');
+INSERT INTO `events` VALUES (4,'depression','2014-10-06 18:28:52');
+INSERT INTO `events` VALUES (5,'bookmarkle','2014-10-06 18:29:24');
+/*!40000 ALTER TABLE `events` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `posts`
 --
 
@@ -27,7 +57,7 @@ CREATE TABLE `posts` (
   `cat` varchar(10) DEFAULT NULL,
   `link` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=898 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1025 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -872,6 +902,129 @@ INSERT INTO `posts` VALUES (894,'rel','http://www.rouming.cz/upload/Difference98
 INSERT INTO `posts` VALUES (895,'em','http://youtu.be/sIiTeYj0Ufc?t=4m40s');
 INSERT INTO `posts` VALUES (896,'em','http://youtu.be/Vb4vileb-u4?t=3m35s');
 INSERT INTO `posts` VALUES (897,'em','http://youtu.be/5TNhS81w4bM?t=1m30s');
+INSERT INTO `posts` VALUES (901,'em','https://www.youtube.com/v/uAbUtrwYETg&end=92&autoplay=1');
+INSERT INTO `posts` VALUES (902,'em','https://www.youtube.com/v/uAbUtrwYETg&end=92&autoplay=1');
+INSERT INTO `posts` VALUES (903,'em','https://www.youtube.com/v/uAbUtrwYETg&end=92&autoplay=1');
+INSERT INTO `posts` VALUES (904,'rej','http://www.reddit.com/r/AskReddit/comments/y5x7c/reddit_i_just_got_stood_up_by_my_date_for_tonight/');
+INSERT INTO `posts` VALUES (905,'rej','http://www.reddit.com/r/howtonotgiveafuck/comments/1pfnxz/i_finally_gathered_the_courage_to_asked_a_girl/');
+INSERT INTO `posts` VALUES (906,'rej','http://www.reddit.com/r/howtonotgiveafuck/comments/1pfnxz/i_finally_gathered_the_courage_to_asked_a_girl/');
+INSERT INTO `posts` VALUES (907,'rej','http://www.reddit.com/r/changemyview/comments/2889rh/cmv_i_shouldnt_approach_girls_because_i_have_a/');
+INSERT INTO `posts` VALUES (908,'rej','http://www.reddit.com/r/howtonotgiveafuck/comments/12m4c8/the_steps_to_not_giving_a_fuck/');
+INSERT INTO `posts` VALUES (909,'rej','http://www.reddit.com/r/AskMen/comments/1f8k63/guys_what_is_the_coldest_rejection_you_have_ever/');
+INSERT INTO `posts` VALUES (910,'em','http://www.reddit.com/r/NoFap/comments/22iedf/one_thing_eminem_taught_us/');
+INSERT INTO `posts` VALUES (911,'rel','http://www.reddit.com/r/NoFap/comments/22iedf/one_thing_eminem_taught_us/');
+INSERT INTO `posts` VALUES (912,'em','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s');
+INSERT INTO `posts` VALUES (913,'em','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s');
+INSERT INTO `posts` VALUES (914,'rel','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s');
+INSERT INTO `posts` VALUES (915,'rej','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s');
+INSERT INTO `posts` VALUES (916,'em','http://www.reddit.com/r/NoFap/comments/19w9xf/never_would_i_ever_have_thought_that_a_lil_wayne/');
+INSERT INTO `posts` VALUES (917,'rel','http://www.reddit.com/r/NoFap/comments/19w9xf/never_would_i_ever_have_thought_that_a_lil_wayne/');
+INSERT INTO `posts` VALUES (918,'em','http://i.imgur.com/2ydbN2X.jpg');
+INSERT INTO `posts` VALUES (919,'em','http://www.reddit.com/r/NoFap/comments/1tfoyy/i_wrote_a_program_to_help_you_take_self_control/');
+INSERT INTO `posts` VALUES (920,'rel','http://www.reddit.com/r/NoFap/comments/1tfoyy/i_wrote_a_program_to_help_you_take_self_control/');
+INSERT INTO `posts` VALUES (921,'em','http://www.reddit.com/r/NoFap/comments/23gc6n/the_enjoyment_of_selfcontrol/');
+INSERT INTO `posts` VALUES (922,'rel','http://www.reddit.com/r/NoFap/comments/27yiyq/i_failed_this_is_how_i_am_going_to_succeed_next/');
+INSERT INTO `posts` VALUES (923,'rel','http://www.reddit.com/r/NoFap/comments/27yiyq/i_failed_this_is_how_i_am_going_to_succeed_next/');
+INSERT INTO `posts` VALUES (924,'rel','http://www.reddit.com/r/NoFap/comments/1r4r4g/90_day_report_its_not_what_you_think_it_is/');
+INSERT INTO `posts` VALUES (925,'rel','http://www.reddit.com/r/NoFap/comments/274m9r/may_this_post_inspire_all_my_life_is_transformed/');
+INSERT INTO `posts` VALUES (926,'em','http://www.reddit.com/r/NoFap/comments/274m9r/may_this_post_inspire_all_my_life_is_transformed/');
+INSERT INTO `posts` VALUES (927,'em','http://www.reddit.com/r/NoFap/comments/26pynq/90_days_report_i_mastered_my_mind/');
+INSERT INTO `posts` VALUES (928,'em','http://www.reddit.com/r/NoFap/comments/22h97j/i_am_in_control_of_my_dick_my_dick_is_not_in/');
+INSERT INTO `posts` VALUES (929,'em','https://www.youtube.com/watch?v=4bqBA9ZkMg0');
+INSERT INTO `posts` VALUES (930,'rel','https://www.youtube.com/watch?v=4bqBA9ZkMg0');
+INSERT INTO `posts` VALUES (931,'em','https://www.youtube.com/watch?v=4bqBA9ZkMg0');
+INSERT INTO `posts` VALUES (932,'rel','https://www.youtube.com/watch?v=4bqBA9ZkMg0');
+INSERT INTO `posts` VALUES (933,'em','http://www.reddit.com/r/NoFap/comments/1mb47u/never_fucking_surrender/');
+INSERT INTO `posts` VALUES (934,'rel','http://www.reddit.com/r/NoFap/comments/1dn6ee/how_to_be_victorious_at_nofap_and_why_it_works/');
+INSERT INTO `posts` VALUES (935,'em','http://i.imgur.com/tjH2TCc.jpg');
+INSERT INTO `posts` VALUES (936,'rel','http://i.imgur.com/tjH2TCc.jpg');
+INSERT INTO `posts` VALUES (937,'em','http://i.imgur.com/JBJHNWW.jpg');
+INSERT INTO `posts` VALUES (938,'em','http://www.reddit.com/r/NoFap/comments/2efc66/sexual_energy_is_the_most_powerful_tool_youve_got/');
+INSERT INTO `posts` VALUES (939,'em','http://www.reddit.com/r/NoFap/comments/2byhnk/if_youre_sick_and_tired_of_relapsing/');
+INSERT INTO `posts` VALUES (940,'rel','http://www.reddit.com/r/NoFap/comments/2byhnk/if_youre_sick_and_tired_of_relapsing/');
+INSERT INTO `posts` VALUES (941,'em','http://www.reddit.com/r/NoFap/comments/1mhaup/arent_you_tired_of_all_this_fucking_shit/');
+INSERT INTO `posts` VALUES (942,'em','http://www.reddit.com/r/NoFap/comments/2aolgv/the_secret_of_change_is_to_focus_all_of_your/');
+INSERT INTO `posts` VALUES (943,'rel','http://youtu.be/UUR8OmZpOiE?t=13s');
+INSERT INTO `posts` VALUES (944,'em','http://youtu.be/vCbQ_4PxM0E?t=6s');
+INSERT INTO `posts` VALUES (945,'rel','http://youtu.be/vCbQ_4PxM0E?t=6s');
+INSERT INTO `posts` VALUES (946,'em','http://vimeo.com/7306050');
+INSERT INTO `posts` VALUES (947,'em','http://vimeo.com/7306050');
+INSERT INTO `posts` VALUES (948,'em','http://vimeo.com/7306050');
+INSERT INTO `posts` VALUES (949,'em','http://www.reddit.com/r/NoFap/comments/z9xjn/classical_music_can_bring_dopamine_levels_to/');
+INSERT INTO `posts` VALUES (950,'em','http://i.imgur.com/dsn8EtL.jpg');
+INSERT INTO `posts` VALUES (951,'em','http://i.imgur.com/dsn8EtL.jpg');
+INSERT INTO `posts` VALUES (952,'em','http://i.imgur.com/dsn8EtL.jpg');
+INSERT INTO `posts` VALUES (953,'em','http://i.imgur.com/dsn8EtL.jpg');
+INSERT INTO `posts` VALUES (954,'em','http://i.imgur.com/dsn8EtL.jpg');
+INSERT INTO `posts` VALUES (955,'em','http://www.reddit.com/r/NoFap/comments/2959xc/the_master_plan_read_this_everyday/');
+INSERT INTO `posts` VALUES (956,'rel','http://www.reddit.com/r/NoFap/comments/118zf8/urges_dont_know_what_to_do_depression_anxiety_you/');
+INSERT INTO `posts` VALUES (957,'dep','http://www.reddit.com/r/NoFap/comments/118zf8/urges_dont_know_what_to_do_depression_anxiety_you/');
+INSERT INTO `posts` VALUES (958,'em','http://www.reddit.com/r/NoFap/comments/118zf8/urges_dont_know_what_to_do_depression_anxiety_you/');
+INSERT INTO `posts` VALUES (959,'em','http://www.reddit.com/r/NoFap/comments/vmkpa/40_reasons_which_motivated_me_to_stop_watching/');
+INSERT INTO `posts` VALUES (960,'em','http://www.reddit.com/r/NoFap/comments/vmkpa/40_reasons_which_motivated_me_to_stop_watching/');
+INSERT INTO `posts` VALUES (961,'em','http://www.reddit.com/r/NoFap/comments/18vckv/how_to_be_a_man_climb_a_mountain_tell_no_one/');
+INSERT INTO `posts` VALUES (962,'dep','http://www.reddit.com/r/NoFap/comments/18vckv/how_to_be_a_man_climb_a_mountain_tell_no_one/');
+INSERT INTO `posts` VALUES (963,'em','http://www.reddit.com/r/NoFap/comments/1uth8n/the_list_of_greats/');
+INSERT INTO `posts` VALUES (964,'em','http://www.reddit.com/r/NoFap/comments/1uth8n/the_list_of_greats/');
+INSERT INTO `posts` VALUES (965,'em','http://www.reddit.com/r/NoFap/comments/1uctdw/the_14_step_program_for_nofap/');
+INSERT INTO `posts` VALUES (966,'rel','http://www.reddit.com/r/NoFap/comments/1uctdw/the_14_step_program_for_nofap/');
+INSERT INTO `posts` VALUES (967,'em','http://www.reddit.com/r/NoFap/comments/24i4xy/the_nofap_survival_kit_mega_motivator/');
+INSERT INTO `posts` VALUES (968,'em','http://www.reddit.com/r/NoFap/comments/2h22f4/masturbation_is_quite_literally_a_waste_of_time/');
+INSERT INTO `posts` VALUES (969,'em','http://www.reddit.com/r/NoFap/comments/2h22f4/masturbation_is_quite_literally_a_waste_of_time/');
+INSERT INTO `posts` VALUES (970,'em','http://www.reddit.com/r/NoFap/comments/uufdb/do_not_struggle_against_your_sexual_energy/');
+INSERT INTO `posts` VALUES (971,'em','http://www.reddit.com/r/NoFap/comments/1it5k0/i_want_you_to_stop_ive_gone_44_days_without_pmo/');
+INSERT INTO `posts` VALUES (972,'em','http://www.reddit.com/r/books/comments/1x9xou/amazons_list_of_100_books_to_read_in_a_lifetime/');
+INSERT INTO `posts` VALUES (973,'dep','http://www.reddit.com/r/books/comments/1x9xou/amazons_list_of_100_books_to_read_in_a_lifetime/');
+INSERT INTO `posts` VALUES (974,'em','http://make-everything-ok.com/');
+INSERT INTO `posts` VALUES (975,'rej','http://make-everything-ok.com/');
+INSERT INTO `posts` VALUES (976,'em','http://make-everything-ok.com/');
+INSERT INTO `posts` VALUES (977,'em','http://www.reddit.com/r/NoFap/comments/1u7hw7/the_kernel_of_truth_in_a_pornography_website/');
+INSERT INTO `posts` VALUES (978,'em','http://www.reddit.com/r/NoFap/comments/1u5dvw/william_shakespeare_on_lust_sonnet_129/');
+INSERT INTO `posts` VALUES (979,'em','http://www.reddit.com/r/NoFap/comments/1ttvb8/you_just_cant_see_until_the_fog_lifts/');
+INSERT INTO `posts` VALUES (980,'dep','http://www.reddit.com/r/NoFap/comments/1ttvb8/you_just_cant_see_until_the_fog_lifts/');
+INSERT INTO `posts` VALUES (981,'rej','http://www.reddit.com/r/NoFap/comments/1ttvb8/you_just_cant_see_until_the_fog_lifts/');
+INSERT INTO `posts` VALUES (982,'em','http://imgur.com/a/1S2u5');
+INSERT INTO `posts` VALUES (983,'em','http://you.regettingold.com/');
+INSERT INTO `posts` VALUES (984,'em','http://i.imgur.com/Sd6teqC.jpg');
+INSERT INTO `posts` VALUES (985,'em','http://www.reddit.com/r/NoFap/comments/1xx5hm/every_day_you_support_this_movement_changes_lives/');
+INSERT INTO `posts` VALUES (986,'em','http://media-cache-ak0.pinimg.com/736x/5a/6b/0d/5a6b0d677a4b3c73a58404546cddd7e1.jpg');
+INSERT INTO `posts` VALUES (987,'rel','http://media-cache-ak0.pinimg.com/736x/5a/6b/0d/5a6b0d677a4b3c73a58404546cddd7e1.jpg');
+INSERT INTO `posts` VALUES (988,'rel','http://www.reddit.com/r/NoFap/comments/2hos9m/write_down_things_from_nofap_that_motivate_you/');
+INSERT INTO `posts` VALUES (989,'rel','http://www.reddit.com/r/NoFap/comments/2eio8h/reality/');
+INSERT INTO `posts` VALUES (990,'rel','http://www.reddit.com/r/NoFap/comments/2eg7a3/please_dont_read_if_easily_offended/');
+INSERT INTO `posts` VALUES (991,'em','http://www.reddit.com/r/NoFap/comments/1tejif/the_big_list_of_tips_tricks/');
+INSERT INTO `posts` VALUES (992,'rel','http://www.reddit.com/r/NoFap/comments/1tejif/the_big_list_of_tips_tricks/');
+INSERT INTO `posts` VALUES (993,'em','http://www.donothingfor2minutes.com/');
+INSERT INTO `posts` VALUES (994,'em','http://www.donothingfor2minutes.com/');
+INSERT INTO `posts` VALUES (995,'em','http://www.donothingfor2minutes.com/');
+INSERT INTO `posts` VALUES (996,'em','http://www.donothingfor2minutes.com/');
+INSERT INTO `posts` VALUES (998,'em','http://www.rainymood.com/');
+INSERT INTO `posts` VALUES (999,'em','http://youtu.be/Gb0h8ZKvJW4?t=2m11s');
+INSERT INTO `posts` VALUES (1000,'em','http://youtu.be/Gb0h8ZKvJW4?t=2m11s');
+INSERT INTO `posts` VALUES (1001,'rel','http://youtu.be/Gb0h8ZKvJW4?t=2m11s');
+INSERT INTO `posts` VALUES (1002,'em','https://www.youtube.com/watch?v=wSF82AwSDiU');
+INSERT INTO `posts` VALUES (1003,'em','http://www.reddit.com/r/NoFap/comments/1tcmdu/pornography_distorts_the_way_you_look_at_sex_love/');
+INSERT INTO `posts` VALUES (1004,'dep','http://i.imgur.com/NjIoz.jpg');
+INSERT INTO `posts` VALUES (1005,'em','http://quotes.lifehack.org/media/quotes/quote-John-Ortberg-over-time-grit-is-what-separates-fruitful-233055.png');
+INSERT INTO `posts` VALUES (1006,'em','http://youtu.be/H14bBuluwB8?t=23s');
+INSERT INTO `posts` VALUES (1007,'em','http://imgur.com/gallery/uITM2');
+INSERT INTO `posts` VALUES (1008,'em','http://brainpump.net/');
+INSERT INTO `posts` VALUES (1009,'em','http://quotes.lifehack.org/quote/henry-david-thoreau/what-you-get-by-achieving-your-goals/');
+INSERT INTO `posts` VALUES (1010,'em','http://taolifestudio.com/wp-content/uploads/2013/03/Either-you-run-your-day-or-your-day-runs-you.jpg');
+INSERT INTO `posts` VALUES (1011,'em','http://quotes.lifehack.org/quote/jim-rohn/either-you-run-the-day-or-the/');
+INSERT INTO `posts` VALUES (1012,'em','http://cdn-media-1.lifehack.org/wp-content/files/2014/04/quote-Matthew-Henry-after-a-storm-comes-a-calm-57817.png');
+INSERT INTO `posts` VALUES (1013,'em','http://i.imgur.com/e1X5p.jpg');
+INSERT INTO `posts` VALUES (1014,'em','http://www.lovethispic.com/uploaded_images/64975-Expect-Problems-And-Eat-Them-For-Breakfast.jpg');
+INSERT INTO `posts` VALUES (1015,'rel','http://www.lovethispic.com/uploaded_images/64975-Expect-Problems-And-Eat-Them-For-Breakfast.jpg');
+INSERT INTO `posts` VALUES (1016,'rel','http://www.quotesvalley.com/images/07/forget-everything-except-what-youre-going-to-do-now-and-do-it-will-durant.jpg');
+INSERT INTO `posts` VALUES (1017,'em','http://quotes.lifehack.org/quote/ella-wheeler-wilcox/always-continue-the-climb-it-is-possible/');
+INSERT INTO `posts` VALUES (1018,'em','http://quotes.lifehack.org/quote/mahatma-gandhi/in-a-gentle-way-you-can-shake/');
+INSERT INTO `posts` VALUES (1019,'em','http://youtu.be/rgwrWTu4ST0?t=48s');
+INSERT INTO `posts` VALUES (1020,'em','http://www.reddit.com/r/AskReddit/comments/2egyc5/what_quote_or_saying_changed_your_life_serious/');
+INSERT INTO `posts` VALUES (1021,'em','https://www.youtube.com/watch?v=pbm73TwXMC4');
+INSERT INTO `posts` VALUES (1022,'em','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg');
+INSERT INTO `posts` VALUES (1023,'rel','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg');
+INSERT INTO `posts` VALUES (1024,'em','https://www.reddit.com/r/NoFap/comments/1ga25m/procrastination_one_more_cant_hurt/');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -884,4 +1037,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-03 15:11:39
+-- Dump completed on 2014-10-06 14:35:46
