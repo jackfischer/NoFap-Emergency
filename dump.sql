@@ -16,36 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `events`
---
-
-DROP TABLE IF EXISTS `events`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `events` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `cat` varchar(10) NOT NULL,
-  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`),
-  KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `events`
---
-
-LOCK TABLES `events` WRITE;
-/*!40000 ALTER TABLE `events` DISABLE KEYS */;
-INSERT INTO `events` VALUES (1,'emergency','2014-10-06 18:25:57');
-INSERT INTO `events` VALUES (2,'depression','2014-10-06 18:28:38');
-INSERT INTO `events` VALUES (3,'rejection','2014-10-06 18:28:47');
-INSERT INTO `events` VALUES (4,'depression','2014-10-06 18:28:52');
-INSERT INTO `events` VALUES (5,'bookmarkle','2014-10-06 18:29:24');
-/*!40000 ALTER TABLE `events` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `posts`
 --
 
@@ -57,7 +27,7 @@ CREATE TABLE `posts` (
   `cat` varchar(10) DEFAULT NULL,
   `link` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1025 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1068 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1025,6 +995,47 @@ INSERT INTO `posts` VALUES (1021,'em','https://www.youtube.com/watch?v=pbm73TwXM
 INSERT INTO `posts` VALUES (1022,'em','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg');
 INSERT INTO `posts` VALUES (1023,'rel','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg');
 INSERT INTO `posts` VALUES (1024,'em','https://www.reddit.com/r/NoFap/comments/1ga25m/procrastination_one_more_cant_hurt/');
+INSERT INTO `posts` VALUES (1025,'em','http://www.reddit.com/r/NoFap/comments/2iiatr/talking_to_girls_with_no_intention_to_have_sex/');
+INSERT INTO `posts` VALUES (1026,'em','http://www.reddit.com/r/NoFap/comments/2i6zwv/superpowers_are_real_and_heres_how_to_get_them/');
+INSERT INTO `posts` VALUES (1027,'em','http://i.imgur.com/fmd3Lk1.jpg');
+INSERT INTO `posts` VALUES (1028,'rel','http://i.imgur.com/fmd3Lk1.jpg');
+INSERT INTO `posts` VALUES (1029,'em','http://i.imgur.com/W9OTW.jpg');
+INSERT INTO `posts` VALUES (1030,'em','http://i.imgur.com/KJbGf4v.gif');
+INSERT INTO `posts` VALUES (1031,'em','http://i.imgur.com/ZasjYrx.jpg');
+INSERT INTO `posts` VALUES (1032,'em','http://i.imgur.com/ZasjYrx.jpg');
+INSERT INTO `posts` VALUES (1033,'em','http://i.imgur.com/BOElBPo.png');
+INSERT INTO `posts` VALUES (1034,'em','http://i.imgur.com/BOElBPo.png');
+INSERT INTO `posts` VALUES (1035,'rel','http://i.imgur.com/fjD7IPT.jpg');
+INSERT INTO `posts` VALUES (1036,'dep','http://i.imgur.com/fjD7IPT.jpg');
+INSERT INTO `posts` VALUES (1037,'em','http://i.imgur.com/h3jIiUs.jpg');
+INSERT INTO `posts` VALUES (1038,'rel','http://i.imgur.com/h3jIiUs.jpg');
+INSERT INTO `posts` VALUES (1039,'em','http://i.imgur.com/h3jIiUs.jpg');
+INSERT INTO `posts` VALUES (1040,'rel','http://i.imgur.com/RMK32E0.jpg');
+INSERT INTO `posts` VALUES (1041,'rej','http://i.imgur.com/RMK32E0.jpg');
+INSERT INTO `posts` VALUES (1042,'rej','http://i.imgur.com/RMK32E0.jpg');
+INSERT INTO `posts` VALUES (1043,'rej','http://i.imgur.com/RMK32E0.jpg');
+INSERT INTO `posts` VALUES (1044,'rel','http://www.reddit.com/r/NoFap/comments/2id0w4/you_havent_failed/');
+INSERT INTO `posts` VALUES (1045,'em','http://i.imgur.com/HXMU6RW.jpg');
+INSERT INTO `posts` VALUES (1046,'rel','http://i.imgur.com/HXMU6RW.jpg');
+INSERT INTO `posts` VALUES (1047,'em','http://www.reddit.com/r/NoFap/comments/15lrh7/16_habits_you_should_do_everyday_this_changed_my/');
+INSERT INTO `posts` VALUES (1048,'rel','http://www.reddit.com/r/NoFap/comments/15lrh7/16_habits_you_should_do_everyday_this_changed_my/');
+INSERT INTO `posts` VALUES (1049,'dep','http://www.reddit.com/r/NoFap/comments/15lrh7/16_habits_you_should_do_everyday_this_changed_my/');
+INSERT INTO `posts` VALUES (1050,'em','http://www.reddit.com/r/NoFap/comments/2iha45/i_feel_like_im_on_cocaine/');
+INSERT INTO `posts` VALUES (1051,'rel','http://media-cache-ak0.pinimg.com/736x/0c/04/cd/0c04cd49a14992b597d4c774e3771243.jpg');
+INSERT INTO `posts` VALUES (1052,'rel','http://media-cache-ak0.pinimg.com/736x/0c/04/cd/0c04cd49a14992b597d4c774e3771243.jpg');
+INSERT INTO `posts` VALUES (1053,'rel','https://www.youtube.com/watch?v=ejyD3_gBhYw');
+INSERT INTO `posts` VALUES (1054,'rel','https://www.youtube.com/watch?v=ejyD3_gBhYw');
+INSERT INTO `posts` VALUES (1056,'rel','http://www.becomingminimalist.com/overcome-failure/');
+INSERT INTO `posts` VALUES (1057,'rel','http://www.becomingminimalist.com/overcome-failure/');
+INSERT INTO `posts` VALUES (1058,'em','http://i.imgur.com/5H8uO.jpg');
+INSERT INTO `posts` VALUES (1059,'rel','http://i.imgur.com/5H8uO.jpg');
+INSERT INTO `posts` VALUES (1060,'em','http://www.reddit.com/r/NoFap/comments/1xy2ph/heres_the_truth_to_edging_period/');
+INSERT INTO `posts` VALUES (1061,'em','http://www.quickmeme.com/img/13/1376fe716c488e066b48efa3f75ef5e6b19f6fc7762417cd6ac6124d02cff16d.jpg');
+INSERT INTO `posts` VALUES (1062,'em','http://i.imgur.com/pwfaMlo.jpg');
+INSERT INTO `posts` VALUES (1063,'em','http://i.imgur.com/pwfaMlo.jpg');
+INSERT INTO `posts` VALUES (1064,'rel','http://i.imgur.com/pwfaMlo.jpg');
+INSERT INTO `posts` VALUES (1065,'em','http://cdn.meme.li/instances/250x250/53158063.jpg');
+INSERT INTO `posts` VALUES (1066,'em','http://cdn.meme.li/instances/250x250/53158063.jpg');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1037,4 +1048,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-06 14:35:46
+-- Dump completed on 2014-10-07 16:00:27
