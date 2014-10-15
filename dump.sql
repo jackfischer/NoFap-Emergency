@@ -27,7 +27,7 @@ CREATE TABLE `posts` (
   `cat` varchar(10) DEFAULT NULL,
   `link` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1068 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1079 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -470,7 +470,6 @@ INSERT INTO `posts` VALUES (474,'dep','http://quotes.lifehack.org/media/quotes/q
 INSERT INTO `posts` VALUES (476,'em','https://pbs.twimg.com/media/Bunf9O3CAAE17p6.jpg');
 INSERT INTO `posts` VALUES (477,'rel','https://pbs.twimg.com/media/Bunf9O3CAAE17p6.jpg');
 INSERT INTO `posts` VALUES (478,'rej','https://pbs.twimg.com/media/Bunf9O3CAAE17p6.jpg');
-INSERT INTO `posts` VALUES (479,'em','http://4.bp.blogspot.com/_dM8sowSPGRA/SM0HZeevh5I/AAAAAAAAB0M/tdYxgjGGjJs/s400/1corinthians10_13.jpg');
 INSERT INTO `posts` VALUES (480,'em','http://i.gyazo.com/00ecc74369c6e45fe9b35661dfaba8d2.png');
 INSERT INTO `posts` VALUES (481,'rel','http://i.gyazo.com/00ecc74369c6e45fe9b35661dfaba8d2.png');
 INSERT INTO `posts` VALUES (483,'em','http://imagizer.imageshack.us/a/img855/9016/3i30.jpg');
@@ -947,7 +946,6 @@ INSERT INTO `posts` VALUES (972,'em','http://www.reddit.com/r/books/comments/1x9
 INSERT INTO `posts` VALUES (973,'dep','http://www.reddit.com/r/books/comments/1x9xou/amazons_list_of_100_books_to_read_in_a_lifetime/');
 INSERT INTO `posts` VALUES (974,'em','http://make-everything-ok.com/');
 INSERT INTO `posts` VALUES (975,'rej','http://make-everything-ok.com/');
-INSERT INTO `posts` VALUES (976,'em','http://make-everything-ok.com/');
 INSERT INTO `posts` VALUES (977,'em','http://www.reddit.com/r/NoFap/comments/1u7hw7/the_kernel_of_truth_in_a_pornography_website/');
 INSERT INTO `posts` VALUES (978,'em','http://www.reddit.com/r/NoFap/comments/1u5dvw/william_shakespeare_on_lust_sonnet_129/');
 INSERT INTO `posts` VALUES (979,'em','http://www.reddit.com/r/NoFap/comments/1ttvb8/you_just_cant_see_until_the_fog_lifts/');
@@ -1036,6 +1034,18 @@ INSERT INTO `posts` VALUES (1063,'em','http://i.imgur.com/pwfaMlo.jpg');
 INSERT INTO `posts` VALUES (1064,'rel','http://i.imgur.com/pwfaMlo.jpg');
 INSERT INTO `posts` VALUES (1065,'em','http://cdn.meme.li/instances/250x250/53158063.jpg');
 INSERT INTO `posts` VALUES (1066,'em','http://cdn.meme.li/instances/250x250/53158063.jpg');
+INSERT INTO `posts` VALUES (1067,'em','http://i.imgur.com/sM00I9Q.png');
+INSERT INTO `posts` VALUES (1068,'rel','http://i.imgur.com/sM00I9Q.png');
+INSERT INTO `posts` VALUES (1069,'em','http://www.reddit.com/r/NoFap/comments/2inlaj/after_a_33_days_streak_i_relapsed_totally_not/');
+INSERT INTO `posts` VALUES (1070,'em','http://www.4000saturdays.com/blog/wp-content/uploads/2012/04/dog.jpg');
+INSERT INTO `posts` VALUES (1071,'rel','http://www.theoddpolymath.net/bullshit-matrix/');
+INSERT INTO `posts` VALUES (1072,'dep','http://9gag.com/gag/aLQgWVM?ref=fb.s');
+INSERT INTO `posts` VALUES (1073,'em','http://i.imgur.com/5Jnq953.jpg');
+INSERT INTO `posts` VALUES (1074,'em','http://i.imgur.com/5Jnq953.jpg');
+INSERT INTO `posts` VALUES (1075,'em','http://www.reddit.com/r/NoFap/comments/2ini4e/it_will_pass/');
+INSERT INTO `posts` VALUES (1076,'em','http://www.reddit.com/r/NoFap/comments/2ini4e/it_will_pass/');
+INSERT INTO `posts` VALUES (1077,'rel','http://i.imgur.com/hBDSSL5.jpg');
+INSERT INTO `posts` VALUES (1078,'em','http://i.imgur.com/racR5wx.jpg');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1048,4 +1058,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-07 16:00:27
+-- Dump completed on 2014-10-15 18:58:01

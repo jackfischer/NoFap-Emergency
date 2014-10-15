@@ -30,7 +30,7 @@ background: #e74c3c;
 </style>
 </head>
 <body>
-<form method="post" action="verify.php">
+<form method="post" action="suggestor.php">
 <div class="form-group">
 <input class="form-control" name="link" placeholder="Potential Link">
 </div>
@@ -46,7 +46,41 @@ background: #e74c3c;
 </div>
 <button type="submit" name="submit" class="col-xs-12 btn btn-default">Submit</button>
 </form>
+<style>
+html {
+text-align:center;
+background: #e74c3c;
+height: 100%;
+}
+</style>
 
+<?php
+if (isset($_POST["link"])) {
+require_once('recaptchalib.php');
+require_once('credentials.php');
+$resp = recaptcha_check_answer ($privatekey,
+                              $_SERVER["REMOTE_ADDR"],
+                              $_POST["recaptcha_challenge_field"],
+                              $_POST["recaptcha_response_field"]);
+
+if (!$resp->is_valid) {
+  // What happens when the CAPTCHA was entered incorrectly
+  die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
+       "(reCAPTCHA said: " . $resp->error . ")");
+} else {
+// Your code here to handle a successful verification
+$link = $_POST['link'];
+$message = $_POST['message'];
+$to = 'trump6@gmail.com'; 
+$email_subject = "Website Contact Form";
+$email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nLink: " . $link . "\n\nMessage:\n" . $message;
+$headers = "From: trump6@gmail.com\n"; 
+mail($to,$email_subject,$email_body,$headers);
+echo "<p style=\"margin-top:25%;\"> Thank you!";
+return true;
+}
+}
+?>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
