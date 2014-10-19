@@ -71,7 +71,7 @@ return true;
 
 <br><br><br><br>
 
-<form action="mailto:trump6@gmail.com">
+<form action="mailto:jack@trump6.com">
 <button type="submit" name="send" class="col-xs-12 btn btn-default">Problem or other suggestion? Email us</button>
 </form>
 

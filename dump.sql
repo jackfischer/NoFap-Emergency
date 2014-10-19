@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.40, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: posts
 -- ------------------------------------------------------
--- Server version	5.5.38-0ubuntu0.14.04.1
+-- Server version	5.5.40-0ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -27,7 +27,7 @@ CREATE TABLE `posts` (
   `cat` varchar(10) DEFAULT NULL,
   `link` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1079 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1091 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1046,6 +1046,18 @@ INSERT INTO `posts` VALUES (1075,'em','http://www.reddit.com/r/NoFap/comments/2i
 INSERT INTO `posts` VALUES (1076,'em','http://www.reddit.com/r/NoFap/comments/2ini4e/it_will_pass/');
 INSERT INTO `posts` VALUES (1077,'rel','http://i.imgur.com/hBDSSL5.jpg');
 INSERT INTO `posts` VALUES (1078,'em','http://i.imgur.com/racR5wx.jpg');
+INSERT INTO `posts` VALUES (1079,'em','http://i.imgur.com/cfkO5UV.jpg');
+INSERT INTO `posts` VALUES (1080,'em','http://i.imgur.com/cfkO5UV.jpg');
+INSERT INTO `posts` VALUES (1081,'em','http://i.imgur.com/fmd3Lk1.jpg');
+INSERT INTO `posts` VALUES (1082,'rel','http://i.imgur.com/fmd3Lk1.jpg');
+INSERT INTO `posts` VALUES (1083,'em','http://i.imgur.com/oCHH3yl.jpg');
+INSERT INTO `posts` VALUES (1084,'rel','http://i.imgur.com/oCHH3yl.jpg');
+INSERT INTO `posts` VALUES (1085,'em','http://i.imgur.com/T3WbWj4.jpg');
+INSERT INTO `posts` VALUES (1086,'rel','http://i.imgur.com/T3WbWj4.jpg');
+INSERT INTO `posts` VALUES (1087,'em','http://i.imgur.com/kcGXvIR.jpg');
+INSERT INTO `posts` VALUES (1088,'em','http://i.imgur.com/cMP7p.gif');
+INSERT INTO `posts` VALUES (1089,'em','http://img.pandawhale.com/76755-supernatural-shut-laptop-gif-u7sb.gif');
+INSERT INTO `posts` VALUES (1090,'em','http://img.pandawhale.com/76755-supernatural-shut-laptop-gif-u7sb.gif');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1058,4 +1070,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-15 18:58:01
+-- Dump completed on 2014-10-18 17:40:38
