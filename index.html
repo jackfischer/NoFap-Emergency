@@ -16,8 +16,9 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
     <!-- <link href="arrow.css" rel="stylesheet"> -->
-    <link href="bootstrap-switch.min.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -27,36 +28,42 @@
   <body>
   <style>
 body,html{text-align:center;height:100%;}
-.emergency{height:50%;padding:0;color:#fff;background:#e74c3c;border:0;width:100%}.emergency:hover{background:red;text-shadow:2px}
+.emergency{height:50%;padding:0;color:#fff;background:#e74c3c;border:0;width:100%}.emergency:hover{background:red;text-shadow:2px;}
 .rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
 .depression{padding:0;color:#fff;background:#2980b9;border:0;height:50%}.depression:hover{background:#3498db}
 .relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
 .suggest{padding:0;color:#fff;background:#f39c12;border:0;height:15%;z-index:2}.suggest:hover{background:#f1c40f}
 .cross{height:50%;margin-right:5%;margin-bottom:2%}
-.about{opacity:.7;position:absolute;bottom:0;right:0;margin-top:13px;margin-right:13px;padding-left:11px;padding-bottom:11px;cursor:pointer;font-size:1.1em}
-.footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:2}
-#faith{position:fixed;left:90%;bottom:10%;}
+.footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
+#religious{position:fixed;right:20px;top:20px;z-index:3;}
+#mobilereligious{display:none;}
 
 @media only screen and (max-width:768px){
-.emergency{height:40%}.rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}.cross{margin-right:2%}
-#hint,.about,.suggest{display:none} }
+.emergency{height:40%}
+.rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
+.cross{margin-right:2%}
+#hint,.suggest{display:none}
+#religious{display:none;}
+#mobilereligious{position:fixed;top:8px;right:8px;display:inline;} }
   </style>
 
-    <button type="submit" value="Emergency" id="emergency" class="emergency col-sm-12 col-xs-12"><img src="redcross.png" class="cross">Emergency</button>
+    <button type="submit" value="Emergency" id="emergency" class="emergency col-sm-12 col-xs-12"><img src="redcross.png" class="cross">Emergency<div id="mobilereligious"><input type="checkbox"><label>Religious</label></div></button>
     <button type="submit" value="Rejection" id="rejection" class="rejection col-sm-3 col-xs-12">Rejection</button>
     <button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
     <button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
     <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-12 col-xs-12">Submit a Link</button>
 
-    <span class="glyphicon glyphicon-info-sign about" id="about"></span>
     <div class="arrow animated bounce" id="hint"></div>
-    <div id="faith"><input type="checkbox" name="faith" ></div>
 
+    <div id="religious">
+    <input type="checkbox" onchange="religiousChange()">
+    <label>Include Religious</label>
+    </div>
 
     <span class="footer">Take the <a href="https://docs.google.com/forms/d/1ObJNhMUTVAdMepGYD3FxLW8r34-tJN8j0BNkBoyU254/viewform">survey</a><br>Open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.org/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. Tool by <a href="http://trump6.com">Jack Fischer,</a> NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC.</span>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="bootstrap-switch.min.js"></script>
+<script src="icheck.min.js"></script>
 
  <script>
 /*FitText.js 1.2
@@ -110,25 +117,42 @@ $(suggest).click(function() {
 	window.location.href = "http://emergency.nofap.org/suggestor.php"
 })
 
-$(about).click(function() {
-$("html, body").animate({ scrollTop: $(document).height() }, "fast");
-});
 $(hint).click(function() {
 $("html, body").animate({ scrollTop: $(document).height() }, "fast");
 });
 
 $('#hint').delay(2500).fadeOut("slow");
 
-$.fn.bootstrapSwitch.defaults.state = 'off';
-$.fn.bootstrapSwitch.defaults.size = 'large';
-$.fn.bootstrapSwitch.defaults.onText = 'Faith';
-$.fn.bootstrapSwitch.defaults.offText = 'Faith';
-$.fn.bootstrapSwitch.defaults.onColor= 'success';
 
-$("[name='faith']").bootstrapSwitch();
+$(document).ready(function(){
+  $('input').each(function(){
+    var self = $(this),
+      label = self.next(),
+      label_text = label.text();
 
+    label.remove();
+    self.iCheck({
+      checkboxClass: 'icheckbox_line-grey',
+      radioClass: 'iradio_line-grey',
+      insert: '<div class="icheck_line-icon"></div>' + label_text
+    });
+  });
+});
 
+//Cookie Parser
+function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 
+var religious = getCookie("religious");
+if (religious == "true") {
+$('input').iCheck('check');
+}
+
+$('input').on('ifChecked', function(event){
+	document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC";
+});
+$('input').on('ifUnchecked', function(event){
+	document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC";
+});
 </script>
 
 
