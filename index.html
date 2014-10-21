@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="favicon.png">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
-    <link href="arrow.css" rel="stylesheet">
+    <!-- <link href="arrow.css" rel="stylesheet"> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -102,19 +102,19 @@ readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 $(emergency).click(function() {
-	  $.get("director.php", { cat:"emergency" }, function(data) {
+	  $.get("director.php", { cat:"em" }, function(data) {
 		      window.location.href = data;
         }); });
 $(depression).click(function() {
-	  $.get("director.php", { cat:"depression" }, function(data) {
+	  $.get("director.php", { cat:"dep" }, function(data) {
 		      window.location.href = data;
         }); });
 $(rejection).click(function() {
-	  $.get("director.php", { cat:"rejection" }, function(data) {
+	  $.get("director.php", { cat:"rej" }, function(data) {
 		      window.location.href = data;
         }); });
 $(relapsed).click(function() {
-	  $.get("director.php", { cat:"relapsed" }, function(data) {
+	  $.get("director.php", { cat:"rel" }, function(data) {
 		      window.location.href = data;
         }); });
 $(suggest).click(function() {
