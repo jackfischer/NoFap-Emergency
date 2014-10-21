@@ -27,7 +27,7 @@ CREATE TABLE `posts` (
   `cat` varchar(10) DEFAULT NULL,
   `link` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1091 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1102 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1058,6 +1058,17 @@ INSERT INTO `posts` VALUES (1087,'em','http://i.imgur.com/kcGXvIR.jpg');
 INSERT INTO `posts` VALUES (1088,'em','http://i.imgur.com/cMP7p.gif');
 INSERT INTO `posts` VALUES (1089,'em','http://img.pandawhale.com/76755-supernatural-shut-laptop-gif-u7sb.gif');
 INSERT INTO `posts` VALUES (1090,'em','http://img.pandawhale.com/76755-supernatural-shut-laptop-gif-u7sb.gif');
+INSERT INTO `posts` VALUES (1091,'em','http://i.imgur.com/flpElQs.jpg');
+INSERT INTO `posts` VALUES (1092,'em','http://i.imgur.com/9CQrXZE.jpg');
+INSERT INTO `posts` VALUES (1093,'em','http://i.imgur.com/oCHH3yl.jpg');
+INSERT INTO `posts` VALUES (1094,'em','http://coacheshotseat.com/coacheshotseatblog/wp-content/uploads/2011/05/TomPaine7.jpg');
+INSERT INTO `posts` VALUES (1095,'rel','http://coacheshotseat.com/coacheshotseatblog/wp-content/uploads/2011/05/TomPaine7.jpg');
+INSERT INTO `posts` VALUES (1096,'em','http://youtu.be/WDf757QwXpk?t=26s');
+INSERT INTO `posts` VALUES (1097,'rel','http://youtu.be/WDf757QwXpk?t=26s');
+INSERT INTO `posts` VALUES (1098,'dep','http://youtu.be/WDf757QwXpk?t=26s');
+INSERT INTO `posts` VALUES (1099,'em','http://www.reddit.com/r/NoFap/comments/2encia/an_open_letter_to_the_nofap_men/');
+INSERT INTO `posts` VALUES (1100,'dep','http://www.reddit.com/r/NoFap/comments/2encia/an_open_letter_to_the_nofap_men/');
+INSERT INTO `posts` VALUES (1101,'em','http://www.reddit.com/r/NoFap/comments/2jsldz/she_is_lucky_to_have_you_as_her_boyfriend/');
 /*!40000 ALTER TABLE `posts` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1070,4 +1081,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-18 17:40:38
+-- Dump completed on 2014-10-21 11:59:44

@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="favicon.png">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
-    <!-- <link href="arrow.css" rel="stylesheet"> -->
+    <link href="arrow.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -32,9 +32,11 @@ body,html{text-align:center;height:100%;}
 .rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
 .depression{padding:0;color:#fff;background:#2980b9;border:0;height:50%}.depression:hover{background:#3498db}
 .relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
-.suggest{padding:0;color:#fff;background:#f39c12;border:0;height:15%;z-index:2}.suggest:hover{background:#f1c40f}
+.suggest{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.suggest:hover{background:#95a5a6}
+.survey{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.survey:hover{background:#34495e}
 .cross{height:50%;margin-right:5%;margin-bottom:2%}
 .footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
+
 #religious{position:fixed;right:20px;top:20px;z-index:3;}
 #mobilereligious{display:none;}
 
@@ -42,8 +44,7 @@ body,html{text-align:center;height:100%;}
 .emergency{height:40%}
 .rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
 .cross{margin-right:2%}
-#hint,.suggest{display:none}
-#religious{display:none;}
+#hint,#religious,.survey{display:none}
 #mobilereligious{position:fixed;top:8px;right:8px;display:inline;} }
   </style>
 
@@ -51,7 +52,8 @@ body,html{text-align:center;height:100%;}
     <button type="submit" value="Rejection" id="rejection" class="rejection col-sm-3 col-xs-12">Rejection</button>
     <button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
     <button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
-    <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-12 col-xs-12">Submit a Link</button>
+    <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-6 col-xs-12">Submit</button>
+    <button type="submit" value="Survey" id="survey" class="survey col-sm-6 col-xs-12">Survey</button>
 
     <div class="arrow animated bounce" id="hint"></div>
 
@@ -60,7 +62,7 @@ body,html{text-align:center;height:100%;}
     <label>Include Religious</label>
     </div>
 
-    <span class="footer">Take the <a href="https://docs.google.com/forms/d/1ObJNhMUTVAdMepGYD3FxLW8r34-tJN8j0BNkBoyU254/viewform">survey</a><br>Open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.org/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. Tool by <a href="http://trump6.com">Jack Fischer,</a> NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC.</span>
+    <span class="footer">Open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.org/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. Tool by <a href="http://trump6.com">Jack Fischer,</a> NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC.</span>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="icheck.min.js"></script>
@@ -77,7 +79,8 @@ function portraitText() {
 	jQuery("#rejection").fitText(.9);
 	jQuery("#depression").fitText(.9);
 	jQuery("#relapsed").fitText(.9);
-	jQuery("#suggest").fitText(3.5);
+	jQuery("#suggest").fitText(2);
+	jQuery("#survey").fitText(2);
 }
 function landscapeText() {
 	jQuery("#emergency").fitText(1.1);
@@ -85,6 +88,7 @@ function landscapeText() {
 	jQuery("#depression").fitText(1.7);
 	jQuery("#relapsed").fitText(2);
 	jQuery("#suggest").fitText(5);
+	jQuery("#survey").fitText(5);
 }
 
 function readDeviceOrientation() {
@@ -114,7 +118,10 @@ $(relapsed).click(function() {
 		      window.location.href = data;
         }); });
 $(suggest).click(function() {
-	window.location.href = "http://emergency.nofap.org/suggestor.php"
+	window.location.href = "http://emergency.nofap.org/suggestor.php";
+})
+$(survey).click(function() {
+	window.location.href = "https://docs.google.com/forms/d/1ObJNhMUTVAdMepGYD3FxLW8r34-tJN8j0BNkBoyU254/viewform";
 })
 
 $(hint).click(function() {

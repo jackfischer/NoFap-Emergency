@@ -3,4 +3,4 @@ phpmyadmin
 robots.txt
 phpinfo.php
 staging
-dbdump.sh
+dump.sh
