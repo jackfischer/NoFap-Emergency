@@ -9,7 +9,6 @@
     <meta name="DC.Title" content="NoFap Emergency">
     <meta name="DC.Creator" content="Jack Fischer">
     <meta name="DC.Subject" content="NoFap Relapse Prevention Tool">
-    <meta name="DC.Description" content="Panic Button for Nofap. NoFap Emergency helps successfully beat urges by getting you to the best possible content as quickly as possible.">
     <meta name="DC.Language" content="EN">
 
     <title>NoFap Emergency</title>
@@ -26,7 +25,7 @@
     <![endif]-->
   </head>
   <body>
-  <style>
+<style>
 body,html{text-align:center;height:100%;}
 .emergency{height:50%;padding:0;color:#fff;background:#e74c3c;border:0;width:100%}.emergency:hover{background:red;text-shadow:2px;}
 .rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
@@ -46,7 +45,7 @@ body,html{text-align:center;height:100%;}
 .cross{margin-right:2%}
 #hint,#religious,.survey{display:none}
 #mobilereligious{position:fixed;top:8px;right:8px;display:inline;} }
-  </style>
+</style>
 
     <button type="submit" value="Emergency" id="emergency" class="emergency col-sm-12 col-xs-12"><img src="redcross.png" class="cross">Emergency<div id="mobilereligious"><input type="checkbox"><label>Religious</label></div></button>
     <button type="submit" value="Rejection" id="rejection" class="rejection col-sm-3 col-xs-12">Rejection</button>
@@ -91,32 +90,26 @@ function landscapeText() {
 	jQuery("#survey").fitText(5);
 }
 
-function readDeviceOrientation() {
-	if (Math.abs(window.orientation) === 90) {
-		landscapeText();
-	} else {
-		portraitText();
-	}
-}
+function readDeviceOrientation(){if(Math.abs(window.orientation)===90){landscapeText()}else{portraitText()}}
 readDeviceOrientation();
 window.onorientationchange = readDeviceOrientation;
 
 $(emergency).click(function() {
-	  $.get("director.php", { cat:"em" }, function(data) {
-		      window.location.href = data;
-        }); });
+$.get("director.php", { cat:"em",religious:religiousCheck }, function(data) {
+	window.location.href = data;
+}); });
 $(depression).click(function() {
-	  $.get("director.php", { cat:"dep" }, function(data) {
-		      window.location.href = data;
-        }); });
+$.get("director.php", { cat:"dep",religious:religiousCheck }, function(data) {
+	window.location.href = data;
+}); });
 $(rejection).click(function() {
-	  $.get("director.php", { cat:"rej" }, function(data) {
-		      window.location.href = data;
-        }); });
+$.get("director.php", { cat:"rej",religious:religiousCheck }, function(data) {
+	window.location.href = data;
+}); });
 $(relapsed).click(function() {
-	  $.get("director.php", { cat:"rel" }, function(data) {
-		      window.location.href = data;
-        }); });
+$.get("director.php", { cat:"rel",religious:religiousCheck }, function(data) {
+	window.location.href = data;
+}); });
 $(suggest).click(function() {
 	window.location.href = "suggestor.php";
 })
@@ -131,33 +124,23 @@ $("html, body").animate({ scrollTop: $(document).height() }, "fast");
 $('#hint').delay(2500).fadeOut("slow");
 
 
-$(document).ready(function(){
-  $('input').each(function(){
-    var self = $(this),
-      label = self.next(),
-      label_text = label.text();
-
-    label.remove();
-    self.iCheck({
-      checkboxClass: 'icheckbox_line-grey',
-      radioClass: 'iradio_line-grey',
-      insert: '<div class="icheck_line-icon"></div>' + label_text
-    });
-  });
-});
+//Checkbox magic
+$(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
 
 //Cookie Parser
 function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 
-var religious = getCookie("religious");
-if (religious == "true") {
-$('input').iCheck('check');
+var religiousCheck = getCookie("religious");
+if (religiousCheck == "true") {
+	$('input').iCheck('check');
 }
 
 $('input').on('ifChecked', function(event){
+	religiousCheck = "true";
 	document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC";
 });
 $('input').on('ifUnchecked', function(event){
+	religiousCheck = "false";
 	document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC";
 });
 </script>
