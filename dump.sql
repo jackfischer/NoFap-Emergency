@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1218 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1266 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1185,6 +1185,54 @@ INSERT INTO `links` VALUES (1214,'em','http://i.imgur.com/h7irsvF.jpg',NULL);
 INSERT INTO `links` VALUES (1215,'em','http://www.reddit.com/r/NoFap/comments/2k7vkk/i_dont_jack_off/',NULL);
 INSERT INTO `links` VALUES (1216,'em','http://www.reddit.com/r/NoFap/comments/2k20hg/edging_is_masturbating/',NULL);
 INSERT INTO `links` VALUES (1217,'em','http://www.reddit.com/r/NoFap/comments/11pney/edging_is_100_fapping_stop_rationalizing/',NULL);
+INSERT INTO `links` VALUES (1218,'em','http://i.imgur.com/dE2DlGP.png',1);
+INSERT INTO `links` VALUES (1219,'em','http://i.imgur.com/f1D0fO4.jpg',NULL);
+INSERT INTO `links` VALUES (1220,'em','http://i.imgur.com/f1D0fO4.jpg',NULL);
+INSERT INTO `links` VALUES (1221,'em','http://i.imgur.com/5jxJplc.png',NULL);
+INSERT INTO `links` VALUES (1222,'em','http://media02.hongkiat.com/black_wallpapers/do-your-work.jpg',NULL);
+INSERT INTO `links` VALUES (1223,'em','http://www.hdwallpapersinn.com/wp-content/uploads/2014/09/Quotes-Worth-Is-Not-Easy.png',NULL);
+INSERT INTO `links` VALUES (1224,'rel','http://www.hdwallpapersinn.com/wp-content/uploads/2014/09/Quotes-Worth-Is-Not-Easy.png',NULL);
+INSERT INTO `links` VALUES (1225,'em','http://www.sharegoodthings.com/pics/t/4071.jpg',NULL);
+INSERT INTO `links` VALUES (1226,'em','http://brightdrops.com/wp-content/uploads/2013/10/drseussyouhavebrainsinyourhead.jpg',NULL);
+INSERT INTO `links` VALUES (1227,'em','http://2.bp.blogspot.com/-qmui4v6QzOU/UUqKdX_fKnI/AAAAAAAAAHs/mTpYO51_o6E/s1600/never_give_up__by_atillalifeson-d5c145o.png',NULL);
+INSERT INTO `links` VALUES (1228,'rel','http://2.bp.blogspot.com/-qmui4v6QzOU/UUqKdX_fKnI/AAAAAAAAAHs/mTpYO51_o6E/s1600/never_give_up__by_atillalifeson-d5c145o.png',NULL);
+INSERT INTO `links` VALUES (1229,'rej','http://2.bp.blogspot.com/-qmui4v6QzOU/UUqKdX_fKnI/AAAAAAAAAHs/mTpYO51_o6E/s1600/never_give_up__by_atillalifeson-d5c145o.png',NULL);
+INSERT INTO `links` VALUES (1230,'dep','http://2.bp.blogspot.com/-qmui4v6QzOU/UUqKdX_fKnI/AAAAAAAAAHs/mTpYO51_o6E/s1600/never_give_up__by_atillalifeson-d5c145o.png',NULL);
+INSERT INTO `links` VALUES (1231,'rel','http://www.motivateyourplate.com/wp-content/uploads/2014/04/Failure-is-not-final-unless-you-give-up.jpg',NULL);
+INSERT INTO `links` VALUES (1232,'em','http://biblegodquotes.com/wp-content/uploads/2013/10/bible-god-quotes-759.jpg',1);
+INSERT INTO `links` VALUES (1233,'rel','http://biblegodquotes.com/wp-content/uploads/2013/10/bible-god-quotes-759.jpg',1);
+INSERT INTO `links` VALUES (1234,'rel','http://biblegodquotes.com/wp-content/uploads/2013/10/bible-god-quotes-759.jpg',1);
+INSERT INTO `links` VALUES (1235,'em','http://runningwildblogdotcom.files.wordpress.com/2013/08/motivation.jpg',NULL);
+INSERT INTO `links` VALUES (1236,'em','http://media-cache-ak0.pinimg.com/236x/70/13/34/7013341f36e1a6af78f724c85721d829.jpg',1);
+INSERT INTO `links` VALUES (1237,'em','http://biblegodquotes.com/wp-content/uploads/2013/04/bible-god-quotes-577.jpg',1);
+INSERT INTO `links` VALUES (1238,'em','https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/s480x480/47842_10151588103521718_492420634_n.jpg',1);
+INSERT INTO `links` VALUES (1239,'em','https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/s480x480/47842_10151588103521718_492420634_n.jpg',1);
+INSERT INTO `links` VALUES (1240,'em','https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/s480x480/47842_10151588103521718_492420634_n.jpg',1);
+INSERT INTO `links` VALUES (1241,'dep','https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-prn1/s480x480/47842_10151588103521718_492420634_n.jpg',1);
+INSERT INTO `links` VALUES (1242,'em','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
+INSERT INTO `links` VALUES (1243,'em','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
+INSERT INTO `links` VALUES (1244,'em','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
+INSERT INTO `links` VALUES (1245,'dep','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
+INSERT INTO `links` VALUES (1246,'em','http://media-cache-ec0.pinimg.com/736x/f2/fd/37/f2fd37e9df70342c265324ebf9a10630.jpg',1);
+INSERT INTO `links` VALUES (1247,'rel','http://media-cache-ec0.pinimg.com/736x/f2/fd/37/f2fd37e9df70342c265324ebf9a10630.jpg',1);
+INSERT INTO `links` VALUES (1248,'dep','http://media-cache-ec0.pinimg.com/736x/f2/fd/37/f2fd37e9df70342c265324ebf9a10630.jpg',1);
+INSERT INTO `links` VALUES (1249,'dep','http://media-cache-ec0.pinimg.com/736x/f2/fd/37/f2fd37e9df70342c265324ebf9a10630.jpg',1);
+INSERT INTO `links` VALUES (1250,'em','http://4.bp.blogspot.com/-l-mevJpmKRc/UR3tUoLekgI/AAAAAAAAH-M/B-JpLZRBAag/s1600/1+peter+5_8-9+wallpaper.jpg',1);
+INSERT INTO `links` VALUES (1251,'em','http://www.lovethispic.com/uploaded_images/64182-Tough-Times-Don-t-Last-People-Do.jpg',NULL);
+INSERT INTO `links` VALUES (1252,'dep','http://www.lovethispic.com/uploaded_images/64182-Tough-Times-Don-t-Last-People-Do.jpg',NULL);
+INSERT INTO `links` VALUES (1253,'dep','http://www.lovethispic.com/uploaded_images/64182-Tough-Times-Don-t-Last-People-Do.jpg',NULL);
+INSERT INTO `links` VALUES (1254,'rel','http://www.lovethispic.com/uploaded_images/64182-Tough-Times-Don-t-Last-People-Do.jpg',NULL);
+INSERT INTO `links` VALUES (1255,'rel','http://www.lovethispic.com/uploaded_images/64182-Tough-Times-Don-t-Last-People-Do.jpg',NULL);
+INSERT INTO `links` VALUES (1256,'em','http://2.bp.blogspot.com/-K08u1cErkQI/UbJeBWWSVbI/AAAAAAAAAGU/5AQqj-GmE6c/s1600/will-power-1366x768.jpg',NULL);
+INSERT INTO `links` VALUES (1257,'em','http://i.imgur.com/gdTUa0V.jpg',1);
+INSERT INTO `links` VALUES (1258,'em','http://media-cache-ak0.pinimg.com/736x/0f/1a/58/0f1a58acda62d1d33ef8fdb8dcdbf3cc.jpg',NULL);
+INSERT INTO `links` VALUES (1259,'em','http://i.imgur.com/u211XHI.jpg',NULL);
+INSERT INTO `links` VALUES (1260,'em','http://img.gawkerassets.com/post/17/2013/02/cantignorewallpaper-2560x1440.png',NULL);
+INSERT INTO `links` VALUES (1261,'em','http://www.youtube.com/watch?v=BOksW_NabEk',NULL);
+INSERT INTO `links` VALUES (1262,'em','http://www.reddit.com/r/NoFap/comments/2km5lu/my_personal_panic_button/',NULL);
+INSERT INTO `links` VALUES (1263,'em','http://i.imgur.com/kjxAmAD.png',1);
+INSERT INTO `links` VALUES (1264,'em','http://chrismgilbert.files.wordpress.com/2013/05/564749_268419783259538_1019540063_n.jpg',NULL);
+INSERT INTO `links` VALUES (1265,'em','http://4.bp.blogspot.com/-P7yLXxqwPvo/UKB6uNEQoPI/AAAAAAAACEc/jkVgRNiobKQ/s1600/Screen+shot+2012-10-30+at+5.07.40+PM.png',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1197,4 +1245,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-25 21:37:42
+-- Dump completed on 2014-11-09 14:48:40
