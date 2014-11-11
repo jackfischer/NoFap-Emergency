@@ -3,7 +3,7 @@
 include 'credentials.php';
 $cat = $_GET["cat"];
 try {
-	$DBH = new PDO("mysql:host=localhost;dbname=posts", $user, $password);
+	$DBH = new PDO("mysql:host=127.0.0.1;dbname=posts", $user, $password);
 	$DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 }
 catch(PDOException $e) {
@@ -40,7 +40,7 @@ if ($cat == "bookmarklet") {
 	$IH = $DBH->prepare($insert);
 	$IH->execute();
 
-	$query="select link from links where cat=:cat order by RAND() limit 1";
+	$query="select link from links where cat=:cat and religious is NULL order by RAND() limit 1";
 	$STH = $DBH->prepare($query);
 	$STH->execute(array(":cat" => "em"));
 	$result = $STH->fetch()[0];
