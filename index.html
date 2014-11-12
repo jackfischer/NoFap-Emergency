@@ -87,13 +87,14 @@ $(rejection).click(function(){$.get("director.php",{cat:"rej",religious:religiou
 $(relapsed).click(function(){$.get("director.php",{cat:"rel",religious:religiousCheck},function(e){window.location.href=e})});
 $(suggest).click(function(){window.location.href="suggestor.php"});$(survey).click(function(){window.location.href="https://docs.google.com/forms/d/1ObJNhMUTVAdMepGYD3FxLW8r34-tJN8j0BNkBoyU254/viewform"})
 
-$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
+//$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
 
 $(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
 
 //Cookie Parser, then handling and management
 function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}$("input").on("ifChecked",function(e){religiousCheck="true";document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC"});$("input").on("ifUnchecked",function(e){religiousCheck="false";document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC"})
+
 </script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
