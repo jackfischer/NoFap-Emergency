@@ -8,7 +8,7 @@
     <meta name="description" content="Submut a link for NoFap Emergency relapse prevention">
     <title>NoFap Emergency - Submit a Link</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

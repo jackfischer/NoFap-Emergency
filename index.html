@@ -10,13 +10,15 @@
     <meta name="DC.Creator" content="Jack Fischer">
     <meta name="DC.Subject" content="NoFap Relapse Prevention Tool">
     <meta name="DC.Language" content="EN">
+    <meta name="google-play-app" content="app-id=org.nofap.emergency">
 
     <title>NoFap Emergency</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="touchicon.png">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
-    <!-- <link href="arrow.css" rel="stylesheet"> -->
+    <link href="arrow.css" rel="stylesheet">
+    <link rel="stylesheet" href="jquery.smartbanner.css" type="text/css" media="screen">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,8 +33,9 @@ body,html{text-align:center;height:100%;}
 .rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
 .depression{padding:0;color:#fff;background:#2980b9;border:0;height:50%}.depression:hover{background:#3498db}
 .relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
-.suggest{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.suggest:hover{background:#95a5a6}
-.survey{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.survey:hover{background:#34495e}
+.survey{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.survey:hover{background:#95a5a6}
+.suggest{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.suggest:hover{background:#34495e}
+.android{padding:0;color:#fff;background:#bdc3c7;border:0;height:15%;z-index:2}.android:hover{background:#ecf0f1}
 .cross{height:50%;margin-right:5%;margin-bottom:2%}
 
 .footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
@@ -43,7 +46,7 @@ body,html{text-align:center;height:100%;}
 .emergency{height:40%}
 .rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
 .cross{margin-right:2%}
-#hint,#religious,.survey{display:none}
+#hint,#religious,#android,.survey{display:none}
 #mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3;} }
 </style>
 
@@ -51,8 +54,10 @@ body,html{text-align:center;height:100%;}
     <button type="submit" value="Rejection" id="rejection" class="rejection col-sm-3 col-xs-12">Rejection</button>
     <button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
     <button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
-    <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-6 col-xs-12">Submit</button>
-    <button type="submit" value="Survey" id="survey" class="survey col-sm-6 col-xs-12">Survey</button>
+
+    <button type="submit" value="Survey" id="survey" class="survey col-sm-4 col-xs-12">Survey</button>
+    <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-4 col-xs-12">Submit</button>
+    <button type="submit" value="Android" id="android" class="android col-sm-4 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
 
     <div class="arrow animated bounce" id="hint"></div>
 
@@ -62,7 +67,9 @@ body,html{text-align:center;height:100%;}
     <span class="footer">Open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.org/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. Tool by <a href="http://trump6.com">Jack Fischer,</a> NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC. <a href="http://www.nofap.org/donate/">Donate</a> to NoFap.</span>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
 <script src="icheck.min.js"></script>
+<script src="jquery.smartbanner.js"></script>
 
  <script>
 /*FitText.js 1.2
@@ -72,8 +79,8 @@ body,html{text-align:center;height:100%;}
 */ (function(e){e.fn.fitText=function(t,n){var r=t||1,i=e.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},n);return this.each(function(){var t=e(this);var n=function(){t.css("font-size",Math.max(Math.min(t.width()/(r*10),parseFloat(i.maxFontSize)),parseFloat(i.minFontSize)))};n();e(window).on("resize.fittext orientationchange.fittext",n)})}})(jQuery)
 
 //Portrait and Landscape Sizing Functions
-function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(2);jQuery("#survey").fitText(2)}
-function landscapeText(){jQuery("#emergency").fitText(1.1);jQuery("#rejection").fitText(2);jQuery("#depression").fitText(1.7);jQuery("#relapsed").fitText(2);jQuery("#suggest").fitText(3);jQuery("#survey").fitText(5)}
+function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(1.5);jQuery("#survey").fitText(2)}
+function landscapeText(){jQuery("#emergency").fitText(1.1);jQuery("#rejection").fitText(2);jQuery("#depression").fitText(1.7);jQuery("#relapsed").fitText(2);jQuery("#suggest").fitText(8.2);jQuery("#survey").fitText(5.5)}
 
 //Orientation management
 function readDeviceOrientation(){if(Math.abs(window.orientation)===90){landscapeText()}else{portraitText()}}
@@ -85,15 +92,20 @@ $(emergency).click(function(){$.get("director.php",{cat:"em",religious:religious
 $(depression).click(function(){$.get("director.php",{cat:"dep",religious:religiousCheck},function(e){window.location.href=e})});
 $(rejection).click(function(){$.get("director.php",{cat:"rej",religious:religiousCheck},function(e){window.location.href=e})});
 $(relapsed).click(function(){$.get("director.php",{cat:"rel",religious:religiousCheck},function(e){window.location.href=e})});
-$(suggest).click(function(){window.location.href="suggestor.php"});$(survey).click(function(){window.location.href="https://docs.google.com/forms/d/1ObJNhMUTVAdMepGYD3FxLW8r34-tJN8j0BNkBoyU254/viewform"})
+$(suggest).click(function(){window.location.href="suggestor.php"});
+$(survey).click(function(){window.location.href="https://docs.google.com/forms/d/1ObJNhMUTVAdMepGYD3FxLW8r34-tJN8j0BNkBoyU254/viewform"});
+$(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
 
-//$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
+$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
 
 $(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
 
 //Cookie Parser, then handling and management
 function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}$("input").on("ifChecked",function(e){religiousCheck="true";document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC"});$("input").on("ifUnchecked",function(e){religiousCheck="false";document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC"})
+
+//Smart banner launch
+$(function() { $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true}) } )
 
 </script>
 <script>
