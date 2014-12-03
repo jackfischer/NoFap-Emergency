@@ -13,11 +13,11 @@
     <meta name="google-play-app" content="app-id=org.nofap.emergency">
 
     <title>NoFap Emergency</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="touchicon.png">
+    <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
+    <link rel="apple-touch-icon" href="icons/touchicon.png">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
-    <link href="arrow.css" rel="stylesheet">
+    <!-- <link href="arrow.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="jquery.smartbanner.css" type="text/css" media="screen">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -25,41 +25,39 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+	body,html{text-align:center;height:100%;}
+	.emergency{height:50%;padding:0;color:#fff;background:#e74c3c;border:0;width:100%}.emergency:hover{background:red;text-shadow:2px;}
+	.rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
+	.depression{padding:0;color:#fff;background:#2980b9;border:0;height:50%}.depression:hover{background:#3498db}
+	.relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
+	.survey{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.survey:hover{background:#95a5a6}
+	.suggest{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.suggest:hover{background:#34495e}
+	.android{padding:0;color:#fff;background:#bdc3c7;border:0;height:15%;z-index:2}.android:hover{background:#ecf0f1}
+	.cross{height:50%;margin-right:5%;margin-bottom:2%}
+
+	.footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
+	#religious{position:fixed;right:20px;top:20px;z-index:3;}
+	#mobilereligious{display:none;}
+
+	@media only screen and (max-width:768px){
+	.emergency{height:40%}
+	.rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
+	.cross{margin-right:2%}
+	#hint,#religious,#android,.survey{display:none}
+	#mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3;} }
+    </style>
   </head>
   <body>
-<style>
-body,html{text-align:center;height:100%;}
-.emergency{height:50%;padding:0;color:#fff;background:#e74c3c;border:0;width:100%}.emergency:hover{background:red;text-shadow:2px;}
-.rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
-.depression{padding:0;color:#fff;background:#2980b9;border:0;height:50%}.depression:hover{background:#3498db}
-.relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
-.survey{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.survey:hover{background:#95a5a6}
-.suggest{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.suggest:hover{background:#34495e}
-.android{padding:0;color:#fff;background:#bdc3c7;border:0;height:15%;z-index:2}.android:hover{background:#ecf0f1}
-.cross{height:50%;margin-right:5%;margin-bottom:2%}
-
-.footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
-#religious{position:fixed;right:20px;top:20px;z-index:3;}
-#mobilereligious{display:none;}
-
-@media only screen and (max-width:768px){
-.emergency{height:40%}
-.rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
-.cross{margin-right:2%}
-#hint,#religious,#android,.survey{display:none}
-#mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3;} }
-</style>
-
-    <button type="submit" value="Emergency" id="emergency" class="emergency col-sm-12 col-xs-12"><img src="redcross.png" class="cross">Emergency</button>
+    <button type="submit" value="Emergency" id="emergency" class="emergency col-sm-12 col-xs-12"><img src="icons/redcross.png" class="cross">Emergency</button>
     <button type="submit" value="Rejection" id="rejection" class="rejection col-sm-3 col-xs-12">Rejection</button>
     <button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
     <button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
 
-    <button type="submit" value="Survey" id="survey" class="survey col-sm-4 col-xs-12">Survey</button>
-    <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-4 col-xs-12">Submit</button>
-    <button type="submit" value="Android" id="android" class="android col-sm-4 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
+    <button type="submit" value="Suggest" id="suggest" class="suggest col-sm-6 col-xs-12">Submit</button>
+    <button type="submit" value="Android" id="android" class="android col-sm-6 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
 
-    <div class="arrow animated bounce" id="hint"></div>
+    <!-- <div class="arrow animated bounce" id="hint"></div> -->
 
     <div id="mobilereligious"><input type="checkbox" onchange="religiousChange()"><label>Religious</label></div>
     <div id="religious"><input type="checkbox" onchange="religiousChange()"><label>Include Religious</label></div>
@@ -79,8 +77,8 @@ body,html{text-align:center;height:100%;}
 */ (function(e){e.fn.fitText=function(t,n){var r=t||1,i=e.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},n);return this.each(function(){var t=e(this);var n=function(){t.css("font-size",Math.max(Math.min(t.width()/(r*10),parseFloat(i.maxFontSize)),parseFloat(i.minFontSize)))};n();e(window).on("resize.fittext orientationchange.fittext",n)})}})(jQuery)
 
 //Portrait and Landscape Sizing Functions
-function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(1.5);jQuery("#survey").fitText(2)}
-function landscapeText(){jQuery("#emergency").fitText(1.1);jQuery("#rejection").fitText(2);jQuery("#depression").fitText(1.7);jQuery("#relapsed").fitText(2);jQuery("#suggest").fitText(8.2);jQuery("#survey").fitText(5.5)}
+function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(2.1);}
+function landscapeText(){jQuery("#emergency").fitText(1.1);jQuery("#rejection").fitText(2);jQuery("#depression").fitText(1.7);jQuery("#relapsed").fitText(2);jQuery("#suggest").fitText(4);}
 
 //Orientation management
 function readDeviceOrientation(){if(Math.abs(window.orientation)===90){landscapeText()}else{portraitText()}}
@@ -93,19 +91,17 @@ $(depression).click(function(){$.get("director.php",{cat:"dep",religious:religio
 $(rejection).click(function(){$.get("director.php",{cat:"rej",religious:religiousCheck},function(e){window.location.href=e})});
 $(relapsed).click(function(){$.get("director.php",{cat:"rel",religious:religiousCheck},function(e){window.location.href=e})});
 $(suggest).click(function(){window.location.href="suggestor.php"});
-$(survey).click(function(){window.location.href="https://docs.google.com/forms/d/1ObJNhMUTVAdMepGYD3FxLW8r34-tJN8j0BNkBoyU254/viewform"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
 
-$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
-
-$(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
+//$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
 
 //Cookie Parser, then handling and management
 function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}$("input").on("ifChecked",function(e){religiousCheck="true";document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC"});$("input").on("ifUnchecked",function(e){religiousCheck="false";document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC"})
 
-//Smart banner launch
+//Smart banner and checkbox launch
 $(function() { $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true}) } )
+$(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
 
 </script>
 <script>

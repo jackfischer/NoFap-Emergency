@@ -9,6 +9,7 @@ header("Access-Control-Allow-Origin: *");
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-53301604-1', 'auto');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 </script>
 

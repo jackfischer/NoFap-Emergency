@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1430 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1457 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -773,8 +773,6 @@ INSERT INTO `links` VALUES (805,'rel','http://www.youtube.com/watch?v=NlmezywdxP
 INSERT INTO `links` VALUES (806,'em','http://www.youtube.com/watch?v=NlmezywdxPI',NULL);
 INSERT INTO `links` VALUES (807,'em','http://www.youtube.com/watch?v=hw6GwhfNl7U',NULL);
 INSERT INTO `links` VALUES (808,'em','http://youtu.be/eAHDS5Rn4kg?t=1m25s',NULL);
-INSERT INTO `links` VALUES (811,'em','http://youtu.be/RezjC4jdbTU?t=54s',NULL);
-INSERT INTO `links` VALUES (812,'em','http://youtu.be/RezjC4jdbTU?t=54s',NULL);
 INSERT INTO `links` VALUES (813,'em','http://youtu.be/vpFIj_8daVU?t=2m15s',NULL);
 INSERT INTO `links` VALUES (814,'em','http://youtu.be/vpFIj_8daVU?t=2m15s',NULL);
 INSERT INTO `links` VALUES (815,'em','http://www.lolroflmao.com/wp-content/uploads/2011/12/motherfucking-game.png',NULL);
@@ -973,7 +971,6 @@ INSERT INTO `links` VALUES (1016,'rel','http://www.quotesvalley.com/images/07/fo
 INSERT INTO `links` VALUES (1017,'em','http://quotes.lifehack.org/quote/ella-wheeler-wilcox/always-continue-the-climb-it-is-possible/',NULL);
 INSERT INTO `links` VALUES (1018,'em','http://quotes.lifehack.org/quote/mahatma-gandhi/in-a-gentle-way-you-can-shake/',NULL);
 INSERT INTO `links` VALUES (1019,'em','http://youtu.be/rgwrWTu4ST0?t=48s',NULL);
-INSERT INTO `links` VALUES (1020,'em','http://www.reddit.com/r/AskReddit/comments/2egyc5/what_quote_or_saying_changed_your_life_serious/',NULL);
 INSERT INTO `links` VALUES (1021,'em','https://www.youtube.com/watch?v=pbm73TwXMC4',NULL);
 INSERT INTO `links` VALUES (1022,'em','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg',NULL);
 INSERT INTO `links` VALUES (1023,'rel','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg',NULL);
@@ -1376,6 +1373,33 @@ INSERT INTO `links` VALUES (1426,'em','http://memecrunch.com/meme/M2L5/plz-stop-
 INSERT INTO `links` VALUES (1427,'em','http://www.reddit.com/r/NoFap/comments/2npd70/friends_asked_if_i_wanted_to_go_the_strip_club_so/',NULL);
 INSERT INTO `links` VALUES (1428,'em','http://41.media.tumblr.com/tumblr_ln4e6jPDd11qbv3ovo1_400.png',NULL);
 INSERT INTO `links` VALUES (1429,'em','http://media-cache-ec0.pinimg.com/236x/a0/29/28/a02928903f6644c04ce365855b4ac0b9.jpg',NULL);
+INSERT INTO `links` VALUES (1430,'em','http://quotes.lifehack.org/quote/jim-rohn/discipline-is-the-bridge-between-goals-and/',NULL);
+INSERT INTO `links` VALUES (1431,'rel','http://quotes.lifehack.org/media/quotes/quote-Tom-Landry-a-winner-never-stops-trying-23526.png',NULL);
+INSERT INTO `links` VALUES (1432,'rel','http://www.verybestquotes.com/wp-content/uploads/2012/04/quotes-a-winner-never-stops-trying.jpg',NULL);
+INSERT INTO `links` VALUES (1433,'rej','http://www.verybestquotes.com/wp-content/uploads/2012/04/quotes-a-winner-never-stops-trying.jpg',NULL);
+INSERT INTO `links` VALUES (1434,'rej','http://quotes.lifehack.org/media/quotes/quote-Tom-Landry-a-winner-never-stops-trying-23526.png',NULL);
+INSERT INTO `links` VALUES (1435,'em','http://physicalculturist.ca/wp-content/uploads/2013/08/1184979_499863786768627_1793939922_n.jpg',NULL);
+INSERT INTO `links` VALUES (1436,'rel','http://physicalculturist.ca/wp-content/uploads/2013/08/1184979_499863786768627_1793939922_n.jpg',NULL);
+INSERT INTO `links` VALUES (1437,'em','http://quotes.lifehack.org/quote/muhammad-ali/i-hated-every-minute-of-training-but/',NULL);
+INSERT INTO `links` VALUES (1438,'em','http://addicted2success.com/wp-content/uploads/2011/12/keep-moving-forward.png',NULL);
+INSERT INTO `links` VALUES (1439,'rel','http://addicted2success.com/wp-content/uploads/2011/12/keep-moving-forward.png',NULL);
+INSERT INTO `links` VALUES (1440,'dep','http://addicted2success.com/wp-content/uploads/2011/12/keep-moving-forward.png',NULL);
+INSERT INTO `links` VALUES (1441,'dep','http://addicted2success.com/wp-content/uploads/2011/12/keep-moving-forward.png',NULL);
+INSERT INTO `links` VALUES (1442,'rel','http://addicted2success.com/wp-content/uploads/2011/12/keep-moving-forward.png',NULL);
+INSERT INTO `links` VALUES (1443,'rej','http://addicted2success.com/wp-content/uploads/2011/12/keep-moving-forward.png',NULL);
+INSERT INTO `links` VALUES (1444,'rej','http://addicted2success.com/wp-content/uploads/2011/12/keep-moving-forward.png',NULL);
+INSERT INTO `links` VALUES (1445,'em','http://i1.wp.com/everydaypowerblog.com/wp-content/uploads/2014/02/do-today.jpg',NULL);
+INSERT INTO `links` VALUES (1446,'rel','http://i1.wp.com/everydaypowerblog.com/wp-content/uploads/2014/02/do-today.jpg',NULL);
+INSERT INTO `links` VALUES (1447,'em','http://reanimated.lt/wp-content/uploads/2013/04/wallpaper-2722801.jpg',NULL);
+INSERT INTO `links` VALUES (1448,'em','http://reanimated.lt/wp-content/uploads/2013/04/wallpaper-2722801.jpg',NULL);
+INSERT INTO `links` VALUES (1449,'em','http://addicted2success.com/wp-content/uploads/2013/03/Never-Give-Up-Picture-Quote.png',NULL);
+INSERT INTO `links` VALUES (1450,'em','http://www.sideincomelab.com/wp-content/uploads/2014/06/Never-Forget.png',NULL);
+INSERT INTO `links` VALUES (1451,'em','http://www.sideincomelab.com/wp-content/uploads/2014/06/Never-Forget.png',NULL);
+INSERT INTO `links` VALUES (1452,'rel','http://www.sideincomelab.com/wp-content/uploads/2014/06/Never-Forget.png',NULL);
+INSERT INTO `links` VALUES (1453,'em','http://jesslively.com/wp-content/uploads/2013/11/ThisVeryMomentWeCanChangeOurLives.jpg',NULL);
+INSERT INTO `links` VALUES (1454,'rel','http://jesslively.com/wp-content/uploads/2013/11/ThisVeryMomentWeCanChangeOurLives.jpg',NULL);
+INSERT INTO `links` VALUES (1455,'em','http://www.reddit.com/r/NoFap/comments/2npd70/friends_asked_if_i_wanted_to_go_the_strip_club_so/',NULL);
+INSERT INTO `links` VALUES (1456,'em','https://michaeldooleyblog.files.wordpress.com/2013/10/potential-copy.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1388,4 +1412,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-29 19:48:31
+-- Dump completed on 2014-12-03 10:29:00

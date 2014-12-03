@@ -14,15 +14,14 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-<style>
-body,html{height:100%}
-html{display:table;margin:auto;text-align:center;background:#e74c3c;height:100%}
-body{display:table-cell;vertical-align:middle;background:#e74c3c}
-</style>
-</head>
-
-<body>
-<form method="post" action="suggestor.php">
+	<style>
+	body,html{height:100%}
+	html{display:table;margin:auto;text-align:center;background:#e74c3c;height:100%}
+	body{display:table-cell;vertical-align:middle;background:#e74c3c}
+	</style>
+  </head>
+  <body>
+    <form method="post" action="suggestor.php">
 	<div class="form-group">
 	<input class="form-control" name="link" placeholder="Link">
 	</div>
@@ -37,7 +36,7 @@ body{display:table-cell;vertical-align:middle;background:#e74c3c}
 	?>
 	</div>
 	<button type="submit" name="submit" class="col-xs-12 btn btn-default">Submit</button>
-</form>
+    </form>
 
 
 <?php
@@ -72,7 +71,7 @@ return true;
 <br><br><br><br>
 
 <form action="mailto:jack@trump6.com">
-<button type="submit" class="col-xs-12 btn btn-default">Problem or other suggestion? Email us</button>
+	<button type="submit" class="col-xs-12 btn btn-default">Problem or other suggestion? Email us</button>
 </form>
 <br>
 
