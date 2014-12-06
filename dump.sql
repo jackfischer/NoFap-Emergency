@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1457 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1501 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1156,7 +1156,6 @@ INSERT INTO `links` VALUES (1204,'em','http://hdscreen.me/thumbs/art-design/toda
 INSERT INTO `links` VALUES (1206,'em','http://healthadvocation.files.wordpress.com/2013/02/health-and-fitness-motivation-by-elisa.jpg',NULL);
 INSERT INTO `links` VALUES (1207,'em','http://healthadvocation.files.wordpress.com/2013/02/health-and-fitness-motivation-by-elisa.jpg',NULL);
 INSERT INTO `links` VALUES (1208,'em','http://healthadvocation.files.wordpress.com/2013/02/health-and-fitness-motivation-by-elisa.jpg',NULL);
-INSERT INTO `links` VALUES (1209,'em','http://healthsciencedegree.info/wp-content/uploads/2014/04/health-and-fitness-motivation-tumblr.jpg',NULL);
 INSERT INTO `links` VALUES (1210,'rel','http://joeleavers.com/wp-content/uploads/2014/10/motivation-statement.jpg',NULL);
 INSERT INTO `links` VALUES (1211,'em','https://iambeast1.files.wordpress.com/2012/08/welcome.jpg',NULL);
 INSERT INTO `links` VALUES (1212,'em','http://thefabweb.com/wp-content/uploads/2012/12/niAbb.jpg',NULL);
@@ -1400,6 +1399,49 @@ INSERT INTO `links` VALUES (1453,'em','http://jesslively.com/wp-content/uploads/
 INSERT INTO `links` VALUES (1454,'rel','http://jesslively.com/wp-content/uploads/2013/11/ThisVeryMomentWeCanChangeOurLives.jpg',NULL);
 INSERT INTO `links` VALUES (1455,'em','http://www.reddit.com/r/NoFap/comments/2npd70/friends_asked_if_i_wanted_to_go_the_strip_club_so/',NULL);
 INSERT INTO `links` VALUES (1456,'em','https://michaeldooleyblog.files.wordpress.com/2013/10/potential-copy.jpg',NULL);
+INSERT INTO `links` VALUES (1457,'em','https://warosu.org/data/lit/img/0046/15/1393603907027.jpg',NULL);
+INSERT INTO `links` VALUES (1458,'em','http://www.reddit.com/r/NoFap/comments/2o5bmt/what_my_father_told_me_before_he_passed_away/',NULL);
+INSERT INTO `links` VALUES (1459,'rel','http://static.quoteswave.com/wp-content/uploads/2012/01/Your-best-teacher.jpg',NULL);
+INSERT INTO `links` VALUES (1460,'em','http://steadfast-ministries.com/wp-content/uploads/2013/01/1Cor10_13.jpg',1);
+INSERT INTO `links` VALUES (1461,'em','http://steadfast-ministries.com/wp-content/uploads/2013/01/1Cor10_13.jpg',1);
+INSERT INTO `links` VALUES (1462,'em','http://god.com/wp-content/uploads/2014/05/1-Cor-10-13.png',1);
+INSERT INTO `links` VALUES (1463,'em','http://god.com/wp-content/uploads/2014/05/1-Cor-10-13.png',1);
+INSERT INTO `links` VALUES (1464,'em','https://tayjay22.files.wordpress.com/2014/09/00a1919a813e4dabcef1ad06e1836689.jpg',1);
+INSERT INTO `links` VALUES (1465,'em','https://s-media-cache-ec0.pinimg.com/236x/dd/03/2f/dd032ff0f70d46b52eb78ae1fd36bffa.jpg',1);
+INSERT INTO `links` VALUES (1466,'em','http://2.bp.blogspot.com/-T-6vcHw6pr0/UTKfBK6j57I/AAAAAAAAAgg/lxG-_8Tw4HU/s640/marchstudy_lg_2013_03.jpg',1);
+INSERT INTO `links` VALUES (1467,'em','http://quotes.lifehack.org/media/quotes/quote-Jud-Wilhite-the-bible-doesnt-sugarcoat-pain-and-suffering-214380.png',1);
+INSERT INTO `links` VALUES (1468,'dep','http://quotes.lifehack.org/media/quotes/quote-Jud-Wilhite-the-bible-doesnt-sugarcoat-pain-and-suffering-214380.png',1);
+INSERT INTO `links` VALUES (1469,'rel','http://quotes.lifehack.org/media/quotes/quote-Jud-Wilhite-the-bible-doesnt-sugarcoat-pain-and-suffering-214380.png',1);
+INSERT INTO `links` VALUES (1470,'em','http://inspirationboost.com/wp-content/uploads/2014/03/Lance-Armstrong-Pain-Quotes.jpg',NULL);
+INSERT INTO `links` VALUES (1471,'em','http://inspirationboost.com/wp-content/uploads/2014/03/Lance-Armstrong-Pain-Quotes.jpg',NULL);
+INSERT INTO `links` VALUES (1472,'em','http://www.attitudearcade.com/prod_images_blowup/100067-PainIsTemp_lg.jpg',NULL);
+INSERT INTO `links` VALUES (1473,'em','http://8tracks.imgix.net/i/000/225/891/tumblr_mgvrsfGkQC1r4e0wko1_1280-7624.jpg',NULL);
+INSERT INTO `links` VALUES (1474,'em','http://thejobwindow.files.wordpress.com/2013/10/ali1.jpg',NULL);
+INSERT INTO `links` VALUES (1476,'rel','https://sadiedaily.files.wordpress.com/2014/06/20140607-071650-26210493.jpg',NULL);
+INSERT INTO `links` VALUES (1477,'em','http://taleofsuccess.com/wp-content/uploads/2014/04/1-Jackie-Chan-Wallpaper-01.jpg',NULL);
+INSERT INTO `links` VALUES (1478,'em','http://taleofsuccess.com/wp-content/uploads/2014/04/1-Jackie-Chan-Wallpaper-01.jpg',NULL);
+INSERT INTO `links` VALUES (1479,'em','http://taleofsuccess.com/wp-content/uploads/2014/06/Muhammad-Ali-on-Impossible.jpg',NULL);
+INSERT INTO `links` VALUES (1480,'rel','http://taleofsuccess.com/wp-content/uploads/2014/06/Muhammad-Ali-on-Impossible.jpg',NULL);
+INSERT INTO `links` VALUES (1481,'rel','http://taleofsuccess.com/wp-content/uploads/2014/06/Muhammad-Ali-on-Impossible.jpg',NULL);
+INSERT INTO `links` VALUES (1482,'em','http://taleofsuccess.com/wp-content/uploads/2014/05/title-slide_never-never-give-up.jpg',1);
+INSERT INTO `links` VALUES (1483,'em','http://taleofsuccess.com/wp-content/uploads/2014/05/title-slide_never-never-give-up.jpg',1);
+INSERT INTO `links` VALUES (1484,'em','http://taleofsuccess.com/wp-content/uploads/2014/05/title-slide_never-never-give-up.jpg',1);
+INSERT INTO `links` VALUES (1485,'rel','http://www.npr.org/blogs/health/2012/01/02/144431794/what-vietnam-taught-us-about-breaking-bad-habits',NULL);
+INSERT INTO `links` VALUES (1486,'rel','http://www.reddit.com/r/NoFap/comments/1xgu31/porn_a_disappointing_drug/',NULL);
+INSERT INTO `links` VALUES (1487,'rel','http://i.imgur.com/lYJnKfQ.jpg',NULL);
+INSERT INTO `links` VALUES (1488,'rel','http://i.imgur.com/lYJnKfQ.jpg',NULL);
+INSERT INTO `links` VALUES (1489,'em','http://i.imgur.com/lYJnKfQ.jpg',NULL);
+INSERT INTO `links` VALUES (1490,'em','http://www.reddit.com/r/NoFap/comments/2o75qt/remember_the_main_triggers_are_as_easy_as/',NULL);
+INSERT INTO `links` VALUES (1491,'rel','http://www.reddit.com/r/NoFap/comments/2o75qt/remember_the_main_triggers_are_as_easy_as/',NULL);
+INSERT INTO `links` VALUES (1492,'dep','http://us7.campaign-archive1.com/?u=c44f3c5f8a16d5b9fa8bed400&id=7c82f57a83',NULL);
+INSERT INTO `links` VALUES (1493,'dep','http://us7.campaign-archive1.com/?u=c44f3c5f8a16d5b9fa8bed400&id=7c82f57a83',NULL);
+INSERT INTO `links` VALUES (1494,'em','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg',NULL);
+INSERT INTO `links` VALUES (1495,'rel','http://media-cache-ak0.pinimg.com/236x/7c/f8/fb/7cf8fbb95e09f0718d4359614baaa35b.jpg',NULL);
+INSERT INTO `links` VALUES (1496,'em','http://www.reddit.com/r/NoFap/comments/2nzp08/proverbs_62528/',1);
+INSERT INTO `links` VALUES (1497,'em','http://www.reddit.com/r/NoFap/comments/2nzp08/proverbs_62528/',1);
+INSERT INTO `links` VALUES (1498,'em','http://www.reddit.com/r/NoFap/comments/2nzp08/proverbs_62528/',1);
+INSERT INTO `links` VALUES (1499,'em','http://www.reddit.com/r/NoFap/comments/2nzp08/proverbs_62528/',1);
+INSERT INTO `links` VALUES (1500,'em','http://i.imgur.com/b2zX7Wd.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1412,4 +1454,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-03 10:29:00
+-- Dump completed on 2014-12-06 16:26:19
