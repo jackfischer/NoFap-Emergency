@@ -2,6 +2,9 @@
 header("Access-Control-Allow-Origin: *");
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -40,7 +43,8 @@ $STH = $DBH->prepare($query);
 $STH->execute(array(":cat" => $cat));
 
 $url = $STH->fetch()[0];
-echo "<img style=\"display:block;margin-right:auto;margin-left:auto;\" src=\"" . $url . "\" >";
+echo '<img style="display:block;margin-right:auto;margin-left:auto;" src="' . $url . '">';
 
 ?>
 
+</html>

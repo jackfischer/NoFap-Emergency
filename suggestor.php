@@ -22,7 +22,7 @@
     </style>
   </head>
   <body>
-    <form style="" method="post" action="thankyou.php">
+    <form style="" id="suggestor" onsubmit="return validateForm()" method="post" action="thankyou.php">
 	<div class="form-group">
 	<input class="form-control" name="link" placeholder="Link">
 	</div>
@@ -39,6 +39,15 @@
 		<button type="submit" style="margin-top:10% !important;" class="col-xs-10 col-xs-offset-1 btn btn-default">Other problem/suggestion? Email us</button>
 	</form>
 
+<script>
+function validateForm() {
+    var x = document.forms["suggestor"]["link"].value;
+    if (x == null || x == "") {
+        alert("Form must be filled out");
+        return false;
+    }
+}
+</script>
  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

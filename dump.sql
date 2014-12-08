@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1501 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1513 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -333,7 +333,6 @@ INSERT INTO `links` VALUES (333,'rej','http://i.imgur.com/UpMV9Aj.jpg',NULL);
 INSERT INTO `links` VALUES (334,'em','http://i.imgur.com/5kbruK3.jpg',NULL);
 INSERT INTO `links` VALUES (335,'rel','http://i.imgur.com/5kbruK3.jpg',NULL);
 INSERT INTO `links` VALUES (336,'dep','http://i.imgur.com/5kbruK3.jpg',NULL);
-INSERT INTO `links` VALUES (337,'em','http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-fight-for-your-life.png',NULL);
 INSERT INTO `links` VALUES (338,'rel','http://i.imgur.com/MXAIakQ.jpg',NULL);
 INSERT INTO `links` VALUES (339,'em','http://i.imgur.com/MXAIakQ.jpg',NULL);
 INSERT INTO `links` VALUES (340,'em','http://i.imgur.com/qb5AVo3.png',NULL);
@@ -523,7 +522,6 @@ INSERT INTO `links` VALUES (549,'rel','http://i.imgur.com/ug7tDp5.png',NULL);
 INSERT INTO `links` VALUES (550,'em','http://i.imgur.com/OyDvAFj.jpg',NULL);
 INSERT INTO `links` VALUES (551,'em','http://i.imgur.com/TW2uyZd.gif',NULL);
 INSERT INTO `links` VALUES (552,'rel','http://i.imgur.com/TW2uyZd.gif',NULL);
-INSERT INTO `links` VALUES (553,'em','http://i.imgur.com/oSlnVYT.gif',NULL);
 INSERT INTO `links` VALUES (554,'em','http://i.imgur.com/lMRFw0y.jpg',NULL);
 INSERT INTO `links` VALUES (555,'dep','http://i.imgur.com/lMRFw0y.jpg',NULL);
 INSERT INTO `links` VALUES (556,'em','http://i.imgur.com/uohZrRU.jpg',NULL);
@@ -1442,6 +1440,18 @@ INSERT INTO `links` VALUES (1497,'em','http://www.reddit.com/r/NoFap/comments/2n
 INSERT INTO `links` VALUES (1498,'em','http://www.reddit.com/r/NoFap/comments/2nzp08/proverbs_62528/',1);
 INSERT INTO `links` VALUES (1499,'em','http://www.reddit.com/r/NoFap/comments/2nzp08/proverbs_62528/',1);
 INSERT INTO `links` VALUES (1500,'em','http://i.imgur.com/b2zX7Wd.jpg',NULL);
+INSERT INTO `links` VALUES (1501,'em','http://i.imgur.com/25KD5hN.png',NULL);
+INSERT INTO `links` VALUES (1502,'em','http://i.imgur.com/25KD5hN.png',NULL);
+INSERT INTO `links` VALUES (1503,'em','http://i.imgur.com/25KD5hN.png',NULL);
+INSERT INTO `links` VALUES (1504,'em','http://i.imgur.com/25KD5hN.png',NULL);
+INSERT INTO `links` VALUES (1505,'em','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
+INSERT INTO `links` VALUES (1506,'em','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
+INSERT INTO `links` VALUES (1507,'rel','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
+INSERT INTO `links` VALUES (1508,'rel','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
+INSERT INTO `links` VALUES (1509,'dep','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
+INSERT INTO `links` VALUES (1510,'dep','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
+INSERT INTO `links` VALUES (1511,'rej','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
+INSERT INTO `links` VALUES (1512,'rej','https://www.youtube.com/watch?v=g-jwWYX7Jlo',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1454,4 +1464,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-06 16:26:19
+-- Dump completed on 2014-12-08 17:41:44
