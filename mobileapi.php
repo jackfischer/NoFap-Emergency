@@ -4,7 +4,7 @@ header("Access-Control-Allow-Origin: *");
 
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -15,7 +15,8 @@ header("Access-Control-Allow-Origin: *");
   ga('require', 'displayfeatures');
   ga('send', 'pageview');
 </script>
-
+</head>
+<body>
 <?php
 include 'credentials.php';
 $cat = $_GET["cat"];
@@ -28,12 +29,12 @@ catch(PDOException $e) {
 	echo $e->getMessage(); 
 }
 if($_GET["religious"] == "true") {
-	$query = "select link from links where cat=:cat and lower(link) regexp 'jpg$|jpeg$|gif$|png$' order by RAND() limit 1";
-	$insert = "insert into events (id, cat, timestamp, religious, platform) values (NULL, :cat, CURRENT_TIMESTAMP, 1, :platform)";
+	$query = "select link from links where cat=:cat order by RAND() limit 1";
+	$insert = "insert into events (cat, timestamp, religious, platform) values (:cat, CURRENT_TIMESTAMP, 1, :platform)";
 }
 else {
-	$query = "select link from links where cat=:cat and religious is NULL and lower(link) regexp 'jpg$|jpeg$|gif$|png$' order by RAND() limit 1";
-	$insert = "insert into events (id, cat, timestamp, platform) values (NULL, :cat, CURRENT_TIMESTAMP, :platform)";
+	$query = "select link from links where cat=:cat and religious is NULL order by RAND() limit 1";
+	$insert = "insert into events (cat, timestamp, platform) values (:cat, CURRENT_TIMESTAMP, :platform)";
 }
 
 $IH = $DBH->prepare($insert);
@@ -43,8 +44,15 @@ $STH = $DBH->prepare($query);
 $STH->execute(array(":cat" => $cat));
 
 $url = $STH->fetch()[0];
-echo '<img style="display:block;margin-right:auto;margin-left:auto;" src="' . $url . '">';
+
+if (preg_match('/jpeg$|jpg$|gif$|png$/i', $url)) {
+	echo '<img style="display:block;margin-right:auto;margin-left:auto;" src="' . $url . '">';
+}
+else {
+	echo '<script> window.location.href="' . $url . '"</script>';
+}
+
 
 ?>
-
+</body>
 </html>
