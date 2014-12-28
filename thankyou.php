@@ -7,7 +7,7 @@
     <meta name="keywords" content="NoFap,submit,suggest,relapse prevention,emergency">
     <meta name="description" content="Submut a link for NoFap Emergency relapse prevention">
     <title>NoFap Emergency - Thank You!</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

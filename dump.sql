@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1557 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1579 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -751,10 +751,6 @@ INSERT INTO `links` VALUES (780,'rej','http://www.reddit.com/r/NoFap/comments/2c
 INSERT INTO `links` VALUES (781,'dep','http://www.reddit.com/r/NoFap/comments/2c3igj/the_void/',NULL);
 INSERT INTO `links` VALUES (782,'dep','http://www.reddit.com/r/NoFap/comments/2c3igj/the_void/',NULL);
 INSERT INTO `links` VALUES (783,'em','http://youtu.be/ErCAOMi5EGM?t=2m40s',NULL);
-INSERT INTO `links` VALUES (790,'em','http://youtu.be/eDuRoPIOBjE?t=17s',NULL);
-INSERT INTO `links` VALUES (791,'rej','http://youtu.be/eDuRoPIOBjE?t=17s',NULL);
-INSERT INTO `links` VALUES (792,'rel','http://youtu.be/eDuRoPIOBjE?t=17s',NULL);
-INSERT INTO `links` VALUES (793,'em','http://youtu.be/eDuRoPIOBjE?t=17s',NULL);
 INSERT INTO `links` VALUES (794,'em','http://www.youtube.com/watch?v=j5-yKhDd64s',NULL);
 INSERT INTO `links` VALUES (795,'rel','http://www.youtube.com/watch?v=j5-yKhDd64s',NULL);
 INSERT INTO `links` VALUES (796,'dep','http://www.youtube.com/watch?v=j5-yKhDd64s',NULL);
@@ -1492,6 +1488,28 @@ INSERT INTO `links` VALUES (1553,'em','http://www.ted.com/talks/joachim_de_posad
 INSERT INTO `links` VALUES (1554,'em','http://i.imgur.com/3WFGG7k.jpg',NULL);
 INSERT INTO `links` VALUES (1555,'em','http://i.imgur.com/3WFGG7k.jpg',NULL);
 INSERT INTO `links` VALUES (1556,'em','http://www.reddit.com/r/NoFap/comments/2ovqcn/felt_ill_wanted_to_fap_didnt_joined_a_charity/',NULL);
+INSERT INTO `links` VALUES (1557,'em','http://www.reddit.com/r/NoFap/comments/2pr5cr/about_to_relapse_heres_how_to_maintain_your_streak/',NULL);
+INSERT INTO `links` VALUES (1558,'em','https://www.youtube.com/watch?v=bSh1uQ3K6J8',NULL);
+INSERT INTO `links` VALUES (1559,'rel','https://www.youtube.com/watch?v=bSh1uQ3K6J8',NULL);
+INSERT INTO `links` VALUES (1560,'em','https://www.youtube.com/watch?v=bSh1uQ3K6J8',NULL);
+INSERT INTO `links` VALUES (1561,'rel','http://i.imgur.com/9L65zCt.jpg',NULL);
+INSERT INTO `links` VALUES (1562,'rel','http://i.imgur.com/9L65zCt.jpg',NULL);
+INSERT INTO `links` VALUES (1563,'rel','http://www.reddit.com/r/NoFapChristians/comments/2p5ty6/what_god_taught_me_about_my_relapse/',1);
+INSERT INTO `links` VALUES (1564,'em','http://www.reddit.com/r/NoFapChristians/comments/2oqxeb/today_is_a_new_day_we_have_all_been_given_another/',1);
+INSERT INTO `links` VALUES (1565,'em','http://www.reddit.com/r/nofap/comments/2959xc/the_master_plan_read_this_everyday/',NULL);
+INSERT INTO `links` VALUES (1566,'em','http://www.testimoniesofheavenandhell.com/Bible-Verses/wp-content/uploads/2013/04/Bible-Verses-On-Lust-Matthew-5-28-Adultery-In-Heart-Picture-HD-Wallpaper.jpg',1);
+INSERT INTO `links` VALUES (1567,'em','http://www.jesseneo.com/quotes/quote161.jpg',1);
+INSERT INTO `links` VALUES (1568,'em','http://www.jesseneo.com/quotes/quote161.jpg',1);
+INSERT INTO `links` VALUES (1569,'em','http://images.christianpost.com/ipost/full/1254/bible-god-quotes-74.jpg?w=240&h=320',1);
+INSERT INTO `links` VALUES (1570,'em','http://izquotes.com/quotes-pictures/quote-whosoever-looketh-on-a-woman-to-lust-after-her-hath-committed-adultery-with-her-already-in-his-bible-303539.jpg',1);
+INSERT INTO `links` VALUES (1571,'em','http://www.reddit.com/r/NoFap/comments/2qklss/found_this_quote_on_our_emotions_after_watching/',NULL);
+INSERT INTO `links` VALUES (1572,'em','https://boyunderbridge.files.wordpress.com/2014/12/nopron.jpg',1);
+INSERT INTO `links` VALUES (1573,'em','http://www.reddit.com/r/NoFap/comments/2p7d9w/the_lesser_man/',NULL);
+INSERT INTO `links` VALUES (1574,'em','http://www.reddit.com/r/NoFap/comments/2pydpx/from_a_mouse_to_a_bear/cn1b0ia?context=3',NULL);
+INSERT INTO `links` VALUES (1575,'em','http://www.reddit.com/r/NoFap/comments/2pl5vo/day_32_what_is_nofap/',NULL);
+INSERT INTO `links` VALUES (1576,'em','http://i.imgur.com/bAsGY51.jpg',NULL);
+INSERT INTO `links` VALUES (1577,'em','https://d5w4uv416ie49.cloudfront.net/thumbs/82/d8/82d8fad8ee86a6d1c0f12a58af0a7e09.jpg',1);
+INSERT INTO `links` VALUES (1578,'em','https://img1.etsystatic.com/023/0/8442493/il_570xN.506433717_fher.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1504,4 +1522,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-18 19:57:04
+-- Dump completed on 2014-12-28 18:51:47
