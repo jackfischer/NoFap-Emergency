@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1579 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1597 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1128,9 +1128,6 @@ INSERT INTO `links` VALUES (1185,'rel','http://www.wordsonimages.com/pics/58605-
 INSERT INTO `links` VALUES (1186,'dep','http://www.wordsonimages.com/pics/58605-o.jpg',1);
 INSERT INTO `links` VALUES (1187,'em','http://inspiringpretty.com/wp-content/uploads/2014/04/cs-lewis-quote-abuse-of-free-will.jpg',NULL);
 INSERT INTO `links` VALUES (1188,'em','http://inspiringpretty.com/wp-content/uploads/2014/04/cs-lewis-quote-abuse-of-free-will.jpg',1);
-INSERT INTO `links` VALUES (1189,'em','http://nucklecreative.com/wp-content/uploads/2012/01/csquote.png',1);
-INSERT INTO `links` VALUES (1190,'em','http://nucklecreative.com/wp-content/uploads/2012/01/csquote.png',NULL);
-INSERT INTO `links` VALUES (1191,'rel','http://nucklecreative.com/wp-content/uploads/2012/01/csquote.png',NULL);
 INSERT INTO `links` VALUES (1192,'em','http://www.hd-wallpapers9.com/gallery/quotes/Motivation%20Wallpapers/Motivation%20Wallpapers006.jpg',NULL);
 INSERT INTO `links` VALUES (1193,'em','http://www.hd-wallpapers9.com/gallery/quotes/Motivation%20Wallpapers/Motivation%20Wallpapers006.jpg',NULL);
 INSERT INTO `links` VALUES (1194,'em','http://scontent-b.cdninstagram.com/hphotos-xaf1/t51.2885-15/10593520_1542409175977131_604887900_a.jpg',NULL);
@@ -1510,6 +1507,24 @@ INSERT INTO `links` VALUES (1575,'em','http://www.reddit.com/r/NoFap/comments/2p
 INSERT INTO `links` VALUES (1576,'em','http://i.imgur.com/bAsGY51.jpg',NULL);
 INSERT INTO `links` VALUES (1577,'em','https://d5w4uv416ie49.cloudfront.net/thumbs/82/d8/82d8fad8ee86a6d1c0f12a58af0a7e09.jpg',1);
 INSERT INTO `links` VALUES (1578,'em','https://img1.etsystatic.com/023/0/8442493/il_570xN.506433717_fher.jpg',NULL);
+INSERT INTO `links` VALUES (1579,'rel','http://adam4d.com/repentance/',1);
+INSERT INTO `links` VALUES (1580,'em','http://cdn.motivationgrid.com/wp-content/uploads/2014/04/Tony-Robbins-Quotes-We-can-change-our-lives.jpg',NULL);
+INSERT INTO `links` VALUES (1581,'em','https://www.youtube.com/watch?v=b2OLoKUi34g',NULL);
+INSERT INTO `links` VALUES (1582,'rel','https://www.youtube.com/watch?v=b2OLoKUi34g',NULL);
+INSERT INTO `links` VALUES (1583,'em','http://youtu.be/XCkh9tDKgvY?t=14s',NULL);
+INSERT INTO `links` VALUES (1584,'rel','http://youtu.be/XCkh9tDKgvY?t=14s',NULL);
+INSERT INTO `links` VALUES (1585,'em','https://www.youtube.com/watch?v=4DeY65JAXzM',NULL);
+INSERT INTO `links` VALUES (1586,'rel','https://www.youtube.com/watch?v=4DeY65JAXzM',NULL);
+INSERT INTO `links` VALUES (1587,'dep','https://www.youtube.com/watch?v=4DeY65JAXzM',NULL);
+INSERT INTO `links` VALUES (1588,'em','https://www.youtube.com/watch?v=4DeY65JAXzM',NULL);
+INSERT INTO `links` VALUES (1589,'em','https://www.youtube.com/watch?v=ipK-B7-3sB4',NULL);
+INSERT INTO `links` VALUES (1590,'em','https://www.youtube.com/watch?v=ipK-B7-3sB4',NULL);
+INSERT INTO `links` VALUES (1591,'dep','https://www.youtube.com/watch?v=M3U7de_OFZA',NULL);
+INSERT INTO `links` VALUES (1592,'dep','https://www.youtube.com/watch?v=M3U7de_OFZA',NULL);
+INSERT INTO `links` VALUES (1593,'dep','https://www.youtube.com/watch?v=M3U7de_OFZA',NULL);
+INSERT INTO `links` VALUES (1594,'em','https://www.youtube.com/watch?v=gRJ_QfP2mhU',NULL);
+INSERT INTO `links` VALUES (1595,'em','http://quotes.lifehack.org/media/quotes/quote-Harry-S.-Truman-in-reading-the-lives-of-great-men-51232.png',NULL);
+INSERT INTO `links` VALUES (1596,'em','http://quotes.lifehack.org/media/quotes/quote-Harry-S.-Truman-in-reading-the-lives-of-great-men-51232.png',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1522,4 +1537,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-12-28 18:51:47
+-- Dump completed on 2015-01-09 11:32:38

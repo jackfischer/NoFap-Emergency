@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="NoFap,reddit,porn,addiction,help,relapse prevention,panic,emergency">
-    <meta name="description" content="Panic Button for Nofap. NoFap Emergency helps successfully beat urges by getting you to the best possible content as quickly as possible.">
-    <meta name="DC.Title" content="NoFap Emergency">
-    <meta name="DC.Creator" content="Jack Fischer">
-    <meta name="DC.Subject" content="NoFap Relapse Prevention Tool">
+    <meta name="description" content="NoFap's Emergency tool provides you with the most helpful content quickly when you need it the most. Our porn addiction-busting tool will act as your pocket companion that encourages you to stick to your goals during periods of duress.">
+    <meta name="DC.Title" content="NoFap Emergency - A panic button app to help you quit porn">
+    <meta name="DC.Creator" content="Jack Fischer, NoFap">
+    <meta name="DC.Subject" content="NoFap Panic Button - Relapse Prevention Tool">
     <meta name="DC.Language" content="EN">
     <meta name="google-play-app" content="app-id=org.nofap.emergency">
     <title>NoFap Emergency</title>
@@ -96,11 +96,11 @@ $(android).click(function(){window.location.href="https://play.google.com/store/
 
 //$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
 
-//Cookie Parser, then handling and management
+//Cookie parser and handling
 function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}$("input").on("ifChecked",function(e){religiousCheck="true";document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC"});$("input").on("ifUnchecked",function(e){religiousCheck="false";document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC"})
 
-//Smart banner, checkbox, and fastclick launch
+//Smart banner, checkbox, fastclick launch
 $(function() { $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true}) } )
 $(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
 $(function() { FastClick.attach(document.body); });
