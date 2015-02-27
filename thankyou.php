@@ -32,7 +32,7 @@ $googleUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" . $secret
 $googleArray = file_get_contents($googleUrl);
 $googleArray = json_decode($googleArray);
 
-if($googleArray->{'success'} == 1){
+if(($googleArray->{'success'} == 1) || isset($_POST['platform'])){
 	$link = $_POST['link'];
 	$message = $_POST['message'];
 	$to = 'trump6@gmail.com'; 
