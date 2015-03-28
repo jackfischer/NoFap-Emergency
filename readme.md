@@ -2,6 +2,7 @@
 ##For [Reddit's r/NoFap](http://reddit.com/r/NoFap)
 NoFap Emergency is to get you to the right content [when you need it.](http://www.reddit.com/r/NoFap/comments/2ik023/take_red_or_blue_pill/)
 There's also a [bookmarklet](http://emergency.nofap.com/director.php?cat=bookmarklet) (drag to your bookmarks bar) that goes straight to emergency.
+Recently gave a [TEDx talk](https://www.youtube.com/watch?v=M9pPgIraoOM) at Binghamton about this.
 
 Here are a couple of the big Reddit discussions:
 
