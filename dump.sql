@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1833 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1844 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1706,6 +1706,17 @@ INSERT INTO `links` VALUES (1829,'em','http://i.imgur.com/bbWSvJx.jpg',NULL);
 INSERT INTO `links` VALUES (1830,'rel','http://i.imgur.com/bbWSvJx.jpg',NULL);
 INSERT INTO `links` VALUES (1831,'em','http://www.nofapacademy.com/',NULL);
 INSERT INTO `links` VALUES (1832,'rel','http://www.nofapacademy.com/',NULL);
+INSERT INTO `links` VALUES (1833,'em','https://www.reddit.com/r/NoFap/comments/316dwb/be_a_man_of_high_quality/',NULL);
+INSERT INTO `links` VALUES (1834,'em','https://www.reddit.com/r/NoFap/comments/318vwu/you_know_what_feels_better_than_pmo/',NULL);
+INSERT INTO `links` VALUES (1835,'em','http://classes.slis.lsu.edu/wu/7008/fa13/bsavoie/7008project/images/theme2.jpg',NULL);
+INSERT INTO `links` VALUES (1836,'rel','https://s-media-cache-ak0.pinimg.com/236x/71/11/59/711159a376ba20a16f3f50eaeef6544a.jpg',NULL);
+INSERT INTO `links` VALUES (1837,'em','https://c1.staticflickr.com/9/8108/8611301284_9fb9638ae1.jpg',NULL);
+INSERT INTO `links` VALUES (1838,'rel','https://c1.staticflickr.com/9/8108/8611301284_9fb9638ae1.jpg',NULL);
+INSERT INTO `links` VALUES (1839,'dep','https://c1.staticflickr.com/9/8108/8611301284_9fb9638ae1.jpg',NULL);
+INSERT INTO `links` VALUES (1840,'rel','http://hooplaha.com/wp-content/uploads/2015/03/Dr-Seuss-Life-Picture-Quote.jpg',NULL);
+INSERT INTO `links` VALUES (1841,'rel','http://hooplaha.com/wp-content/uploads/2015/03/Dr-Seuss-Life-Picture-Quote.jpg',NULL);
+INSERT INTO `links` VALUES (1842,'em','https://i.imgur.com/kdyIYqR.jpg',NULL);
+INSERT INTO `links` VALUES (1843,'em','http://sd.keepcalm-o-matic.co.uk/i/soon-we-must-all-face-the-choice-between-what-is-right-and-what-is-easy-albus-dumbledore.png',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1718,4 +1729,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-03-28 11:25:06
+-- Dump completed on 2015-04-02 21:08:43
