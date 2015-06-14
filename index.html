@@ -16,7 +16,7 @@
 <link rel="apple-touch-icon" href="icons/touchicon.png">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
-<!-- <link href="arrow.css" rel="stylesheet"> -->
+<!-- <link href="resources/arrow.css" rel="stylesheet"> -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js"></script>    
 
@@ -59,9 +59,8 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
 <span class="footer">Open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.com/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. Tool by <a href="http://trump6.com">trump6,</a> NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC. <a href="http://www.nofap.com/donate/">Donate</a> to NoFap.</span>
 
 
-<link rel="stylesheet" href="jquery.smartbanner.css" type="text/css" media="screen">
-<script src="jquery.smartbanner.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+<link rel="stylesheet" href="resources/jquery.smartbanner.css" type="text/css" media="screen">
+<script src="resources/jquery.smartbanner.js"></script>
 
 <script>
 /*FitText.js 1.2
@@ -84,7 +83,7 @@ $(emergency).click(function(){$.get("director.php",{cat:"em",religious:religious
 $(depression).click(function(){$.get("director.php",{cat:"dep",religious:religiousCheck},function(e){window.location.href=e;})});
 $(rejection).click(function(){$.get("director.php",{cat:"rej",religious:religiousCheck},function(e){window.location.href=e})});
 $(relapsed).click(function(){$.get("director.php",{cat:"rel",religious:religiousCheck},function(e){window.location.href=e})});
-$(suggest).click(function(){window.location.href="suggestor.html"});
+$(suggest).click(function(){window.location.href="suggestor.php"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
 
 //$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
@@ -93,10 +92,10 @@ $(android).click(function(){window.location.href="https://play.google.com/store/
 function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}$("input").on("ifChecked",function(e){religiousCheck="true";document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC"});$("input").on("ifUnchecked",function(e){religiousCheck="false";document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC"})
 
-//Smart banner, checkbox, fastclick launch
+//Smart banner
 $(function() { $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true}) } )
+//Checkbox launch
 $(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
-$(function() { FastClick.attach(document.body); });
 
 </script>
 <script>
