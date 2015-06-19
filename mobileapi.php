@@ -1,3 +1,4 @@
+
 <?php
 header("Access-Control-Allow-Origin: *");
 ?>
@@ -16,6 +17,7 @@ ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
 </head>
+
 <body>
 <?php
 include 'credentials.php';
@@ -51,7 +53,6 @@ if (preg_match('/jpeg$|jpg$|gif$|png$/i', $url)) {
 else {
     echo '<script> window.location.href="' . $url . '"</script>';
 }
-
 ?>
 
 </body>

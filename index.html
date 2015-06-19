@@ -10,6 +10,7 @@
 <meta name="DC.Creator" content="Jack Fischer, NoFap">
 <meta name="DC.Subject" content="NoFap Panic Button - Relapse Prevention Tool">
 <meta name="DC.Language" content="EN">
+<meta name="apple-itunes-app" content="app-id=987297149">
 <meta name="google-play-app" content="app-id=org.nofap.emergency">
 <title>NoFap Emergency</title>
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
@@ -28,7 +29,8 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
 .relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
 .survey{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.survey:hover{background:#95a5a6}
 .suggest{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.suggest:hover{background:#34495e}
-.android{padding:0;color:#fff;background:#bdc3c7;border:0;height:15%;z-index:2}.android:hover{background:#ecf0f1}
+.ios{padding:0;color:#fff;background:#9fadae;border:0;height:15%;z-index:2}.ios:hover{background:#ecf0f1}
+.android{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.android:hover{background:#bdc3c7}
 .cross{height:50%;margin-right:5%;margin-bottom:2%}
 .footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
 #religious{position:fixed;right:20px;top:20px;z-index:3;}
@@ -37,7 +39,7 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
     .emergency{height:40%}
     .rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
     .cross{margin-right:2%}
-    #hint,#religious,#android,.survey{display:none}
+    #hint,#religious,#ios,#android,.survey{display:none}
     #mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3;} }
 </style>
 </head>
@@ -48,8 +50,10 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
 <button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
 <button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
 
-<button type="submit" value="Suggest" id="suggest" class="suggest col-sm-6 col-xs-12">Submit</button>
-<button type="submit" value="Android" id="android" class="android col-sm-6 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Android app on Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
+<button type="submit" value="Suggest" id="suggest" class="suggest col-sm-4 col-xs-12">Submit</button>
+<button type="submit" value="iOS" id="ios" class="ios col-sm-4 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" src="icons/appstore.svg" /></a></button>
+<button type="submit" value="Android" id="android" class="android col-sm-4 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
+
 
 <!-- <div class="arrow animated bounce" id="hint"></div> -->
 
@@ -70,7 +74,7 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
  */ (function(e){e.fn.fitText=function(t,n){var r=t||1,i=e.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},n);return this.each(function(){var t=e(this);var n=function(){t.css("font-size",Math.max(Math.min(t.width()/(r*10),parseFloat(i.maxFontSize)),parseFloat(i.minFontSize)))};n();e(window).on("resize.fittext orientationchange.fittext",n)})}})(jQuery)
 
 //Portrait and Landscape Sizing Functions
-function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(2.1);}
+function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(1.9);}
 function landscapeText(){jQuery("#emergency").fitText(1.1);jQuery("#rejection").fitText(2);jQuery("#depression").fitText(1.7);jQuery("#relapsed").fitText(2);jQuery("#suggest").fitText(4);}
 
 //Orientation management
@@ -84,6 +88,7 @@ $(depression).click(function(){$.get("director.php",{cat:"dep",religious:religio
 $(rejection).click(function(){$.get("director.php",{cat:"rej",religious:religiousCheck},function(e){window.location.href=e})});
 $(relapsed).click(function(){$.get("director.php",{cat:"rel",religious:religiousCheck},function(e){window.location.href=e})});
 $(suggest).click(function(){window.location.href="suggestor.php"});
+$(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
 
 //$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")

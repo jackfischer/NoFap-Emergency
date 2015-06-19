@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@ html{display:table;margin:auto;text-align:center;background:#e74c3c;height:100%}
 body{display:table-cell;vertical-align:middle;background:#e74c3c}
 </style>
 </head>
+
 <body>
 <form style="" id="suggestor" onsubmit="return validateForm()" method="post" action="thankyou.php">
     <div class="form-group">
@@ -33,6 +35,7 @@ body{display:table-cell;vertical-align:middle;background:#e74c3c}
 <form  action="mailto:jack@trump6.com">
     <button type="submit" style="margin-top:10% !important;" class="col-xs-10 col-xs-offset-1 btn btn-default">Other problem/suggestion? Email us</button>
 </form>
+
 
 <script>
 function validateForm() {

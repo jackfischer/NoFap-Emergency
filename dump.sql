@@ -1746,7 +1746,6 @@ INSERT INTO `links` VALUES (1912,'dep','https://www.youtube.com/watch?v=B4YHl0rQ
 INSERT INTO `links` VALUES (1913,'em','https://www.reddit.com/r/NoFap/comments/398ihs/please_read_this_it_might_save_you_today/',NULL);
 INSERT INTO `links` VALUES (1914,'em','https://www.reddit.com/r/NoFap/comments/39ab7e/an_eterenitys_worth_of_orgasms/',NULL);
 INSERT INTO `links` VALUES (1915,'rel','https://www.reddit.com/r/NoFap/comments/39ab7e/an_eterenitys_worth_of_orgasms/',NULL);
-INSERT INTO `links` VALUES (1916,'em','http://albausti.mynmi.net/wordpress/wp-content/uploads/2013/03/url2.jpeg',1);
 INSERT INTO `links` VALUES (1917,'em','http://blog.zerodean.com/wp-content/uploads/2014/04/someone-once-told-me-the-definition-of-hell.jpg',1);
 INSERT INTO `links` VALUES (1918,'rel','http://www.artofmanliness.com/2014/10/09/how-to-quit-porn/',NULL);
 INSERT INTO `links` VALUES (1919,'em','https://www.youtube.com/watch?v=-sUKoKQlEC4',1);
@@ -1800,4 +1799,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-06-14 16:36:31
+-- Dump completed on 2015-06-19 16:02:17
