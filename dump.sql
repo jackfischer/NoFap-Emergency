@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1960 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1964 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -569,7 +569,6 @@ INSERT INTO `links` VALUES (627,'em','http://i.imgur.com/Ri9dk.jpg',NULL);
 INSERT INTO `links` VALUES (628,'em','http://i.imgur.com/lAVPJ1a.gif',NULL);
 INSERT INTO `links` VALUES (629,'rel','http://i.imgur.com/lAVPJ1a.gif',NULL);
 INSERT INTO `links` VALUES (630,'em','http://i.imgur.com/ef6v8j4.jpg',NULL);
-INSERT INTO `links` VALUES (631,'em','http://i.imgur.com/ySVEegn.jpg',NULL);
 INSERT INTO `links` VALUES (632,'em','http://www.quickmeme.com/img/68/68297e563e0130a9a43a02ac30c2fcbc8dbcd1dcd1a04dca3565768c30e0b0ea.jpg',NULL);
 INSERT INTO `links` VALUES (633,'em','http://www.quickmeme.com/img/8b/8ba40e45cca2250cd82bfb8f1a1da42776807c36d8774b7b2e228cac2c66fc9c.jpg',NULL);
 INSERT INTO `links` VALUES (634,'rej','http://www.quickmeme.com/img/8b/8ba40e45cca2250cd82bfb8f1a1da42776807c36d8774b7b2e228cac2c66fc9c.jpg',NULL);
@@ -1065,8 +1064,6 @@ INSERT INTO `links` VALUES (1172,'em','http://www.buzzle.com/images/quotes/inspi
 INSERT INTO `links` VALUES (1173,'em','http://bringitdaily.com/wp-content/uploads/2012/09/lion-savage.jpg',NULL);
 INSERT INTO `links` VALUES (1174,'em','http://bringitdaily.com/wp-content/uploads/2012/09/lion-savage.jpg',NULL);
 INSERT INTO `links` VALUES (1176,'em','http://static5.quoteswave.com/wp-content/uploads/2012/10/Faith-is-the-art-of-holding-on-to-things.jpg',1);
-INSERT INTO `links` VALUES (1177,'em','http://slowbuddy.com/wp-content/gallery/cs-lewis-quotes/7002356087_9acf3f682e_z.jpg',NULL);
-INSERT INTO `links` VALUES (1178,'rel','http://slowbuddy.com/wp-content/gallery/cs-lewis-quotes/7002356087_9acf3f682e_z.jpg',NULL);
 INSERT INTO `links` VALUES (1179,'rel','http://media.salemwebnetwork.com/ecards/quotes/cs-lewis-quote-better-things-550x320.jpg',NULL);
 INSERT INTO `links` VALUES (1180,'em','http://media.salemwebnetwork.com/ecards/quotes/cs-lewis-quote-better-things-550x320.jpg',NULL);
 INSERT INTO `links` VALUES (1181,'em','http://www.favething.com/uploads/images/main-fave-images/cs_lewis_quote-1.jpg',NULL);
@@ -1545,8 +1542,6 @@ INSERT INTO `links` VALUES (1706,'rej','https://bellaanddarcy.files.wordpress.co
 INSERT INTO `links` VALUES (1707,'rej','https://kingkurtissmith.files.wordpress.com/2014/04/8321127577_37f4b92d3b.jpg',NULL);
 INSERT INTO `links` VALUES (1708,'rej','https://kingkurtissmith.files.wordpress.com/2014/04/8321127577_37f4b92d3b.jpg',NULL);
 INSERT INTO `links` VALUES (1709,'rej','https://bellaanddarcy.files.wordpress.com/2013/12/rejection-quote1.jpg',NULL);
-INSERT INTO `links` VALUES (1710,'rej','http://quotepixel.com/images/quotes/success/quote-print-on-canvas_12047-2.png',NULL);
-INSERT INTO `links` VALUES (1711,'rej','http://quotepixel.com/images/quotes/success/quote-print-on-canvas_12047-2.png',NULL);
 INSERT INTO `links` VALUES (1712,'rej','http://meetville.com/images/quotes/Quotation-Richard-Castle-giving-failure-rejection-Meetville-Quotes-139098.jpg',NULL);
 INSERT INTO `links` VALUES (1713,'rej','http://meetville.com/images/quotes/Quotation-Richard-Castle-giving-failure-rejection-Meetville-Quotes-139098.jpg',NULL);
 INSERT INTO `links` VALUES (1714,'rej','https://writerzblock007.files.wordpress.com/2014/08/rejection.jpg',NULL);
@@ -1639,7 +1634,6 @@ INSERT INTO `links` VALUES (1802,'rel','https://www.youtube.com/watch?v=9zSVu76A
 INSERT INTO `links` VALUES (1803,'em','http://www.reddit.com/r/NoFap/comments/2urg4z/my_first_cold_shower/',NULL);
 INSERT INTO `links` VALUES (1804,'em','http://www.covenanteyes.com/2014/02/28/hypofrontality/',1);
 INSERT INTO `links` VALUES (1805,'rel','http://www.covenanteyes.com/2014/02/28/hypofrontality/',1);
-INSERT INTO `links` VALUES (1806,'em','http://2.hiexistence.com/wp-content/uploads/2013/03/b5374d063ba425e0ddcea3b6ebfa6fdd.jpg',NULL);
 INSERT INTO `links` VALUES (1807,'em','https://www.youtube.com/watch?v=m_iKg7nutNY',NULL);
 INSERT INTO `links` VALUES (1808,'rel','https://www.youtube.com/watch?v=m_iKg7nutNY',NULL);
 INSERT INTO `links` VALUES (1809,'dep','https://www.youtube.com/watch?v=m_iKg7nutNY',NULL);
@@ -1787,6 +1781,10 @@ INSERT INTO `links` VALUES (1956,'em','http://i.imgur.com/pE4mcXe.jpg',NULL);
 INSERT INTO `links` VALUES (1957,'em','https://www.youtube.com/watch?v=NuhhTnz5b-Q',1);
 INSERT INTO `links` VALUES (1958,'em','https://s-media-cache-ak0.pinimg.com/736x/b4/4e/9e/b44e9e5c5f235d57fa0e4ce2a11b9449.jpg',NULL);
 INSERT INTO `links` VALUES (1959,'em','http://static.fjcdn.com/pictures/No_d38df5_2287800.jpg',NULL);
+INSERT INTO `links` VALUES (1960,'em','http://i.lvme.me/hj7j6ox.jpg',NULL);
+INSERT INTO `links` VALUES (1961,'dep','http://i.lvme.me/hj7j6ox.jpg',NULL);
+INSERT INTO `links` VALUES (1962,'rej','http://i.lvme.me/hj7j6ox.jpg',NULL);
+INSERT INTO `links` VALUES (1963,'em','http://i.imgur.com/uJurdbQ.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1799,4 +1797,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-06-19 16:02:17
+-- Dump completed on 2015-07-07 19:24:23

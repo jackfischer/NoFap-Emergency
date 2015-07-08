@@ -19,7 +19,7 @@
 <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
 <!-- <link href="resources/arrow.css" rel="stylesheet"> -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js"></script>    
+<script src="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js"></script>
 
 <style>
 body,html{text-align:center;height:100%;-webkit-user-select: none;}
@@ -27,21 +27,33 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
 .rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
 .depression{padding:0;color:#fff;background:#2980b9;border:0;height:50%}.depression:hover{background:#3498db}
 .relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
-.survey{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.survey:hover{background:#95a5a6}
+.nofap{padding:0;color:#fff;background:#C5EFF7;border:0;height:15%;z-index:2}.nofap:hover{background:#ecf5fe}
 .suggest{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.suggest:hover{background:#34495e}
 .ios{padding:0;color:#fff;background:#9fadae;border:0;height:15%;z-index:2}.ios:hover{background:#ecf0f1}
 .android{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.android:hover{background:#bdc3c7}
 .cross{height:50%;margin-right:5%;margin-bottom:2%}
+.nficon{height:50%}
 .footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
 #religious{position:fixed;right:20px;top:20px;z-index:3;}
 #mobilereligious{display:none;}
 @media only screen and (max-width:768px){
     .emergency{height:40%}
     .rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
-    .cross{margin-right:2%}
-    #hint,#religious,#ios,#android,.survey{display:none}
+    .cross{margin-right:4%}
+    .suggest{background:#2f4255;}.suggest:hover{background:#34495e}
+    #hint,#religious,#ios,#android,.footer{display:none}
     #mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3;} }
 </style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53301604-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
@@ -50,9 +62,10 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
 <button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
 <button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
 
-<button type="submit" value="Suggest" id="suggest" class="suggest col-sm-4 col-xs-12">Submit</button>
-<button type="submit" value="iOS" id="ios" class="ios col-sm-4 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" src="icons/appstore.svg" /></a></button>
-<button type="submit" value="Android" id="android" class="android col-sm-4 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
+<button type="submit" value="Suggest" id="suggest" class="suggest col-sm-3 col-xs-12"><img src="icons/redcross.png" class="cross">Submit</button>
+<button type="submit" value="NoFap" id="nofap" class="nofap col-sm-3 col-xs-12"><img src="icons/nofap.png" class="nficon"></button>
+<button type="submit" value="iOS" id="ios" class="ios col-sm-3 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" src="icons/appstore.svg" /></a></button>
+<button type="submit" value="Android" id="android" class="android col-sm-3 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
 
 
 <!-- <div class="arrow animated bounce" id="hint"></div> -->
@@ -74,7 +87,7 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
  */ (function(e){e.fn.fitText=function(t,n){var r=t||1,i=e.extend({minFontSize:Number.NEGATIVE_INFINITY,maxFontSize:Number.POSITIVE_INFINITY},n);return this.each(function(){var t=e(this);var n=function(){t.css("font-size",Math.max(Math.min(t.width()/(r*10),parseFloat(i.maxFontSize)),parseFloat(i.minFontSize)))};n();e(window).on("resize.fittext orientationchange.fittext",n)})}})(jQuery)
 
 //Portrait and Landscape Sizing Functions
-function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(1.9);}
+function portraitText(){jQuery("#emergency").fitText(.9);jQuery("#rejection").fitText(.9);jQuery("#depression").fitText(.9);jQuery("#relapsed").fitText(.9);jQuery("#suggest").fitText(1.3);}
 function landscapeText(){jQuery("#emergency").fitText(1.1);jQuery("#rejection").fitText(2);jQuery("#depression").fitText(1.7);jQuery("#relapsed").fitText(2);jQuery("#suggest").fitText(4);}
 
 //Orientation management
@@ -90,12 +103,13 @@ $(relapsed).click(function(){$.get("director.php",{cat:"rel",religious:religious
 $(suggest).click(function(){window.location.href="suggestor.php"});
 $(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
+$(nofap).click(function(){window.location.href="http://nofap.com"});
 
 //$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
 
 //Cookie parser and handling
-function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
-var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}$("input").on("ifChecked",function(e){religiousCheck="true";document.cookie="religious=true;expires=Mon, 1 Jan 2024 12:00:00 UTC"});$("input").on("ifUnchecked",function(e){religiousCheck="false";document.cookie="religious=false;expires=Mon, 1 Jan 2024 12:00:00 UTC"})
+function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""};var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}else{setCookie("false");}$("input").on("ifChecked",function(e){religiousCheck="true";setCookie("true");});$("input").on("ifUnchecked",function(e){religiousCheck="false";setCookie("false");});function setCookie(pref) {    document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2024 12:00:00 UTC"}
+
 
 //Smart banner
 $(function() { $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true}) } )
@@ -103,17 +117,6 @@ $(function() { $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnIn
 $(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
 
 </script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-var _gaq = _gaq || [];
-ga('create', 'UA-53301604-1', 'auto');
-ga('require', 'displayfeatures');
-ga('send', 'pageview');
-</script>  
 
 </body>
 </html>
