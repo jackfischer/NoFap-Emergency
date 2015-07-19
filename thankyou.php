@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,15 @@
 <meta name="description" content="Submit a link for NoFap Emergency relapse prevention">
 <title>NoFap Emergency - Thank You!</title>
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <script src='https://www.google.com/recaptcha/api.js'></script>
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 <style>
 body,html{height:100%}
 html{display:table;margin:auto;text-align:center;background:#e74c3c;height:100%}
 body{display:table-cell;vertical-align:middle;background:#e74c3c}
 </style>
+
 </head>
 <body>
 
@@ -65,5 +63,6 @@ ga('create', 'UA-53301604-1', 'auto');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 </script>
+
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 <?php
 header("Access-Control-Allow-Origin: *");
 ?>
@@ -19,10 +18,14 @@ ga('send', 'pageview');
 </head>
 
 <body>
+
 <?php
+
 include 'credentials.php';
+
 $cat = $_GET["cat"];
 $platform = $_GET["platform"];
+
 try {
     $DBH = new PDO("mysql:host=localhost;dbname=posts", $user, $password, array(PDO::ATTR_PERSISTENT => true));
     $DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -30,6 +33,7 @@ try {
 catch(PDOException $e) {
     echo $e->getMessage(); 
 }
+
 if($_GET["religious"] == "true") {
     $query = "select link from links where cat=:cat order by RAND() limit 1";
     $insert = "insert into events (cat, timestamp, religious, platform) values (:cat, CURRENT_TIMESTAMP, 1, :platform)";
@@ -53,8 +57,8 @@ if (preg_match('/jpeg$|jpg$|gif$|png$/i', $url)) {
 else {
     echo '<script> window.location.href="' . $url . '"</script>';
 }
+
 ?>
 
 </body>
 </html>
-

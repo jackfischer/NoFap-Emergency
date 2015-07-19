@@ -47,7 +47,7 @@ if ($cat == "bookmarklet") {
     $STH->execute(array(":cat" => "em"));
     $result = $STH->fetch()[0];
 
-    echo "<script>window.location.href=\"".$result."\";</script>";
+    echo '<script>window.location.href="' . $result . '";</script>';
     echo "</body></html>";
 }
 

@@ -9,13 +9,15 @@
 <meta name="description" content="Submut a link for NoFap Emergency relapse prevention">
 <title>NoFap Emergency - Submit a Link</title>
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <script src='https://www.google.com/recaptcha/api.js'></script>
+
 <style>
 body,html{height:100%}
 html{display:table;margin:auto;text-align:center;background:#e74c3c;height:100%}
 body{display:table-cell;vertical-align:middle;background:#e74c3c}
 </style>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -42,7 +44,7 @@ body{display:table-cell;vertical-align:middle;background:#e74c3c}
     <button type="submit" name="submit" class="col-xs-8 col-xs-offset-2 btn btn-default"><b>Submit</b></button>
 </form>
 
-<form  action="mailto:jack@trump6.com">
+<form  action="mailto:trump6@gmail.com">
     <button type="submit" style="margin-top:10% !important;" class="col-xs-10 col-xs-offset-1 btn btn-default">Other problem/suggestion? Email us</button>
 </form>
 

@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /staging
+Disallow: thankyou.php
