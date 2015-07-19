@@ -15,34 +15,36 @@
 <title>NoFap Emergency</title>
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
 <link rel="apple-touch-icon" href="icons/touchicon.png">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
 <!-- <link href="resources/arrow.css" rel="stylesheet"> -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js"></script>
 
 <style>
-body,html{text-align:center;height:100%;-webkit-user-select: none;}
-.emergency{height:50%;padding:0;color:#fff;background:#e74c3c;border:0;width:100%}.emergency:hover{background:red;text-shadow:2px;}
-.rejection{padding:0;color:#fff;background:#27ae60;border:0;height:50%}.rejection:hover{background:#2ecc71}
-.depression{padding:0;color:#fff;background:#2980b9;border:0;height:50%}.depression:hover{background:#3498db}
-.relapsed{padding:0;color:#fff;background:#8e44ad;border:0;height:50%}.relapsed:hover{background:#9b59b6}
-.nofap{padding:0;color:#fff;background:#C5EFF7;border:0;height:15%;z-index:2}.nofap:hover{background:#ecf5fe}
-.suggest{padding:0;color:#fff;background:#2f4255;border:0;height:15%;z-index:2}.suggest:hover{background:#34495e}
-.ios{padding:0;color:#fff;background:#9fadae;border:0;height:15%;z-index:2}.ios:hover{background:#ecf0f1}
-.android{padding:0;color:#fff;background:#7f8c8d;border:0;height:15%;z-index:2}.android:hover{background:#bdc3c7}
+body,html{text-align:center;height:100%;-webkit-user-select:none}
+.pbutton{height:50%;padding:0;color:#fff;border:0}
+#emergency{background:#e74c3c}#emergency:hover{background:red;text-shadow:2px}
+#rejection{background:#27ae60}#rejection:hover{background:#2ecc71}
+#depression{background:#2980b9}#depression:hover{background:#3498db}
+#relapsed{background:#8e44ad}#relapsed:hover{background:#9b59b6}
+.footer-button{height:15%;padding:0;color:#fff;border:0;z-index:2}
+#nofap{background:#C5EFF7}#nofap:hover{background:#ecf5fe}
+#suggest{background:#2f4255}#suggest:hover{background:#34495e}
+#ios{background:#9fadae}#ios:hover{background:#ecf0f1}
+#android{background:#7f8c8d}#android:hover{background:#bdc3c7}
 .cross{height:50%;margin-right:5%;margin-bottom:2%}
 .nficon{height:50%}
-.footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
-#religious{position:fixed;right:20px;top:20px;z-index:3;}
+#footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
+#religious{position:fixed;right:20px;top:20px;z-index:3}
 #mobilereligious{display:none;}
 @media only screen and (max-width:768px){
-    .emergency{height:40%}
-    .rejection{height:15%;width:100%}.depression{height:30%;width:100%}.relapsed{height:15%;width:100%}
+    .pbutton{width:100%}
+    #emergency{height:40%}#rejection,#relapsed{height:15%}#depression{height:30%}
     .cross{margin-right:4%}
-    .suggest{background:#2f4255;}.suggest:hover{background:#34495e}
-    #hint,#religious,#ios,#android,.footer{display:none}
-    #mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3;} }
+    #hint,#religious,#ios,#android,#footer{display:none}
+    #mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3}
+}
 </style>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -57,23 +59,22 @@ body,html{text-align:center;height:100%;-webkit-user-select: none;}
 </head>
 
 <body>
-<button type="submit" value="Emergency" id="emergency" class="emergency col-sm-12 col-xs-12"><img src="icons/redcross.png" class="cross">Emergency</button>
-<button type="submit" value="Rejection" id="rejection" class="rejection col-sm-3 col-xs-12">Rejection</button>
-<button type="submit" value="Depression" id="depression" class="depression col-sm-6 col-xs-12">Depression</button>
-<button type="submit" value="Relapsed" id="relapsed" class="relapsed col-sm-3 col-xs-12">Relapsed</button>
+<button type="submit" value="Emergency" id="emergency" class="pbutton col-sm-12 col-xs-12"><img src="icons/redcross.png" class="cross">Emergency</button>
+<button type="submit" value="Rejection" id="rejection" class="pbutton col-sm-3 col-xs-12">Rejection</button>
+<button type="submit" value="Depression" id="depression" class="pbutton col-sm-6 col-xs-12">Depression</button>
+<button type="submit" value="Relapsed" id="relapsed" class="pbutton col-sm-3 col-xs-12">Relapsed</button>
 
-<button type="submit" value="Suggest" id="suggest" class="suggest col-sm-3 col-xs-12"><img src="icons/redcross.png" class="cross">Submit</button>
-<button type="submit" value="NoFap" id="nofap" class="nofap col-sm-3 col-xs-12"><img src="icons/nofap.png" class="nficon"></button>
-<button type="submit" value="iOS" id="ios" class="ios col-sm-3 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" src="icons/appstore.svg" /></a></button>
-<button type="submit" value="Android" id="android" class="android col-sm-3 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
-
+<button type="submit" value="Suggest" id="suggest" class="footer-button col-sm-3 col-xs-12"><img src="icons/redcross.png" class="cross">Submit</button>
+<button type="submit" value="NoFap" id="nofap" class="footer-button col-sm-3 col-xs-12"><img src="icons/nofap.png" class="nficon"></button>
+<button type="submit" value="iOS" id="ios" class="footer-button col-sm-3 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" src="icons/appstore.svg" /></a></button>
+<button type="submit" value="Android" id="android" class="footer-button col-sm-3 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
 
 <!-- <div class="arrow animated bounce" id="hint"></div> -->
 
 <div id="mobilereligious"><input type="checkbox" onchange="religiousChange()"><label>Religious</label></div>
 <div id="religious"><input type="checkbox" onchange="religiousChange()"><label>Include Religious</label></div>
 
-<span class="footer">Open source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.com/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. Tool by <a href="http://trump6.com">trump6,</a> NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC. <a href="http://www.nofap.com/donate/">Donate</a> to NoFap.</span>
+<span id="footer">Open Source <a href="https://github.com/trump6/NoFap-Emergency">here</a>. Drag <a href="http://emergency.nofap.com/director.php?cat=bookmarklet">bookmarklet</a> to bookmarks bar. Tool by <a href="http://jackfischer.me">trump6,</a> NoFap® is a registered service mark owned by <a href="http://www.alexanderrhodes.net/">Alexander Rhodes</a> and NoFap LLC. <a href="http://www.nofap.com/donate/">Donate</a> to NoFap.</span>
 
 
 <link rel="stylesheet" href="resources/jquery.smartbanner.css" type="text/css" media="screen">
