@@ -36,15 +36,15 @@ catch(PDOException $e) {
 
 if($_GET["religious"] == "true") {
     $query = "select link from links where cat=:cat order by RAND() limit 1";
-    $insert = "insert into events (cat, timestamp, religious, platform) values (:cat, CURRENT_TIMESTAMP, 1, :platform)";
+    $insert = "insert into events (cat, timestamp, religious, platform, ip) values (:cat, CURRENT_TIMESTAMP, 1, :platform, :ip)";
 }
 else {
     $query = "select link from links where cat=:cat and religious is NULL order by RAND() limit 1";
-    $insert = "insert into events (cat, timestamp, platform) values (:cat, CURRENT_TIMESTAMP, :platform)";
+    $insert = "insert into events (cat, timestamp, platform, ip) values (:cat, CURRENT_TIMESTAMP, :platform, :ip)";
 }
 
 $IH = $DBH->prepare($insert);
-$IH->execute(array(":cat" => $cat, ":platform" => $platform));
+$IH->execute(array(":cat" => $cat, ":platform" => $platform, ":ip" => $_SERVER["REMOTE_ADDR"]));
 
 $STH = $DBH->prepare($query);
 $STH->execute(array(":cat" => $cat));

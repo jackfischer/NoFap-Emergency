@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2030 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2034 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1831,6 +1831,10 @@ INSERT INTO `links` VALUES (2026,'rel','http://i.imgur.com/cQbrPnB.jpg',NULL);
 INSERT INTO `links` VALUES (2027,'rel','http://www.nofapacademy.com/',NULL);
 INSERT INTO `links` VALUES (2028,'rel','http://www.nofapacademy.com/',NULL);
 INSERT INTO `links` VALUES (2029,'em','http://i.imgur.com/bzHzVPA.jpg',NULL);
+INSERT INTO `links` VALUES (2030,'dep','http://i.imgur.com/yYIGpJn.jpg',NULL);
+INSERT INTO `links` VALUES (2031,'em','http://i.imgur.com/yYIGpJn.jpg',NULL);
+INSERT INTO `links` VALUES (2032,'rel','http://i.imgur.com/yYIGpJn.jpg',NULL);
+INSERT INTO `links` VALUES (2033,'em','http://i.imgur.com/yYIGpJn.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1843,4 +1847,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-19 18:04:09
+-- Dump completed on 2015-07-19 19:44:23
