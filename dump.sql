@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: posts
 -- ------------------------------------------------------
--- Server version	5.5.43-0ubuntu0.14.04.1
+-- Server version	5.5.44-0ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2034 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2040 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -707,9 +707,7 @@ INSERT INTO `links` VALUES (800,'rej','http://www.youtube.com/watch?v=j5-yKhDd64
 INSERT INTO `links` VALUES (801,'em','http://www.youtube.com/watch?v=j5-yKhDd64s',NULL);
 INSERT INTO `links` VALUES (802,'em','http://youtu.be/j5-yKhDd64s?t=2m38s',NULL);
 INSERT INTO `links` VALUES (803,'rel','http://youtu.be/j5-yKhDd64s?t=2m38s',NULL);
-INSERT INTO `links` VALUES (804,'em','http://www.youtube.com/watch?v=NlmezywdxPI',NULL);
 INSERT INTO `links` VALUES (805,'rel','http://www.youtube.com/watch?v=NlmezywdxPI',NULL);
-INSERT INTO `links` VALUES (806,'em','http://www.youtube.com/watch?v=NlmezywdxPI',NULL);
 INSERT INTO `links` VALUES (807,'em','http://www.youtube.com/watch?v=hw6GwhfNl7U',NULL);
 INSERT INTO `links` VALUES (813,'em','http://youtu.be/vpFIj_8daVU?t=2m15s',NULL);
 INSERT INTO `links` VALUES (814,'em','http://youtu.be/vpFIj_8daVU?t=2m15s',NULL);
@@ -1485,7 +1483,7 @@ INSERT INTO `links` VALUES (1668,'em','http://i.imgur.com/DvJP58Y.png',NULL);
 INSERT INTO `links` VALUES (1669,'em','https://www.youtube.com/watch?v=oKAmujgS4mo',NULL);
 INSERT INTO `links` VALUES (1670,'dep','https://www.youtube.com/watch?v=oKAmujgS4mo',NULL);
 INSERT INTO `links` VALUES (1671,'em','https://www.youtube.com/watch?v=oKAmujgS4mo',NULL);
-INSERT INTO `links` VALUES (1672,'em','https://www.youtube.com/watch?v=4p4iY3aIxzI',NULL);
+INSERT INTO `links` VALUES (1672,'em','https://www.youtube.com/watch?v=4p4iY3aIxzI',1);
 INSERT INTO `links` VALUES (1673,'em','http://www.covenanteyes.com/2015/01/20/singleness-longing-porn-isnt-cure/',1);
 INSERT INTO `links` VALUES (1674,'dep','http://www.covenanteyes.com/2015/01/20/singleness-longing-porn-isnt-cure/',1);
 INSERT INTO `links` VALUES (1675,'em','http://i.imgur.com/bbWSvJx.jpg',NULL);
@@ -1801,7 +1799,6 @@ INSERT INTO `links` VALUES (1996,'em','http://i.imgur.com/ZCcHZIZ.jpg',NULL);
 INSERT INTO `links` VALUES (1997,'em','http://i.imgur.com/w0YB000.jpg',NULL);
 INSERT INTO `links` VALUES (1998,'rel','http://i.imgur.com/w0YB000.jpg',NULL);
 INSERT INTO `links` VALUES (1999,'rej','http://i.imgur.com/w0YB000.jpg',NULL);
-INSERT INTO `links` VALUES (2000,'em','http://www.kingjamesbibleonline.org/Inspirational-Images/large/1-John_5-4.jpg',1);
 INSERT INTO `links` VALUES (2001,'rel','http://rapidlikes.com/wp-content/uploads/2014/02/Faith-Quotes-12.jpg',1);
 INSERT INTO `links` VALUES (2002,'em','https://www.youtube.com/watch?v=Cl8H8q-gr1k',1);
 INSERT INTO `links` VALUES (2003,'em','https://www.reddit.com/r/NoFap/comments/3b9l5g/viewing_the_world_in_a_different_perspective_90/',NULL);
@@ -1835,6 +1832,12 @@ INSERT INTO `links` VALUES (2030,'dep','http://i.imgur.com/yYIGpJn.jpg',NULL);
 INSERT INTO `links` VALUES (2031,'em','http://i.imgur.com/yYIGpJn.jpg',NULL);
 INSERT INTO `links` VALUES (2032,'rel','http://i.imgur.com/yYIGpJn.jpg',NULL);
 INSERT INTO `links` VALUES (2033,'em','http://i.imgur.com/yYIGpJn.jpg',NULL);
+INSERT INTO `links` VALUES (2034,'em','http://i.imgur.com/utkOlGP.jpg',NULL);
+INSERT INTO `links` VALUES (2035,'em','http://cdn.meme.am/instances/500x/58214239.jpg',NULL);
+INSERT INTO `links` VALUES (2036,'dep','http://cdn.meme.am/instances/500x/58214239.jpg',NULL);
+INSERT INTO `links` VALUES (2037,'em','http://4.bp.blogspot.com/-4OJAFEipqwI/VH-mXTylY3I/AAAAAAAAISM/E4Ur0uesVmM/s1600/You%2Bgot%2Bthis.jpg',NULL);
+INSERT INTO `links` VALUES (2038,'dep','http://4.bp.blogspot.com/-4OJAFEipqwI/VH-mXTylY3I/AAAAAAAAISM/E4Ur0uesVmM/s1600/You%2Bgot%2Bthis.jpg',NULL);
+INSERT INTO `links` VALUES (2039,'em','http://i.imgur.com/aEtkAFf.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1847,4 +1850,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-19 19:44:23
+-- Dump completed on 2015-07-24 10:19:38

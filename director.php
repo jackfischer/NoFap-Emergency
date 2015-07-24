@@ -2,6 +2,8 @@
 
 include 'credentials.php';
 $cat = $_GET["cat"];
+$platform = $_GET["platform"];
+
 try {
     $DBH = new PDO("mysql:host=localhost;dbname=posts", $user, $password, array(PDO::ATTR_PERSISTENT => false));
     $DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
@@ -13,15 +15,15 @@ catch(PDOException $e) {
 if ($cat != "bookmarklet") {
     if($_GET["religious"] == "true") {
         $query = "select link from links where cat=:cat order by RAND() limit 1";
-        $insert = "insert into events (cat, timestamp, religious, ip) values (:cat, CURRENT_TIMESTAMP, 1, :ip)";
+        $insert = "insert into events (cat, timestamp, religious, platform, ip) values (:cat, CURRENT_TIMESTAMP, 1, :platform, :ip)";
     }
     else {
         $query = "select link from links where cat=:cat and religious is NULL order by RAND() limit 1";
-        $insert = "insert into events (cat, timestamp, ip) values (:cat, CURRENT_TIMESTAMP, :ip)";
+        $insert = "insert into events (cat, timestamp, platform, ip) values (:cat, CURRENT_TIMESTAMP, :platform, :ip)";
     }
 
     $IH = $DBH->prepare($insert);
-    $IH->execute(array(":cat" => $cat, ":ip" => $_SERVER['REMOTE_ADDR']));
+    $IH->execute(array(":cat" => $cat, ":platform" => $platform, ":ip" => $_SERVER['REMOTE_ADDR']));
 
     $STH = $DBH->prepare($query);
     $STH->execute(array(":cat" => $cat));
