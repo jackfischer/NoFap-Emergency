@@ -22,41 +22,31 @@ body{display:table-cell;vertical-align:middle;background:#e74c3c}
 <body>
 
 <?php
-include 'credentials.php';
+require_once 'db.php';
 
 $remoteIP = $_SERVER['REMOTE_ADDR'];
 $response = $_POST["g-recaptcha-response"];
-$googleUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" . $secret . "&response=" . $response . "&remoteip=" . $remoteIP;
-$googleArray = file_get_contents($googleUrl);
-$googleArray = json_decode($googleArray);
+$googleUrl = "https://www.google.com/recaptcha/api/siteverify";
+$googleUrl = $googleUrl . "?secret=$secret&response=$response&remoteip=$remoteIP";
+$googleArray = json_decode( file_get_contents($googleUrl) );
 
-if(($googleArray->{'success'} == 1) || isset($_POST['platform'])){
-    $myfile = fopen("logs.txt", "a") or die("server error");
-    fwrite($myfile, $_POST['message'] . "\n" . $_POST['link'] . "\n\n");
-    fclose($myfile);
+if ( ($googleArray->{'success'} == 1) || isset($_POST['platform']) ){
+    $insert = "insert into suggestions (link, comments) values (:link, :comments)";
+    $IH = $DBH->prepare($insert);
+    $IH->execute( array(":link" => $_POST['link'], ":comments" => $_POST["message"]) );
 
-    /*
-    $link = $_POST['link'];
-    $message = $_POST['message'];
-    $to = 'trump6@gmail.com'; 
-    $email_subject = "NF";
-    $email_body = $link . "\n\n" . $message;
-    $headers = "From: trump6@gmail.com\n"; 
-    mail($to,$email_subject,$email_body,$headers);
-     */
-
-    echo '<a href="http://emergency.nofap.com"> <div class="alert alert-success" style="opacity:1;" role="alert">Thank you!</div> </a>';
+    echo '<a href="http://emergency.nofap.com"> <div class="alert alert-success"
+        style="opacity:1;" role="alert">Thank you!</div> </a>';
+} else {
+    echo '<div class="alert alert-success" style="opacity:1;" role="alert">
+        Something went wrong. Try submitting again</div>';
 }
-else {
-    echo '<div class="alert alert-success" style="opacity:1;" role="alert">Something went wrong. Try submitting again</div>';
-}
-
 ?>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
- m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-53301604-1', 'auto');

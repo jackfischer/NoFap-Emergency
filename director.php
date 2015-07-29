@@ -1,16 +1,9 @@
 <?php
 
-include 'credentials.php';
+require_once 'db.php';
+
 $cat = $_GET["cat"];
 $platform = $_GET["platform"];
-
-try {
-    $DBH = new PDO("mysql:host=localhost;dbname=posts", $user, $password, array(PDO::ATTR_PERSISTENT => false));
-    $DBH->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-}
-catch(PDOException $e) {
-    echo $e->getMessage(); 
-}
 
 if ($cat != "bookmarklet") {
     if($_GET["religious"] == "true") {
@@ -52,8 +45,5 @@ if ($cat == "bookmarklet") {
     echo '<script>window.location.href="' . $result . '";</script>';
     echo "</body></html>";
 }
-
-
-
 
 ?>

@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2040 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2125 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -802,8 +802,6 @@ INSERT INTO `links` VALUES (908,'rej','http://www.reddit.com/r/howtonotgiveafuck
 INSERT INTO `links` VALUES (909,'rej','http://www.reddit.com/r/AskMen/comments/1f8k63/guys_what_is_the_coldest_rejection_you_have_ever/',NULL);
 INSERT INTO `links` VALUES (910,'em','http://www.reddit.com/r/NoFap/comments/22iedf/one_thing_eminem_taught_us/',NULL);
 INSERT INTO `links` VALUES (911,'rel','http://www.reddit.com/r/NoFap/comments/22iedf/one_thing_eminem_taught_us/',NULL);
-INSERT INTO `links` VALUES (912,'em','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s',NULL);
-INSERT INTO `links` VALUES (913,'em','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s',NULL);
 INSERT INTO `links` VALUES (914,'rel','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s',NULL);
 INSERT INTO `links` VALUES (915,'rej','http://www.youtube.com/watch?v=_1xXYeNrW9k&feature=youtu.be&t=36s',NULL);
 INSERT INTO `links` VALUES (916,'em','http://www.reddit.com/r/NoFap/comments/19w9xf/never_would_i_ever_have_thought_that_a_lil_wayne/',NULL);
@@ -1072,7 +1070,6 @@ INSERT INTO `links` VALUES (1206,'em','http://healthadvocation.files.wordpress.c
 INSERT INTO `links` VALUES (1207,'em','http://healthadvocation.files.wordpress.com/2013/02/health-and-fitness-motivation-by-elisa.jpg',NULL);
 INSERT INTO `links` VALUES (1208,'em','http://healthadvocation.files.wordpress.com/2013/02/health-and-fitness-motivation-by-elisa.jpg',NULL);
 INSERT INTO `links` VALUES (1210,'rel','http://joeleavers.com/wp-content/uploads/2014/10/motivation-statement.jpg',NULL);
-INSERT INTO `links` VALUES (1211,'em','https://iambeast1.files.wordpress.com/2012/08/welcome.jpg',NULL);
 INSERT INTO `links` VALUES (1213,'em','http://i.imgur.com/vZztSTi.jpg',NULL);
 INSERT INTO `links` VALUES (1214,'em','http://i.imgur.com/h7irsvF.jpg',NULL);
 INSERT INTO `links` VALUES (1215,'em','http://www.reddit.com/r/NoFap/comments/2k7vkk/i_dont_jack_off/',NULL);
@@ -1682,7 +1679,6 @@ INSERT INTO `links` VALUES (1874,'rej','http://personalexcellence.co/quotes/file
 INSERT INTO `links` VALUES (1875,'em','http://personalexcellence.co/quotes/files/inspirational-quote-strength-arnold-schwarzenegger.jpg',NULL);
 INSERT INTO `links` VALUES (1876,'em','https://www.reddit.com/r/NoFap/comments/33gbnj/pmo_most_beta_thing_ever/',NULL);
 INSERT INTO `links` VALUES (1877,'rej','https://www.reddit.com/r/NoFap/comments/33gbnj/pmo_most_beta_thing_ever/',NULL);
-INSERT INTO `links` VALUES (1878,'em','https://www.youtube.com/watch?v=VAZSTq4_264',NULL);
 INSERT INTO `links` VALUES (1879,'em','http://photos-ak.sparkpeople.com/nw/6/5/l652518725.jpg',NULL);
 INSERT INTO `links` VALUES (1880,'em','https://s-media-cache-ak0.pinimg.com/736x/63/16/01/6316015283c5f8e9cf2d35b55fab5989.jpg',NULL);
 INSERT INTO `links` VALUES (1881,'rel','http://qph.is.quoracdn.net/main-qimg-6b18d392fe38a410c3be0e7d28c6d98a',NULL);
@@ -1838,6 +1834,91 @@ INSERT INTO `links` VALUES (2036,'dep','http://cdn.meme.am/instances/500x/582142
 INSERT INTO `links` VALUES (2037,'em','http://4.bp.blogspot.com/-4OJAFEipqwI/VH-mXTylY3I/AAAAAAAAISM/E4Ur0uesVmM/s1600/You%2Bgot%2Bthis.jpg',NULL);
 INSERT INTO `links` VALUES (2038,'dep','http://4.bp.blogspot.com/-4OJAFEipqwI/VH-mXTylY3I/AAAAAAAAISM/E4Ur0uesVmM/s1600/You%2Bgot%2Bthis.jpg',NULL);
 INSERT INTO `links` VALUES (2039,'em','http://i.imgur.com/aEtkAFf.jpg',NULL);
+INSERT INTO `links` VALUES (2040,'rel','http://www.nofapacademy.com/',NULL);
+INSERT INTO `links` VALUES (2041,'rel','http://www.nofapacademy.com/reboot-camp/',NULL);
+INSERT INTO `links` VALUES (2042,'rel','http://www.nofapacademy.com/reboot-camp/',NULL);
+INSERT INTO `links` VALUES (2043,'rel','http://www.quotationof.com/images/relapse-quotes-5.jpg',NULL);
+INSERT INTO `links` VALUES (2044,'rel','http://25.media.tumblr.com/tumblr_mc2qmejExC1rbzarfo1_500.jpg',NULL);
+INSERT INTO `links` VALUES (2045,'rel','https://beanythingbutquiet.files.wordpress.com/2012/08/lapse-vs-relapse.jpg',NULL);
+INSERT INTO `links` VALUES (2046,'rel','https://beanythingbutquiet.files.wordpress.com/2012/08/lapse-vs-relapse.jpg',NULL);
+INSERT INTO `links` VALUES (2047,'em','http://eat-spin-run-repeat.com/wp-content/uploads/2012/07/quote2.png',NULL);
+INSERT INTO `links` VALUES (2048,'rel','http://eat-spin-run-repeat.com/wp-content/uploads/2012/07/quote2.png',NULL);
+INSERT INTO `links` VALUES (2049,'dep','http://eat-spin-run-repeat.com/wp-content/uploads/2012/07/quote2.png',NULL);
+INSERT INTO `links` VALUES (2050,'rej','http://eat-spin-run-repeat.com/wp-content/uploads/2012/07/quote2.png',NULL);
+INSERT INTO `links` VALUES (2051,'em','http://i.imgur.com/pTWMJLq.png',NULL);
+INSERT INTO `links` VALUES (2052,'rel','http://i.imgur.com/pTWMJLq.png',NULL);
+INSERT INTO `links` VALUES (2053,'rej','http://i.imgur.com/pTWMJLq.png',NULL);
+INSERT INTO `links` VALUES (2054,'dep','http://i.imgur.com/pTWMJLq.png',NULL);
+INSERT INTO `links` VALUES (2055,'rel','http://www.lakehouserecoverycenter.com/wp-content/uploads/2014/12/dreams-into-plans.jpg',NULL);
+INSERT INTO `links` VALUES (2056,'em','http://izquotes.com/quotes-pictures/quote-what-lies-behind-us-and-what-lies-before-us-are-tiny-matters-compared-to-what-lies-within-us-ralph-waldo-emerson-282779.jpg',NULL);
+INSERT INTO `links` VALUES (2057,'rel','http://izquotes.com/quotes-pictures/quote-what-lies-behind-us-and-what-lies-before-us-are-tiny-matters-compared-to-what-lies-within-us-ralph-waldo-emerson-282779.jpg',NULL);
+INSERT INTO `links` VALUES (2058,'rej','http://izquotes.com/quotes-pictures/quote-what-lies-behind-us-and-what-lies-before-us-are-tiny-matters-compared-to-what-lies-within-us-ralph-waldo-emerson-282779.jpg',NULL);
+INSERT INTO `links` VALUES (2059,'dep','http://izquotes.com/quotes-pictures/quote-what-lies-behind-us-and-what-lies-before-us-are-tiny-matters-compared-to-what-lies-within-us-ralph-waldo-emerson-282779.jpg',NULL);
+INSERT INTO `links` VALUES (2060,'em','http://collectivelyconscious.net/wp-content/uploads/2014/05/what-lies-behind-us-and-what-lies-before-us-are-small-matters-compared-to-what-lies-within-us.jpg',NULL);
+INSERT INTO `links` VALUES (2061,'rel','http://collectivelyconscious.net/wp-content/uploads/2014/05/what-lies-behind-us-and-what-lies-before-us-are-small-matters-compared-to-what-lies-within-us.jpg',NULL);
+INSERT INTO `links` VALUES (2062,'rej','http://collectivelyconscious.net/wp-content/uploads/2014/05/what-lies-behind-us-and-what-lies-before-us-are-small-matters-compared-to-what-lies-within-us.jpg',NULL);
+INSERT INTO `links` VALUES (2063,'dep','http://collectivelyconscious.net/wp-content/uploads/2014/05/what-lies-behind-us-and-what-lies-before-us-are-small-matters-compared-to-what-lies-within-us.jpg',NULL);
+INSERT INTO `links` VALUES (2064,'em','http://whowasralphwaldoemerson.com/wp-content/uploads/2013/06/43cbf__5045.jpg',NULL);
+INSERT INTO `links` VALUES (2065,'rel','http://whowasralphwaldoemerson.com/wp-content/uploads/2013/06/43cbf__5045.jpg',NULL);
+INSERT INTO `links` VALUES (2066,'rej','http://whowasralphwaldoemerson.com/wp-content/uploads/2013/06/43cbf__5045.jpg',NULL);
+INSERT INTO `links` VALUES (2067,'dep','http://whowasralphwaldoemerson.com/wp-content/uploads/2013/06/43cbf__5045.jpg',NULL);
+INSERT INTO `links` VALUES (2068,'em','http://i.imgur.com/CyGtAaj.jpg',NULL);
+INSERT INTO `links` VALUES (2069,'rel','http://i.imgur.com/CyGtAaj.jpg',NULL);
+INSERT INTO `links` VALUES (2070,'rej','http://i.imgur.com/CyGtAaj.jpg',NULL);
+INSERT INTO `links` VALUES (2071,'dep','http://i.imgur.com/CyGtAaj.jpg',NULL);
+INSERT INTO `links` VALUES (2072,'em','http://i.imgur.com/R1O9TpR.jpg',NULL);
+INSERT INTO `links` VALUES (2073,'rel','http://i.imgur.com/R1O9TpR.jpg',NULL);
+INSERT INTO `links` VALUES (2074,'rej','http://i.imgur.com/R1O9TpR.jpg',NULL);
+INSERT INTO `links` VALUES (2075,'dep','http://i.imgur.com/R1O9TpR.jpg',NULL);
+INSERT INTO `links` VALUES (2076,'em','http://i.imgur.com/l29qbpC.jpg',NULL);
+INSERT INTO `links` VALUES (2077,'rel','http://i.imgur.com/l29qbpC.jpg',NULL);
+INSERT INTO `links` VALUES (2078,'rej','http://i.imgur.com/l29qbpC.jpg',NULL);
+INSERT INTO `links` VALUES (2079,'dep','http://i.imgur.com/l29qbpC.jpg',NULL);
+INSERT INTO `links` VALUES (2080,'em','http://www.kingjamesbibleonline.org/Inspirational-Images/large/1-John_5-4.jpg',1);
+INSERT INTO `links` VALUES (2081,'rel','https://www.youtube.com/watch?v=DYmhbCbiQnU',NULL);
+INSERT INTO `links` VALUES (2082,'rel','https://www.youtube.com/watch?v=fd02B4Vlwog',NULL);
+INSERT INTO `links` VALUES (2083,'em','uvmYINIXN5U',NULL);
+INSERT INTO `links` VALUES (2084,'rel','uvmYINIXN5U',NULL);
+INSERT INTO `links` VALUES (2085,'em','http://addicted2success.com/wp-content/uploads/2012/10/Tony-Robbins-Picture-Quotes.jpeg',NULL);
+INSERT INTO `links` VALUES (2086,'em','http://www.greatest-inspirational-quotes.com/images/Anthony-Robbins-Biography.jpg',NULL);
+INSERT INTO `links` VALUES (2087,'rel','http://onevoiceaday.com/wp-content/uploads/2015/02/tony-robbins.jpg',NULL);
+INSERT INTO `links` VALUES (2088,'em','http://ralfskirr.com/wp-content/uploads/decision-is-the-ultimate-power-fi.jpg',1);
+INSERT INTO `links` VALUES (2089,'em','https://img1.etsystatic.com/000/0/6277922/il_570xN.344898779.jpg',NULL);
+INSERT INTO `links` VALUES (2090,'rel','https://img1.etsystatic.com/000/0/6277922/il_570xN.344898779.jpg',NULL);
+INSERT INTO `links` VALUES (2091,'em','http://www.blogaboutrunning.com/wp-content/uploads/2013/04/TODAY-OTHERS-WONT.jpg',NULL);
+INSERT INTO `links` VALUES (2092,'rel','http://www.blogaboutrunning.com/wp-content/uploads/2013/04/TODAY-OTHERS-WONT.jpg',NULL);
+INSERT INTO `links` VALUES (2093,'rel','https://atnewsroom.files.wordpress.com/2013/05/559_splash.jpg',NULL);
+INSERT INTO `links` VALUES (2094,'em','https://atnewsroom.files.wordpress.com/2013/05/559_splash.jpg',NULL);
+INSERT INTO `links` VALUES (2095,'em','https://s-media-cache-ak0.pinimg.com/736x/f1/e1/85/f1e185dcc7034919941b926a080f5081.jpg',NULL);
+INSERT INTO `links` VALUES (2096,'rel','http://quotepixel.com/images/quotes/success/success-picture-quotes_13067-1.png',NULL);
+INSERT INTO `links` VALUES (2097,'em','http://dontgiveupworld.com/wp-content/uploads/2013/05/Quote-Work-hard-in-silence-.-Let-success-make-the-noise.jpg',NULL);
+INSERT INTO `links` VALUES (2098,'rej','http://dontgiveupworld.com/wp-content/uploads/2013/05/Quote-Work-hard-in-silence-.-Let-success-make-the-noise.jpg',NULL);
+INSERT INTO `links` VALUES (2099,'dep','http://geniusquotes.org/wp-content/uploads/2014/02/exercise-motivation-quotes-weight-loss-work-out-lose-weight-12.jpg',NULL);
+INSERT INTO `links` VALUES (2100,'dep','http://geniusquotes.org/wp-content/uploads/2014/02/exercise-motivation-quotes-weight-loss-work-out-lose-weight-12.jpg',NULL);
+INSERT INTO `links` VALUES (2101,'em','http://geniusquotes.org/wp-content/uploads/2014/02/exercise-motivation-quotes-weight-loss-work-out-lose-weight-12.jpg',NULL);
+INSERT INTO `links` VALUES (2102,'rel','http://geniusquotes.org/wp-content/uploads/2014/02/exercise-motivation-quotes-weight-loss-work-out-lose-weight-12.jpg',NULL);
+INSERT INTO `links` VALUES (2103,'rel','http://geniusquotes.org/wp-content/uploads/2014/02/exercise-motivation-quotes-weight-loss-work-out-lose-weight-12.jpg',NULL);
+INSERT INTO `links` VALUES (2104,'em','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
+INSERT INTO `links` VALUES (2105,'rel','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
+INSERT INTO `links` VALUES (2106,'rej','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
+INSERT INTO `links` VALUES (2107,'dep','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
+INSERT INTO `links` VALUES (2108,'em','http://orig04.deviantart.net/d7a2/f/2009/266/4/4/harder_better_faster_stronger_by_abhijitdara.jpg',NULL);
+INSERT INTO `links` VALUES (2109,'em','http://quoteswallpaper.co/wp-content/uploads/2015/03/ea4dexcellent-motivational-quote-about-hard-work.png',NULL);
+INSERT INTO `links` VALUES (2110,'em','http://www.hdwallpapersimages.com/wp-content/uploads/2015/04/Hard-Work-Pays-Motivation-Background-Images.jpg',NULL);
+INSERT INTO `links` VALUES (2111,'em','http://hdwpics.com/images/2026C4765D4F/Finish-What-You-Start.jpg',NULL);
+INSERT INTO `links` VALUES (2112,'em','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
+INSERT INTO `links` VALUES (2113,'rel','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
+INSERT INTO `links` VALUES (2114,'rej','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
+INSERT INTO `links` VALUES (2115,'dep','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
+INSERT INTO `links` VALUES (2116,'em','http://i.imgur.com/i3cpfr8.jpg',NULL);
+INSERT INTO `links` VALUES (2117,'dep','http://i.imgur.com/i3cpfr8.jpg',NULL);
+INSERT INTO `links` VALUES (2118,'rel','http://i.imgur.com/i3cpfr8.jpg',NULL);
+INSERT INTO `links` VALUES (2119,'rej','http://i.imgur.com/i3cpfr8.jpg',NULL);
+INSERT INTO `links` VALUES (2120,'em','http://www.fantasyhelp.com/wp-content/uploads/2014/03/Remember-the-guy-motivational-quote.jpg',NULL);
+INSERT INTO `links` VALUES (2121,'rel','http://www.fantasyhelp.com/wp-content/uploads/2014/03/Remember-the-guy-motivational-quote.jpg',NULL);
+INSERT INTO `links` VALUES (2122,'em','http://1.bp.blogspot.com/-aLF7U_LomQ8/U68zOeZQymI/AAAAAAAABig/eN_6VILc0o4/s1600/motivational-inspirational-quote-background.png',NULL);
+INSERT INTO `links` VALUES (2123,'em','https://www.youtube.com/watch?v=cCeeTfsm8bk',NULL);
+INSERT INTO `links` VALUES (2124,'rel','https://www.youtube.com/watch?v=cCeeTfsm8bk',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1850,4 +1931,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-07-24 10:19:38
+-- Dump completed on 2015-07-29 15:15:43
