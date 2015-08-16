@@ -17,7 +17,6 @@
 <link rel="apple-touch-icon" href="icons/touchicon.png">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
-<!-- <link href="resources/arrow.css" rel="stylesheet"> -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js"></script>
 
@@ -69,8 +68,7 @@ body,html{text-align:center;height:100%;-webkit-user-select:none}
 <button type="submit" value="iOS" id="ios" class="footer-button col-sm-3 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" src="icons/appstore.svg" /></a></button>
 <button type="submit" value="Android" id="android" class="footer-button col-sm-3 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" src="https://developer.android.com/images/brand/en_app_rgb_wo_45.png" /></a></button>
 
-<!-- <div class="arrow animated bounce" id="hint"></div> -->
-
+<div class="arrow animated bounce" id="hint"></div>
 <div id="mobilereligious"><input type="checkbox" onchange="religiousChange()"><label>Religious</label></div>
 <div id="religious"><input type="checkbox" onchange="religiousChange()"><label>Include Religious</label></div>
 
@@ -106,11 +104,15 @@ $(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
 $(nofap).click(function(){window.location.href="http://nofap.com"});
 
-//$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});$("#hint").delay(2500).fadeOut("slow")
 
 //Cookie parser and handling
-function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""};var religiousCheck=getCookie("religious");if(religiousCheck=="true"){$("input").iCheck("check")}else{setCookie("false");}$("input").on("ifChecked",function(e){religiousCheck="true";setCookie("true");});$("input").on("ifUnchecked",function(e){religiousCheck="false";setCookie("false");});function setCookie(pref) {    document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2024 12:00:00 UTC"}
-
+function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""};var religiousCheck=getCookie("religious");
+if(religiousCheck==""){
+$('head').append($('<link rel="stylesheet" type="text/css"/>').attr('href','resources/arrow.css'));
+$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});
+$("#hint").delay(4000).fadeOut("slow");}
+if(religiousCheck=="true"){$("input").iCheck("check")}else{setCookie("false");}
+$("input").on("ifChecked",function(e){religiousCheck="true";setCookie("true");});$("input").on("ifUnchecked",function(e){religiousCheck="false";setCookie("false");});function setCookie(pref) {    document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2024 12:00:00 UTC"}
 
 //Smart banner
 $(function() { $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true}) } )
