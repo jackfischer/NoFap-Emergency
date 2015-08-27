@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2225 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2251 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -941,7 +941,6 @@ INSERT INTO `links` VALUES (1067,'em','http://i.imgur.com/sM00I9Q.png',NULL);
 INSERT INTO `links` VALUES (1068,'rel','http://i.imgur.com/sM00I9Q.png',NULL);
 INSERT INTO `links` VALUES (1069,'em','http://www.reddit.com/r/NoFap/comments/2inlaj/after_a_33_days_streak_i_relapsed_totally_not/',NULL);
 INSERT INTO `links` VALUES (1070,'em','http://www.4000saturdays.com/blog/wp-content/uploads/2012/04/dog.jpg',NULL);
-INSERT INTO `links` VALUES (1071,'rel','http://www.theoddpolymath.net/bullshit-matrix/',NULL);
 INSERT INTO `links` VALUES (1072,'dep','http://9gag.com/gag/aLQgWVM?ref=fb.s',NULL);
 INSERT INTO `links` VALUES (1073,'em','http://i.imgur.com/5Jnq953.jpg',NULL);
 INSERT INTO `links` VALUES (1074,'em','http://i.imgur.com/5Jnq953.jpg',NULL);
@@ -1032,8 +1031,6 @@ INSERT INTO `links` VALUES (1164,'dep','http://www.wordsonimages.com/pics/173167
 INSERT INTO `links` VALUES (1165,'dep','http://4.bp.blogspot.com/-l9NdT8OGKuo/Uhk2cYyNamI/AAAAAAAAAlU/OuZKpKmClSs/s1600/jeremiah+30-17.jpg',1);
 INSERT INTO `links` VALUES (1166,'rel','http://4.bp.blogspot.com/-l9NdT8OGKuo/Uhk2cYyNamI/AAAAAAAAAlU/OuZKpKmClSs/s1600/jeremiah+30-17.jpg',1);
 INSERT INTO `links` VALUES (1167,'rel','http://4.bp.blogspot.com/-l9NdT8OGKuo/Uhk2cYyNamI/AAAAAAAAAlU/OuZKpKmClSs/s1600/jeremiah+30-17.jpg',1);
-INSERT INTO `links` VALUES (1168,'rel','http://meetville.com/images/quotes/Quotation-Joanne-Wilson-Edwards-god-religious-inspirational-Meetville-Quotes-169106.jpg',1);
-INSERT INTO `links` VALUES (1169,'rel','http://meetville.com/images/quotes/Quotation-Joanne-Wilson-Edwards-god-religious-inspirational-Meetville-Quotes-169106.jpg',1);
 INSERT INTO `links` VALUES (1170,'em','http://www.buzzle.com/images/quotes/inspirational-bible-quote4.jpg',1);
 INSERT INTO `links` VALUES (1171,'rel','http://www.buzzle.com/images/quotes/inspirational-bible-quote4.jpg',1);
 INSERT INTO `links` VALUES (1172,'em','http://www.buzzle.com/images/quotes/inspirational-bible-quote4.jpg',1);
@@ -1489,11 +1486,8 @@ INSERT INTO `links` VALUES (1687,'em','http://quotes.lifehack.org/media/quotes/q
 INSERT INTO `links` VALUES (1688,'em','http://quotes.lifehack.org/media/quotes/quote-Steven-Pressfield-never-forget-this-very-moment-we-can-208846.png',NULL);
 INSERT INTO `links` VALUES (1689,'em','http://static.oprah.com/images/own/2013/supersoulsunday/20130929/ep431-own-sss-steven-pressfield-quotes-3-600x411.jpg',1);
 INSERT INTO `links` VALUES (1690,'em','http://static.oprah.com/images/own/2013/supersoulsunday/20130929/ep431-own-sss-steven-pressfield-quotes-5-600x411.jpg',NULL);
-INSERT INTO `links` VALUES (1691,'em','http://meetville.com/images/quotes/Quotation-Steven-Pressfield-soul-spirit-Meetville-Quotes-278322.jpg',1);
 INSERT INTO `links` VALUES (1692,'em','http://jesslively.com/wp-content/uploads/2013/11/ThisVeryMomentWeCanChangeOurLives.jpg',NULL);
 INSERT INTO `links` VALUES (1693,'em','http://jesslively.com/wp-content/uploads/2013/11/ThisVeryMomentWeCanChangeOurLives.jpg',NULL);
-INSERT INTO `links` VALUES (1694,'em','http://meetville.com/images/quotes/Quotation-Steven-Pressfield-lies-Meetville-Quotes-113844.jpg',NULL);
-INSERT INTO `links` VALUES (1695,'em','http://meetville.com/images/quotes/Quotation-Steven-Pressfield-lies-Meetville-Quotes-113844.jpg',NULL);
 INSERT INTO `links` VALUES (1696,'em','http://www.reddit.com/r/NoFap/comments/21tyfw/here_is_a_list_of_subreddits_for_fapstronauts/',NULL);
 INSERT INTO `links` VALUES (1697,'em','http://i.imgur.com/HGBY1tW.png',NULL);
 INSERT INTO `links` VALUES (1698,'em','http://i.imgur.com/lJv9Iu5.jpg',NULL);
@@ -1508,8 +1502,6 @@ INSERT INTO `links` VALUES (1706,'rej','https://bellaanddarcy.files.wordpress.co
 INSERT INTO `links` VALUES (1707,'rej','https://kingkurtissmith.files.wordpress.com/2014/04/8321127577_37f4b92d3b.jpg',NULL);
 INSERT INTO `links` VALUES (1708,'rej','https://kingkurtissmith.files.wordpress.com/2014/04/8321127577_37f4b92d3b.jpg',NULL);
 INSERT INTO `links` VALUES (1709,'rej','https://bellaanddarcy.files.wordpress.com/2013/12/rejection-quote1.jpg',NULL);
-INSERT INTO `links` VALUES (1712,'rej','http://meetville.com/images/quotes/Quotation-Richard-Castle-giving-failure-rejection-Meetville-Quotes-139098.jpg',NULL);
-INSERT INTO `links` VALUES (1713,'rej','http://meetville.com/images/quotes/Quotation-Richard-Castle-giving-failure-rejection-Meetville-Quotes-139098.jpg',NULL);
 INSERT INTO `links` VALUES (1714,'rej','https://writerzblock007.files.wordpress.com/2014/08/rejection.jpg',NULL);
 INSERT INTO `links` VALUES (1715,'rej','http://www.famme.nl/wp-content/uploads/2014/04/353b96dd16401353348a1048c3d6eaa6.jpg',NULL);
 INSERT INTO `links` VALUES (1716,'rel','http://waterfallconcept.org/wp-content/uploads/2014/05/relapse-quote.jpg',NULL);
@@ -1662,7 +1654,6 @@ INSERT INTO `links` VALUES (1867,'em','http://addicted2success.com/wp-content/up
 INSERT INTO `links` VALUES (1868,'em','http://addicted2success.com/wp-content/uploads/2013/08/Motivation-Picture-Quote-Motivation-You.jpg',NULL);
 INSERT INTO `links` VALUES (1869,'em','http://addicted2success.com/wp-content/uploads/2013/08/Motivation-Picture-Quote-No-Quitting.jpg',NULL);
 INSERT INTO `links` VALUES (1870,'em','http://quotes.lifehack.org/media/quotes/quote-Frank-Herbert-seek-freedom-and-become-captive-of-your-113140.png',NULL);
-INSERT INTO `links` VALUES (1871,'em','http://meetville.com/images/quotes/Quotation-Frank-Herbert-discipline-freedom-paradox-liberty-history-Meetville-Quotes-184834.jpg',1);
 INSERT INTO `links` VALUES (1872,'em','http://personalexcellence.co/quotes/files/inspirational-quote-strength-arnold-schwarzenegger.jpg',NULL);
 INSERT INTO `links` VALUES (1873,'rel','http://personalexcellence.co/quotes/files/inspirational-quote-strength-arnold-schwarzenegger.jpg',NULL);
 INSERT INTO `links` VALUES (1874,'rej','http://personalexcellence.co/quotes/files/inspirational-quote-strength-arnold-schwarzenegger.jpg',NULL);
@@ -2004,6 +1995,32 @@ INSERT INTO `links` VALUES (2221,'dep','https://i.imgur.com/BoF648Z.jpg',1);
 INSERT INTO `links` VALUES (2222,'rej','https://i.imgur.com/BoF648Z.jpg',1);
 INSERT INTO `links` VALUES (2223,'em','https://www.reddit.com/r/NoFap/comments/1hv6j9/a_compilation_of_benefits_people_have_noticed/',NULL);
 INSERT INTO `links` VALUES (2224,'dep','https://www.reddit.com/r/NoFap/comments/1hv6j9/a_compilation_of_benefits_people_have_noticed/',NULL);
+INSERT INTO `links` VALUES (2225,'em','http://izquotes.com/quotes-pictures/quote-never-be-discouraged-if-i-were-sunk-in-the-lowest-pits-of-nova-scotia-with-the-rocky-mountains-joseph-smith-jr-173128.jpg',NULL);
+INSERT INTO `links` VALUES (2226,'rel','http://izquotes.com/quotes-pictures/quote-never-be-discouraged-if-i-were-sunk-in-the-lowest-pits-of-nova-scotia-with-the-rocky-mountains-joseph-smith-jr-173128.jpg',NULL);
+INSERT INTO `links` VALUES (2227,'dep','http://izquotes.com/quotes-pictures/quote-never-be-discouraged-if-i-were-sunk-in-the-lowest-pits-of-nova-scotia-with-the-rocky-mountains-joseph-smith-jr-173128.jpg',NULL);
+INSERT INTO `links` VALUES (2228,'rej','http://izquotes.com/quotes-pictures/quote-never-be-discouraged-if-i-were-sunk-in-the-lowest-pits-of-nova-scotia-with-the-rocky-mountains-joseph-smith-jr-173128.jpg',NULL);
+INSERT INTO `links` VALUES (2229,'em','https://i.imgur.com/2s25NwP.jpg',NULL);
+INSERT INTO `links` VALUES (2230,'rel','https://i.imgur.com/2s25NwP.jpg',NULL);
+INSERT INTO `links` VALUES (2231,'dep','https://i.imgur.com/2s25NwP.jpg',NULL);
+INSERT INTO `links` VALUES (2232,'rej','https://i.imgur.com/2s25NwP.jpg',NULL);
+INSERT INTO `links` VALUES (2233,'rel','https://3.bp.blogspot.com/-Cu6kWDDhyIU/VZYYg5NZjvI/AAAAAAAAPGY/m3dM5pUiafo/s1600/theessenceoflife.jpg',NULL);
+INSERT INTO `links` VALUES (2234,'rej','https://3.bp.blogspot.com/-Cu6kWDDhyIU/VZYYg5NZjvI/AAAAAAAAPGY/m3dM5pUiafo/s1600/theessenceoflife.jpg',NULL);
+INSERT INTO `links` VALUES (2235,'em','https://i.imgur.com/TGAy6zQ.jpg',NULL);
+INSERT INTO `links` VALUES (2236,'em','https://i.imgur.com/mpjGsGr.jpg',NULL);
+INSERT INTO `links` VALUES (2237,'em','http://refe99.com/wp-content/uploads/2014/10/Today-stop-making-excuses-for-why-you-cant-get-it-done.jpg',1);
+INSERT INTO `links` VALUES (2238,'rel','http://refe99.com/wp-content/uploads/2014/10/Today-stop-making-excuses-for-why-you-cant-get-it-done.jpg',1);
+INSERT INTO `links` VALUES (2239,'em','http://dennyzen.com/wp-content/uploads/2014/01/procrastination3.jpg',NULL);
+INSERT INTO `links` VALUES (2240,'rej','https://s-media-cache-ak0.pinimg.com/736x/f6/97/bf/f697bf740f9f6a5c38c480a403fb07ba.jpg',NULL);
+INSERT INTO `links` VALUES (2241,'em','https://s-media-cache-ak0.pinimg.com/736x/7f/ef/cc/7fefcc0c2cc37294daffcc0385878308.jpg',NULL);
+INSERT INTO `links` VALUES (2242,'rel','https://s-media-cache-ak0.pinimg.com/736x/7f/ef/cc/7fefcc0c2cc37294daffcc0385878308.jpg',NULL);
+INSERT INTO `links` VALUES (2243,'em','https://i.imgur.com/5KCLwiQ.jpg',NULL);
+INSERT INTO `links` VALUES (2244,'rel','https://i.imgur.com/5KCLwiQ.jpg',NULL);
+INSERT INTO `links` VALUES (2245,'dep','http://brightdrops.com/wp-content/uploads/2013/10/kidyoullmovemountains.jpg',1);
+INSERT INTO `links` VALUES (2246,'rej','http://brightdrops.com/wp-content/uploads/2013/10/kidyoullmovemountains.jpg',1);
+INSERT INTO `links` VALUES (2247,'em','https://s-media-cache-ak0.pinimg.com/736x/bf/da/02/bfda025d6954f354d051374d350deca9.jpg',NULL);
+INSERT INTO `links` VALUES (2248,'em','https://s-media-cache-ak0.pinimg.com/736x/5f/4e/b8/5f4eb8d001e33c7d61e19c473910e583.jpg',NULL);
+INSERT INTO `links` VALUES (2249,'rej','http://i.huffpost.com/gadgets/slideshows/277392/slide_277392_2037175_free.jpg',NULL);
+INSERT INTO `links` VALUES (2250,'dep','http://i.huffpost.com/gadgets/slideshows/277392/slide_277392_2037175_free.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2016,4 +2033,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-08-16 15:05:55
+-- Dump completed on 2015-08-27 10:33:40
