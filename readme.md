@@ -4,7 +4,7 @@ NoFap Emergency is to get you to the right content when you need it. Recently ga
 
 Also on [Android](https://play.google.com/store/apps/details?id=org.nofap.emergency) and [iOS](https://appsto.re/us/9vp26.i) (sources [here](https://github.com/trump6/NoFap-Phonegap) and [here](https://github.com/danielx0328/NoFap).) Much thanks to [Daniel Romero](https://github.com/danielx0328) for his work.
 
-There's also a [bookmarklet](http://emergency.nofap.com/director.php?cat=bookmarklet) (drag to your bookmarks bar) that goes straight to emergency. [Suggest a link](http://emergency.nofap.com/suggestor.php) or report any broken links if you see them. If you're interested in using this as an API or something [email me,](mailto:jfische8@binghamton.edu) but you could also probably just figure it out no biggie. 
+There's also a [bookmarklet](http://emergency.nofap.com/director.php?cat=bookmarklet) (drag to your bookmarks bar) that goes straight to emergency. [Suggest a link](http://emergency.nofap.com/suggestor.php) or report any broken links if you see them. If you're interested in using this as an API or something, [email me](mailto:jfische8@binghamton.edu) or [Alexander Rhodes](mailto:rhodes@nofap.com).
 
 A couple of the big Reddit discussions,
 
