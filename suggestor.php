@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="NoFap,submit,suggest,relapse prevention,emergency">
-<meta name="description" content="Submut a link for NoFap Emergency relapse prevention">
+<meta name="description" content="Submit a link for NoFap Emergency relapse prevention">
 <title>NoFap Emergency - Submit a Link</title>
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
 <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
