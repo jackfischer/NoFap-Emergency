@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2437 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2487 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1267,8 +1267,6 @@ INSERT INTO `links` VALUES (1456,'em','https://michaeldooleyblog.files.wordpress
 INSERT INTO `links` VALUES (1457,'em','https://warosu.org/data/lit/img/0046/15/1393603907027.jpg',NULL);
 INSERT INTO `links` VALUES (1458,'em','http://www.reddit.com/r/NoFap/comments/2o5bmt/what_my_father_told_me_before_he_passed_away/',NULL);
 INSERT INTO `links` VALUES (1459,'rel','http://static.quoteswave.com/wp-content/uploads/2012/01/Your-best-teacher.jpg',NULL);
-INSERT INTO `links` VALUES (1460,'em','http://steadfast-ministries.com/wp-content/uploads/2013/01/1Cor10_13.jpg',1);
-INSERT INTO `links` VALUES (1461,'em','http://steadfast-ministries.com/wp-content/uploads/2013/01/1Cor10_13.jpg',1);
 INSERT INTO `links` VALUES (1464,'em','https://tayjay22.files.wordpress.com/2014/09/00a1919a813e4dabcef1ad06e1836689.jpg',1);
 INSERT INTO `links` VALUES (1465,'em','https://s-media-cache-ec0.pinimg.com/236x/dd/03/2f/dd032ff0f70d46b52eb78ae1fd36bffa.jpg',1);
 INSERT INTO `links` VALUES (1466,'em','http://2.bp.blogspot.com/-T-6vcHw6pr0/UTKfBK6j57I/AAAAAAAAAgg/lxG-_8Tw4HU/s640/marchstudy_lg_2013_03.jpg',1);
@@ -2169,6 +2167,54 @@ INSERT INTO `links` VALUES (2433,'dep','http://quotes.lifehack.org/media/quotes/
 INSERT INTO `links` VALUES (2434,'dep','http://orig01.deviantart.net/dbc2/f/2015/101/9/5/the_world_breaks_everyone_by_cjprevett-d8pbiwz.jpg',NULL);
 INSERT INTO `links` VALUES (2435,'rel','http://orig01.deviantart.net/dbc2/f/2015/101/9/5/the_world_breaks_everyone_by_cjprevett-d8pbiwz.jpg',NULL);
 INSERT INTO `links` VALUES (2436,'rej','http://orig01.deviantart.net/dbc2/f/2015/101/9/5/the_world_breaks_everyone_by_cjprevett-d8pbiwz.jpg',NULL);
+INSERT INTO `links` VALUES (2437,'em','https://www.reddit.com/r/NoFap/comments/3tpurt/men_have_become_soft_he_said_my_conversation_with/',1);
+INSERT INTO `links` VALUES (2440,'rej','https://www.reddit.com/r/NoFap/comments/3tf49s/getting_that_girl_wont_change_much_if_you_havent/',NULL);
+INSERT INTO `links` VALUES (2441,'rej','https://www.reddit.com/r/NoFap/comments/3tf49s/getting_that_girl_wont_change_much_if_you_havent/',1);
+INSERT INTO `links` VALUES (2442,'dep','https://i.imgur.com/0KQ21O0.jpg',NULL);
+INSERT INTO `links` VALUES (2443,'rej','https://i.imgur.com/0KQ21O0.jpg',NULL);
+INSERT INTO `links` VALUES (2444,'rel','https://i.imgur.com/0KQ21O0.jpg',NULL);
+INSERT INTO `links` VALUES (2445,'em','https://www.reddit.com/r/NoFap/comments/3u4229/whatever_you_do_please_dont_just_sit_around/',NULL);
+INSERT INTO `links` VALUES (2446,'rel','https://www.reddit.com/r/NoFap/comments/3u4229/whatever_you_do_please_dont_just_sit_around/',NULL);
+INSERT INTO `links` VALUES (2447,'dep','https://www.reddit.com/r/NoFap/comments/3u4229/whatever_you_do_please_dont_just_sit_around/',NULL);
+INSERT INTO `links` VALUES (2448,'em','http://learn.genetics.utah.edu/content/addiction/brainchange/',1);
+INSERT INTO `links` VALUES (2449,'rej','https://www.reddit.com/r/NoFap/comments/3tf49s/getting_that_girl_wont_change_much_if_you_havent/',NULL);
+INSERT INTO `links` VALUES (2450,'dep','https://www.reddit.com/r/NoFap/comments/3tf49s/getting_that_girl_wont_change_much_if_you_havent/',1);
+INSERT INTO `links` VALUES (2451,'em','https://geniuslevelr.files.wordpress.com/2015/11/575b9712ed53872ac9b394a2efd58708.jpg',1);
+INSERT INTO `links` VALUES (2452,'rel','https://www.reddit.com/r/NoFap/comments/3uerfd/best_of_rnofap/',1);
+INSERT INTO `links` VALUES (2453,'dep','https://www.reddit.com/r/NoFap/comments/3uerfd/best_of_rnofap/',1);
+INSERT INTO `links` VALUES (2454,'rel','https://www.reddit.com/r/NoFap/comments/2sys2c/the_universal_laws_of_nofap/',NULL);
+INSERT INTO `links` VALUES (2455,'em','https://www.reddit.com/r/NoFap/comments/2sys2c/the_universal_laws_of_nofap/',NULL);
+INSERT INTO `links` VALUES (2456,'rel','https://www.reddit.com/r/NoFap/comments/17sfwj/the_guide_to_nofap/',NULL);
+INSERT INTO `links` VALUES (2457,'dep','https://www.reddit.com/r/NoFap/comments/17sfwj/the_guide_to_nofap/',NULL);
+INSERT INTO `links` VALUES (2458,'em','https://www.reddit.com/r/NoFap/comments/2i6zwv/superpowers_are_real_and_heres_how_to_get_them/',1);
+INSERT INTO `links` VALUES (2459,'dep','https://www.reddit.com/r/NoFap/comments/2i6zwv/superpowers_are_real_and_heres_how_to_get_them/',1);
+INSERT INTO `links` VALUES (2460,'dep','https://www.reddit.com/r/NoFap/comments/2i6zwv/superpowers_are_real_and_heres_how_to_get_them/',NULL);
+INSERT INTO `links` VALUES (2461,'rel','https://www.reddit.com/r/NoFap/comments/2bpcmj/stages_of_nofap/',NULL);
+INSERT INTO `links` VALUES (2462,'dep','https://www.reddit.com/r/NoFap/comments/2bpcmj/stages_of_nofap/',NULL);
+INSERT INTO `links` VALUES (2463,'rel','https://www.reddit.com/r/NoFap/comments/2bpcmj/stages_of_nofap/',NULL);
+INSERT INTO `links` VALUES (2464,'rel','http://www.yourbrainrebalanced.com/index.php?topic=15558.0',1);
+INSERT INTO `links` VALUES (2465,'rel','https://www.reddit.com/r/NoFap/comments/39omcd/im_really_excited_to_finally_get_this_to_you_guys/',NULL);
+INSERT INTO `links` VALUES (2466,'dep','https://www.reddit.com/r/NoFap/comments/39omcd/im_really_excited_to_finally_get_this_to_you_guys/',NULL);
+INSERT INTO `links` VALUES (2467,'dep','https://www.reddit.com/r/NoFap/comments/3defw5/i_challenge_you_10_ways_to_be_happier/',NULL);
+INSERT INTO `links` VALUES (2468,'dep','https://www.reddit.com/r/NoFap/comments/3defw5/i_challenge_you_10_ways_to_be_happier/',NULL);
+INSERT INTO `links` VALUES (2469,'em','https://www.reddit.com/r/NoFap/comments/2umfts/a_guide_how_to_quit_pmo/',1);
+INSERT INTO `links` VALUES (2470,'rel','https://www.reddit.com/r/NoFap/comments/2umfts/a_guide_how_to_quit_pmo/',1);
+INSERT INTO `links` VALUES (2471,'rel','https://www.reddit.com/r/NoFap/comments/2umfts/a_guide_how_to_quit_pmo/',1);
+INSERT INTO `links` VALUES (2472,'em','https://www.reddit.com/r/NoFap/comments/1tejif/the_big_list_of_tips_tricks/',NULL);
+INSERT INTO `links` VALUES (2473,'rel','https://www.reddit.com/r/NoFap/comments/1tejif/the_big_list_of_tips_tricks/',NULL);
+INSERT INTO `links` VALUES (2474,'dep','https://www.reddit.com/r/NoFap/comments/1tejif/the_big_list_of_tips_tricks/',NULL);
+INSERT INTO `links` VALUES (2475,'rej','https://www.reddit.com/r/NoFap/comments/1tejif/the_big_list_of_tips_tricks/',NULL);
+INSERT INTO `links` VALUES (2476,'rel','https://www.reddit.com/r/NoFap/comments/2dosnq/1_year_on_a_simple_tip_which_will_guarantee/',1);
+INSERT INTO `links` VALUES (2477,'em','https://www.reddit.com/r/NoFap/comments/1uth8n/the_list_of_greats/',NULL);
+INSERT INTO `links` VALUES (2478,'rel','https://www.reddit.com/r/NoFap/comments/1uth8n/the_list_of_greats/',NULL);
+INSERT INTO `links` VALUES (2479,'dep','https://www.reddit.com/r/NoFap/comments/1uth8n/the_list_of_greats/',NULL);
+INSERT INTO `links` VALUES (2480,'dep','http://www.begrateful.io/',1);
+INSERT INTO `links` VALUES (2481,'rej','http://www.begrateful.io/',NULL);
+INSERT INTO `links` VALUES (2482,'rel','https://www.reddit.com/r/NoFap/comments/3ws9vx/porn_makes_you_dumb_this_feels_so_true/',NULL);
+INSERT INTO `links` VALUES (2483,'rel','http://quotes.lifehack.org/media/quotes/quote-Gianni-Versace-i-never-fall-down-i-always-fight-99519.png',NULL);
+INSERT INTO `links` VALUES (2484,'rel','http://quotes.lifehack.org/media/quotes/quote-Gianni-Versace-i-never-fall-down-i-always-fight-99519.png',NULL);
+INSERT INTO `links` VALUES (2485,'rel','http://img.picturequotes.com/2/48/47070/always-fight-for-the-things-you-love-quote-1.jpg',1);
+INSERT INTO `links` VALUES (2486,'rel','http://i.quoteaddicts.com/media/q1/64197.png',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2181,4 +2227,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-20 10:46:26
+-- Dump completed on 2015-12-28 19:42:19
