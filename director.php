@@ -19,7 +19,13 @@ if ($cat != "bookmarklet") {
     }
 
     $IH = $DBH->prepare($insert);
-    $IH->execute(array(":cat" => $cat, ":platform" => $platform, ":ip" => $_SERVER['REMOTE_ADDR']));
+    $IH->execute(
+        array(
+            ":cat" => $cat, 
+            ":platform" => $platform,
+            ":ip" => $_SERVER['REMOTE_ADDR']
+        )
+    );
 
     $STH = $DBH->prepare($query);
     $STH->execute(array(":cat" => $cat));
@@ -43,9 +49,8 @@ if ($cat == "bookmarklet") {
     $query="select link from links where cat=:cat and religious is NULL order by RAND() limit 1";
     $STH = $DBH->prepare($query);
     $STH->execute(array(":cat" => "em"));
-    $result = $STH->fetch()[0];
 
-    echo '<script>window.location.href="' . $result . '";</script>';
+    echo '<script>window.location.href="' . $STH->fetch()[0] . '";</script>';
     echo "</body></html>";
 }
 
