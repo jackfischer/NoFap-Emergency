@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2701 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2708 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -398,10 +398,6 @@ INSERT INTO `links` VALUES (427,'em','http://i.imgur.com/7Zb9Z.png',NULL);
 INSERT INTO `links` VALUES (428,'em','http://infothread.org/Advice/Motivation/Ben%20Franklin.jpg',NULL);
 INSERT INTO `links` VALUES (429,'dep','http://infothread.org/Advice/Motivation/Ben%20Franklin.jpg',NULL);
 INSERT INTO `links` VALUES (430,'rel','http://infothread.org/Advice/Motivation/Ben%20Franklin.jpg',NULL);
-INSERT INTO `links` VALUES (431,'em','http://viralcircus.com/wp-content/uploads/2014/04/Zb0XeK3.jpg',NULL);
-INSERT INTO `links` VALUES (432,'rel','http://viralcircus.com/wp-content/uploads/2014/04/Zb0XeK3.jpg',NULL);
-INSERT INTO `links` VALUES (433,'rej','http://viralcircus.com/wp-content/uploads/2014/04/Zb0XeK3.jpg',NULL);
-INSERT INTO `links` VALUES (434,'dep','http://viralcircus.com/wp-content/uploads/2014/04/Zb0XeK3.jpg',NULL);
 INSERT INTO `links` VALUES (435,'em','http://i.imgur.com/4uMQO.jpg',NULL);
 INSERT INTO `links` VALUES (436,'rel','http://i.imgur.com/4uMQO.jpg',NULL);
 INSERT INTO `links` VALUES (437,'em','http://i.imgur.com/W9OTW.jpeg',NULL);
@@ -1634,7 +1630,6 @@ INSERT INTO `links` VALUES (1887,'rej','https://pbs.twimg.com/media/B_dgTA3XAAAe
 INSERT INTO `links` VALUES (1888,'dep','https://pbs.twimg.com/media/B_dgTA3XAAAendp.jpg',NULL);
 INSERT INTO `links` VALUES (1889,'em','https://pbs.twimg.com/media/B_7ga0HXIAAw7OL.jpg',NULL);
 INSERT INTO `links` VALUES (1890,'rel','https://pbs.twimg.com/media/CFe09DyWgAEyNKK.jpg',NULL);
-INSERT INTO `links` VALUES (1891,'em','http://static.fjcdn.com/pictures/Shall_992d2f_1184565.jpg',NULL);
 INSERT INTO `links` VALUES (1892,'rel','https://www.reddit.com/r/NoFap/comments/35tc2z/9_for_90_9_rules_that_helped_me_reach_90_days/',NULL);
 INSERT INTO `links` VALUES (1893,'rel','http://data1.whicdn.com/images/137433497/large.jpg',NULL);
 INSERT INTO `links` VALUES (1894,'rel','http://www.lookupquotes.com/quote_imgs/thumb/never_give_up_quotes.jpg',NULL);
@@ -1698,7 +1693,6 @@ INSERT INTO `links` VALUES (1955,'em','https://i.imgflip.com/mvw0p.jpg',NULL);
 INSERT INTO `links` VALUES (1956,'em','http://i.imgur.com/pE4mcXe.jpg',NULL);
 INSERT INTO `links` VALUES (1957,'em','https://www.youtube.com/watch?v=NuhhTnz5b-Q',1);
 INSERT INTO `links` VALUES (1958,'em','https://s-media-cache-ak0.pinimg.com/736x/b4/4e/9e/b44e9e5c5f235d57fa0e4ce2a11b9449.jpg',NULL);
-INSERT INTO `links` VALUES (1959,'em','http://static.fjcdn.com/pictures/No_d38df5_2287800.jpg',NULL);
 INSERT INTO `links` VALUES (1960,'em','http://i.lvme.me/hj7j6ox.jpg',NULL);
 INSERT INTO `links` VALUES (1961,'dep','http://i.lvme.me/hj7j6ox.jpg',NULL);
 INSERT INTO `links` VALUES (1962,'rej','http://i.lvme.me/hj7j6ox.jpg',NULL);
@@ -1720,7 +1714,6 @@ INSERT INTO `links` VALUES (1977,'em','http://i.imgur.com/n3RGs0O.gif',NULL);
 INSERT INTO `links` VALUES (1978,'rej','http://quotepixel.com/images/quotes/success/quote-print-on-canvas_12047-2.png',NULL);
 INSERT INTO `links` VALUES (1979,'rej','http://i.imgur.com/7q6w8Gd.png',NULL);
 INSERT INTO `links` VALUES (1980,'rej','http://quotes.lifehack.org/media/quotes/quote-Bo-Bennett-a-rejection-is-nothing-more-than-a-1966.png',NULL);
-INSERT INTO `links` VALUES (1981,'em','http://albausti.mynmi.net/wordpress/wp-content/uploads/2013/03/url2.jpeg',1);
 INSERT INTO `links` VALUES (1982,'rel','http://www.nofapacademy.com/',NULL);
 INSERT INTO `links` VALUES (1983,'em','https://www.reddit.com/r/NoFap/comments/2mx7tr/looking_into_her_eyes/',1);
 INSERT INTO `links` VALUES (1985,'dep','https://www.reddit.com/r/NoFap/comments/2mx7tr/looking_into_her_eyes/',1);
@@ -2291,7 +2284,6 @@ INSERT INTO `links` VALUES (2573,'rel','https://i.imgur.com/RJhLljA.png',NULL);
 INSERT INTO `links` VALUES (2574,'rel','https://i.imgur.com/RJhLljA.png',1);
 INSERT INTO `links` VALUES (2575,'rej','https://i.imgur.com/RJhLljA.png',NULL);
 INSERT INTO `links` VALUES (2576,'rej','https://i.imgur.com/RJhLljA.png',1);
-INSERT INTO `links` VALUES (2577,NULL,NULL,NULL);
 INSERT INTO `links` VALUES (2578,'dep','https://i.imgur.com/RJhLljA.png',NULL);
 INSERT INTO `links` VALUES (2579,'dep','https://i.imgur.com/RJhLljA.png',1);
 INSERT INTO `links` VALUES (2580,'rel','http://cdn.meme.am/instances/500x/63373653.jpg',NULL);
@@ -2415,6 +2407,13 @@ INSERT INTO `links` VALUES (2697,'rel','https://i.imgur.com/GazWaSf.jpg',NULL);
 INSERT INTO `links` VALUES (2698,'dep','https://i.imgur.com/GazWaSf.jpg',NULL);
 INSERT INTO `links` VALUES (2699,'rej','https://i.imgur.com/GazWaSf.jpg',NULL);
 INSERT INTO `links` VALUES (2700,'em','http://img-9gag-fun.9cache.com/photo/a3L4w61_700b_v1.jpg',NULL);
+INSERT INTO `links` VALUES (2701,'em','https://i.imgur.com/dciAXE5.jpg',NULL);
+INSERT INTO `links` VALUES (2702,'em','https://i.imgur.com/aa7oNy2.jpg',NULL);
+INSERT INTO `links` VALUES (2703,'em','http://cdn.zenpencils.com/wp-content/uploads/181_stonecutter.jpg',1);
+INSERT INTO `links` VALUES (2704,'rel','https://i.imgur.com/7dOyhlx.png',NULL);
+INSERT INTO `links` VALUES (2705,'rej','https://i.imgur.com/7dOyhlx.png',NULL);
+INSERT INTO `links` VALUES (2706,'dep','https://i.imgur.com/7dOyhlx.png',NULL);
+INSERT INTO `links` VALUES (2707,'rel','https://www.reddit.com/r/NoFap/comments/48immn/found_this_gem_in_an_old_text_document_really_hit/',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2427,4 +2426,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-01-31 10:53:04
+-- Dump completed on 2016-03-02 17:19:35

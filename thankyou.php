@@ -9,7 +9,7 @@
 <meta name="description" content="Submit a link for NoFap Emergency relapse prevention">
 <title>NoFap Emergency - Thank You!</title>
 <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
 <style>
@@ -35,7 +35,7 @@ if ( ($googleArray->{'success'} == 1) || isset($_POST['platform']) ){
     $IH = $DBH->prepare($insert);
     $IH->execute( array(":link" => $_POST['link'], ":comments" => $_POST["message"]) );
 
-    echo '<a href="http://emergency.nofap.com"> <div class="alert alert-success"
+    echo '<a href="/"> <div class="alert alert-success"
         style="opacity:1;" role="alert">Thank you!</div> </a>';
 } else {
     echo '<div class="alert alert-success" style="opacity:1;" role="alert">
