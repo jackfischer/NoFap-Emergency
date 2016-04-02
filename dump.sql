@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2708 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2730 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -395,9 +395,6 @@ INSERT INTO `links` VALUES (424,'em','http://i.imgur.com/1idiN4f.jpg',NULL);
 INSERT INTO `links` VALUES (425,'rel','http://i.imgur.com/1idiN4f.jpg',NULL);
 INSERT INTO `links` VALUES (426,'dep','http://i.imgur.com/1idiN4f.jpg',NULL);
 INSERT INTO `links` VALUES (427,'em','http://i.imgur.com/7Zb9Z.png',NULL);
-INSERT INTO `links` VALUES (428,'em','http://infothread.org/Advice/Motivation/Ben%20Franklin.jpg',NULL);
-INSERT INTO `links` VALUES (429,'dep','http://infothread.org/Advice/Motivation/Ben%20Franklin.jpg',NULL);
-INSERT INTO `links` VALUES (430,'rel','http://infothread.org/Advice/Motivation/Ben%20Franklin.jpg',NULL);
 INSERT INTO `links` VALUES (435,'em','http://i.imgur.com/4uMQO.jpg',NULL);
 INSERT INTO `links` VALUES (436,'rel','http://i.imgur.com/4uMQO.jpg',NULL);
 INSERT INTO `links` VALUES (437,'em','http://i.imgur.com/W9OTW.jpeg',NULL);
@@ -1017,10 +1014,6 @@ INSERT INTO `links` VALUES (1174,'em','http://bringitdaily.com/wp-content/upload
 INSERT INTO `links` VALUES (1176,'em','http://static5.quoteswave.com/wp-content/uploads/2012/10/Faith-is-the-art-of-holding-on-to-things.jpg',1);
 INSERT INTO `links` VALUES (1179,'rel','http://media.salemwebnetwork.com/ecards/quotes/cs-lewis-quote-better-things-550x320.jpg',NULL);
 INSERT INTO `links` VALUES (1180,'em','http://media.salemwebnetwork.com/ecards/quotes/cs-lewis-quote-better-things-550x320.jpg',NULL);
-INSERT INTO `links` VALUES (1181,'em','http://www.favething.com/uploads/images/main-fave-images/cs_lewis_quote-1.jpg',NULL);
-INSERT INTO `links` VALUES (1182,'em','http://www.favething.com/uploads/images/main-fave-images/cs_lewis_quote-1.jpg',1);
-INSERT INTO `links` VALUES (1183,'dep','http://www.favething.com/uploads/images/main-fave-images/cs_lewis_quote-1.jpg',NULL);
-INSERT INTO `links` VALUES (1184,'dep','http://www.favething.com/uploads/images/main-fave-images/cs_lewis_quote-1.jpg',1);
 INSERT INTO `links` VALUES (1185,'rel','http://www.wordsonimages.com/pics/58605-o.jpg',1);
 INSERT INTO `links` VALUES (1186,'dep','http://www.wordsonimages.com/pics/58605-o.jpg',1);
 INSERT INTO `links` VALUES (1187,'em','http://inspiringpretty.com/wp-content/uploads/2014/04/cs-lewis-quote-abuse-of-free-will.jpg',NULL);
@@ -1202,7 +1195,6 @@ INSERT INTO `links` VALUES (1398,'em','http://media-cache-ec0.pinimg.com/736x/74
 INSERT INTO `links` VALUES (1399,'dep','http://media-cache-ec0.pinimg.com/736x/74/89/bb/7489bb3463d828950424d24be81062f4.jpg',1);
 INSERT INTO `links` VALUES (1400,'dep','http://media-cache-ec0.pinimg.com/736x/74/89/bb/7489bb3463d828950424d24be81062f4.jpg',1);
 INSERT INTO `links` VALUES (1401,'em','http://4.bp.blogspot.com/_Fhd2UZ0pRYs/TB-7Di01KVI/AAAAAAAAAqk/05n5j0V0cDM/s1600/pray1.png',1);
-INSERT INTO `links` VALUES (1402,'em','http://images.sodahead.com/profiles/0/0/3/0/2/1/1/7/9/prayer-83176450739.png',1);
 INSERT INTO `links` VALUES (1403,'em','http://www.inspire21.com/sites/default/files/imagecache/lightbox/wings_eagles_isaiah_0.jpg',1);
 INSERT INTO `links` VALUES (1404,'em','http://www.reddit.com/r/NoFapChristians/comments/2nfv12/it_is_for_freedom_that_christ_has_set_us_free/',1);
 INSERT INTO `links` VALUES (1405,'em','http://www.reddit.com/r/NoFapChristians/comments/2lt7wk/scratching_the_itch_only_makes_it_worse/',1);
@@ -1834,11 +1826,6 @@ INSERT INTO `links` VALUES (2105,'rel','http://addicted2success.com/wp-content/u
 INSERT INTO `links` VALUES (2106,'rej','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
 INSERT INTO `links` VALUES (2107,'dep','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
 INSERT INTO `links` VALUES (2108,'em','http://orig04.deviantart.net/d7a2/f/2009/266/4/4/harder_better_faster_stronger_by_abhijitdara.jpg',NULL);
-INSERT INTO `links` VALUES (2111,'em','http://hdwpics.com/images/2026C4765D4F/Finish-What-You-Start.jpg',NULL);
-INSERT INTO `links` VALUES (2112,'em','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
-INSERT INTO `links` VALUES (2113,'rel','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
-INSERT INTO `links` VALUES (2114,'rej','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
-INSERT INTO `links` VALUES (2115,'dep','http://wallpapers.downgy.com/wp-content/uploads/2015/04/29-Motivational-Quotes-For-Work-That-Tell-You-Quitting-Sucks-8.jpg',NULL);
 INSERT INTO `links` VALUES (2116,'em','http://i.imgur.com/i3cpfr8.jpg',NULL);
 INSERT INTO `links` VALUES (2117,'dep','http://i.imgur.com/i3cpfr8.jpg',NULL);
 INSERT INTO `links` VALUES (2118,'rel','http://i.imgur.com/i3cpfr8.jpg',NULL);
@@ -2014,7 +2001,6 @@ INSERT INTO `links` VALUES (2299,'em','https://i.imgur.com/QGEXuAQ.jpg',NULL);
 INSERT INTO `links` VALUES (2300,'em','https://www.reddit.com/r/NoFap/comments/3m0f8v/youre_a_lion_trying_to_run_away_from_a_gazelle/',NULL);
 INSERT INTO `links` VALUES (2301,'rel','https://www.reddit.com/r/NoFap/comments/3m0f8v/youre_a_lion_trying_to_run_away_from_a_gazelle/',NULL);
 INSERT INTO `links` VALUES (2302,'dep','https://www.reddit.com/r/NoFap/comments/3m0f8v/youre_a_lion_trying_to_run_away_from_a_gazelle/',NULL);
-INSERT INTO `links` VALUES (2303,'em','https://www.reddit.com/r/NoFap/comments/3lujq5/penis_spoke_to_me_today/',NULL);
 INSERT INTO `links` VALUES (2304,'em','http://i.imgur.com/vE5wBvc.png',NULL);
 INSERT INTO `links` VALUES (2305,'em','https://i.imgur.com/67aHKhF.jpg',NULL);
 INSERT INTO `links` VALUES (2306,'rel','https://i.imgur.com/67aHKhF.jpg',NULL);
@@ -2059,7 +2045,6 @@ INSERT INTO `links` VALUES (2344,'dep','http://motivationalgymquotes.com/wp-cont
 INSERT INTO `links` VALUES (2345,'rel','http://motivationalgymquotes.com/wp-content/uploads/2014/10/your_future_created_what_you_do_today_not_tomorrow.jpg',NULL);
 INSERT INTO `links` VALUES (2346,'rel','http://motivationalgymquotes.com/wp-content/uploads/2015/07/your_life_does_not_get_better_by_chance_gets_better_change.jpg',NULL);
 INSERT INTO `links` VALUES (2347,'dep','http://motivationalgymquotes.com/wp-content/uploads/2015/07/your_life_does_not_get_better_by_chance_gets_better_change.jpg',NULL);
-INSERT INTO `links` VALUES (2348,'rel','http://motivationalgymquotes.com/wp-content/uploads/2014/08/if_stopping_short_my_best_only_person_cheating_is_me.jpg',NULL);
 INSERT INTO `links` VALUES (2349,'em','http://motivationalgymquotes.com/wp-content/uploads/2014/04/bigger_challenge_greater_rewards.jpg',NULL);
 INSERT INTO `links` VALUES (2350,'rel','http://motivationalgymquotes.com/wp-content/uploads/2014/04/bigger_challenge_greater_rewards.jpg',NULL);
 INSERT INTO `links` VALUES (2351,'em','http://motivationalgymquotes.com/wp-content/uploads/2014/09/believe_in_yourself_all_you_are_greater_obstacle.jpg',NULL);
@@ -2414,6 +2399,28 @@ INSERT INTO `links` VALUES (2704,'rel','https://i.imgur.com/7dOyhlx.png',NULL);
 INSERT INTO `links` VALUES (2705,'rej','https://i.imgur.com/7dOyhlx.png',NULL);
 INSERT INTO `links` VALUES (2706,'dep','https://i.imgur.com/7dOyhlx.png',NULL);
 INSERT INTO `links` VALUES (2707,'rel','https://www.reddit.com/r/NoFap/comments/48immn/found_this_gem_in_an_old_text_document_really_hit/',NULL);
+INSERT INTO `links` VALUES (2708,'em','https://i.imgur.com/QGEXuAQ.jpg',NULL);
+INSERT INTO `links` VALUES (2709,'em','https://i.imgur.com/QGEXuAQ.jpg',NULL);
+INSERT INTO `links` VALUES (2710,'dep','https://i.imgur.com/QGEXuAQ.jpg',NULL);
+INSERT INTO `links` VALUES (2711,'rel','https://s-media-cache-ak0.pinimg.com/736x/4f/a9/a7/4fa9a7dfccc48a7f480c25b1c88b9df9.jpg',NULL);
+INSERT INTO `links` VALUES (2712,'rej','https://s-media-cache-ak0.pinimg.com/736x/4f/a9/a7/4fa9a7dfccc48a7f480c25b1c88b9df9.jpg',NULL);
+INSERT INTO `links` VALUES (2713,'rel','https://i.imgur.com/PbANIW0.jpg',NULL);
+INSERT INTO `links` VALUES (2714,'rej','https://i.imgur.com/PbANIW0.jpg',NULL);
+INSERT INTO `links` VALUES (2715,'em','https://s-media-cache-ak0.pinimg.com/736x/69/4a/77/694a77ec5c494abd071277319105c48a.jpg',NULL);
+INSERT INTO `links` VALUES (2716,'dep','https://s-media-cache-ak0.pinimg.com/736x/69/4a/77/694a77ec5c494abd071277319105c48a.jpg',NULL);
+INSERT INTO `links` VALUES (2717,'rej','https://s-media-cache-ak0.pinimg.com/736x/69/4a/77/694a77ec5c494abd071277319105c48a.jpg',NULL);
+INSERT INTO `links` VALUES (2718,'em','http://i.imgur.com/60lqie1.jpg',NULL);
+INSERT INTO `links` VALUES (2719,'rej','http://i.imgur.com/60lqie1.jpg',NULL);
+INSERT INTO `links` VALUES (2720,'dep','http://i.imgur.com/60lqie1.jpg',NULL);
+INSERT INTO `links` VALUES (2721,'rej','http://www.lovethispic.com/uploaded_images/64182-Tough-Times-Don-t-Last-People-Do.jpg',NULL);
+INSERT INTO `links` VALUES (2722,'dep','http://www.lovethispic.com/uploaded_images/64182-Tough-Times-Don-t-Last-People-Do.jpg',NULL);
+INSERT INTO `links` VALUES (2723,'rel','http://www.pixteller.com/pdata/t/l-40994.jpg',NULL);
+INSERT INTO `links` VALUES (2724,'rel','http://www.pixteller.com/pdata/t/l-40994.jpg',NULL);
+INSERT INTO `links` VALUES (2725,'rel','https://s-media-cache-ak0.pinimg.com/736x/1d/91/b9/1d91b9c7bb2162b0d54a3309be2d9437.jpg',1);
+INSERT INTO `links` VALUES (2726,'dep','http://media-cache-ak0.pinimg.com/736x/36/a3/5b/36a35b2f394318da25865ebdea3fd52c.jpg',NULL);
+INSERT INTO `links` VALUES (2727,'rej','http://media-cache-ak0.pinimg.com/736x/36/a3/5b/36a35b2f394318da25865ebdea3fd52c.jpg',NULL);
+INSERT INTO `links` VALUES (2728,'dep','https://i.imgur.com/4NtT9BQ.jpg',NULL);
+INSERT INTO `links` VALUES (2729,'rej','https://i.imgur.com/4NtT9BQ.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2426,4 +2433,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-02 17:19:35
+-- Dump completed on 2016-04-01 20:29:40

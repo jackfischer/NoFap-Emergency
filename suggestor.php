@@ -44,7 +44,7 @@ ga('send', 'pageview');
     <button type="submit" name="submit" class="col-xs-8 col-xs-offset-2 btn btn-default"><b>Submit</b></button>
 </form>
 
-<form  action="mailto:trump6@gmail.com">
+<form  action="mailto:app@nofap.com">
     <button type="submit" style="margin-top:10% !important;" class="col-xs-10 col-xs-offset-1 btn btn-default">Other problem/suggestion? Email us</button>
 </form>
 
