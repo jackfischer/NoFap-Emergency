@@ -89,10 +89,10 @@ $(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
 $(nofap).click(function(){window.location.href="https://nofap.com"});
 
-function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""};
+function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 
 var religiousCheck=getCookie("religious");
-if(religiousCheck==""){
+if(religiousCheck===""){
 $('head').append($('<link rel="stylesheet" type="text/css"/>').attr('href','resources/arrow.css'));
 $(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});
 $(hint).delay(4000).fadeOut("slow");
