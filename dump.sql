@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.49, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.50, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: posts
 -- ------------------------------------------------------
--- Server version	5.5.49-0ubuntu0.14.04.1
+-- Server version	5.5.50-0ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3293 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3318 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1039,10 +1039,6 @@ INSERT INTO `links` VALUES (1222,'em','http://media02.hongkiat.com/black_wallpap
 INSERT INTO `links` VALUES (1226,'em','http://brightdrops.com/wp-content/uploads/2013/10/drseussyouhavebrainsinyourhead.jpg',NULL);
 INSERT INTO `links` VALUES (1235,'em','http://runningwildblogdotcom.files.wordpress.com/2013/08/motivation.jpg',NULL);
 INSERT INTO `links` VALUES (1236,'em','http://media-cache-ak0.pinimg.com/236x/70/13/34/7013341f36e1a6af78f724c85721d829.jpg',1);
-INSERT INTO `links` VALUES (1242,'em','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
-INSERT INTO `links` VALUES (1243,'em','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
-INSERT INTO `links` VALUES (1244,'em','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
-INSERT INTO `links` VALUES (1245,'dep','https://d22d7v2y1t140g.cloudfront.net/m_2035721_FhRFyvjZAchZ.jpg',1);
 INSERT INTO `links` VALUES (1246,'em','http://media-cache-ec0.pinimg.com/736x/f2/fd/37/f2fd37e9df70342c265324ebf9a10630.jpg',1);
 INSERT INTO `links` VALUES (1247,'rel','http://media-cache-ec0.pinimg.com/736x/f2/fd/37/f2fd37e9df70342c265324ebf9a10630.jpg',1);
 INSERT INTO `links` VALUES (1248,'dep','http://media-cache-ec0.pinimg.com/736x/f2/fd/37/f2fd37e9df70342c265324ebf9a10630.jpg',1);
@@ -1518,8 +1514,6 @@ INSERT INTO `links` VALUES (1783,'em','https://www.youtube.com/watch?v=KxGRhd_iW
 INSERT INTO `links` VALUES (1784,'rel','https://www.youtube.com/watch?v=KxGRhd_iWuE',NULL);
 INSERT INTO `links` VALUES (1785,'dep','https://www.youtube.com/watch?v=KxGRhd_iWuE',NULL);
 INSERT INTO `links` VALUES (1786,'rej','https://www.youtube.com/watch?v=KxGRhd_iWuE',NULL);
-INSERT INTO `links` VALUES (1787,'em','https://www.reddit.com/r/NoFap/comments/2x862c/so_you_want_to_fap_this_is_what_i_have_learnt/',NULL);
-INSERT INTO `links` VALUES (1788,'dep','https://www.reddit.com/r/NoFap/comments/2x862c/so_you_want_to_fap_this_is_what_i_have_learnt/',NULL);
 INSERT INTO `links` VALUES (1789,'em','http://www.openbible.info/topics/temptation',1);
 INSERT INTO `links` VALUES (1790,'em','http://www.openbible.info/topics/temptation',1);
 INSERT INTO `links` VALUES (1791,'dep','http://www.openbible.info/topics/temptation',1);
@@ -1814,7 +1808,6 @@ INSERT INTO `links` VALUES (2104,'em','http://addicted2success.com/wp-content/up
 INSERT INTO `links` VALUES (2105,'rel','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
 INSERT INTO `links` VALUES (2106,'rej','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
 INSERT INTO `links` VALUES (2107,'dep','http://addicted2success.com/wp-content/uploads/2011/12/If-it-wasnt-hard-everyone-would-do-it.png',NULL);
-INSERT INTO `links` VALUES (2108,'em','http://orig04.deviantart.net/d7a2/f/2009/266/4/4/harder_better_faster_stronger_by_abhijitdara.jpg',NULL);
 INSERT INTO `links` VALUES (2116,'em','http://i.imgur.com/i3cpfr8.jpg',NULL);
 INSERT INTO `links` VALUES (2117,'dep','http://i.imgur.com/i3cpfr8.jpg',NULL);
 INSERT INTO `links` VALUES (2118,'rel','http://i.imgur.com/i3cpfr8.jpg',NULL);
@@ -1952,8 +1945,6 @@ INSERT INTO `links` VALUES (2256,'rel','http://cutelovequotesforher.org/wp-conte
 INSERT INTO `links` VALUES (2257,'dep','http://cutelovequotesforher.org/wp-content/uploads/2015/03/theodore-roosevelt-quotes-on-leadership.jpeg',NULL);
 INSERT INTO `links` VALUES (2258,'em','http://cutelovequotesforher.org/wp-content/uploads/2015/03/theodore-teddy-roosevelt-quotes.jpg',NULL);
 INSERT INTO `links` VALUES (2259,'rel','http://cutelovequotesforher.org/wp-content/uploads/2015/03/theodore-teddy-roosevelt-quotes.jpg',NULL);
-INSERT INTO `links` VALUES (2260,'rel','http://istanabagus.com/wp-content/uploads/2014/10/theodore-roosevelt-quotes-5.jpg',NULL);
-INSERT INTO `links` VALUES (2261,'rel','http://istanabagus.com/wp-content/uploads/2014/10/theodore-roosevelt-quotes-5.jpg',NULL);
 INSERT INTO `links` VALUES (2262,'em','http://www.categoryfive.co/wp-content/uploads/2014/11/Roosevelt.jpg',NULL);
 INSERT INTO `links` VALUES (2263,'rel','http://www.categoryfive.co/wp-content/uploads/2014/11/Roosevelt.jpg',NULL);
 INSERT INTO `links` VALUES (2264,'em','https://i.imgur.com/n5F1sQe.png',NULL);
@@ -2909,6 +2900,31 @@ INSERT INTO `links` VALUES (3289,'dep','https://www.youtube.com/watch?v=ZSt9tm3R
 INSERT INTO `links` VALUES (3290,'em','http://i.imgur.com/OPdGqUy.png',NULL);
 INSERT INTO `links` VALUES (3291,'dep','http://i.imgur.com/OPdGqUy.png',NULL);
 INSERT INTO `links` VALUES (3292,'rel','http://i.imgur.com/OPdGqUy.png',NULL);
+INSERT INTO `links` VALUES (3293,'dep','https://pbs.twimg.com/media/CVnd2vFWcAA4DS5.jpg',NULL);
+INSERT INTO `links` VALUES (3294,'rel','https://pbs.twimg.com/media/CVnd2vFWcAA4DS5.jpg',NULL);
+INSERT INTO `links` VALUES (3295,'dep','https://pbs.twimg.com/media/CVYNK8sXAAAjBDR.jpg',NULL);
+INSERT INTO `links` VALUES (3296,'rel','https://www.jamesvincent.life/wp-content/uploads/2015/05/motivational-quotes-273.jpg',NULL);
+INSERT INTO `links` VALUES (3297,'dep','https://www.jamesvincent.life/wp-content/uploads/2015/05/motivational-quotes-273.jpg',NULL);
+INSERT INTO `links` VALUES (3298,'rej','https://www.jamesvincent.life/wp-content/uploads/2015/05/motivational-quotes-273.jpg',NULL);
+INSERT INTO `links` VALUES (3299,'em','https://www.reddit.com/r/NoFap/comments/3we2ju/so_you_want_to_relapse/',NULL);
+INSERT INTO `links` VALUES (3300,'dep','https://www.reddit.com/r/NoFap/comments/40y659/a_decade_of_addiction_and_two_years_of_recovery_a/',NULL);
+INSERT INTO `links` VALUES (3301,'rel','https://www.reddit.com/r/NoFap/comments/4981ji/keep_trying_heres_why_you_should/',NULL);
+INSERT INTO `links` VALUES (3302,'dep','https://www.reddit.com/r/NoFap/comments/4981ji/keep_trying_heres_why_you_should/',NULL);
+INSERT INTO `links` VALUES (3303,'dep','http://brightdrops.com/wp-content/uploads/2013/10/davidlivingstonquote.jpg',NULL);
+INSERT INTO `links` VALUES (3304,'rel','http://brightdrops.com/wp-content/uploads/2013/10/tedwilliamsjustkeepgoing.jpg',NULL);
+INSERT INTO `links` VALUES (3305,'rej','http://brightdrops.com/wp-content/uploads/2013/10/tedwilliamsjustkeepgoing.jpg',NULL);
+INSERT INTO `links` VALUES (3306,'rel','http://brightdrops.com/wp-content/uploads/2014/05/nelsonmandelaitalwaysseemsimpossible.jpg',NULL);
+INSERT INTO `links` VALUES (3307,'rel','https://www.reddit.com/r/NoFap/comments/4a9sle/its_a_relapse_dude_you_didnt_kill_anyone_learn_to/',NULL);
+INSERT INTO `links` VALUES (3308,'em','http://4.bp.blogspot.com/_RG-OzuKmezY/TCbnNNXvCnI/AAAAAAAAAgE/2Sy0F1Uv8L4/s1600/oh+no+you+don\'t+get+off+the+internet.JPG',NULL);
+INSERT INTO `links` VALUES (3309,'em','http://i.imgur.com/ymHhSeL.jpg',NULL);
+INSERT INTO `links` VALUES (3310,'dep','https://www.quora.com/Life-Lessons-What-can-I-learn-in-one-minute-that-will-be-useful-for-the-rest-of-my-life-1/answer/Steven-N-Czetli',NULL);
+INSERT INTO `links` VALUES (3311,'em','https://www.reddit.com/r/NoFap/comments/4azwel/fk_your_symptoms_fk_your_urges_your_time_is_your/',NULL);
+INSERT INTO `links` VALUES (3312,'rel','https://www.reddit.com/r/NoFap/comments/4azwel/fk_your_symptoms_fk_your_urges_your_time_is_your/',NULL);
+INSERT INTO `links` VALUES (3313,'rel','https://www.reddit.com/r/NoFap/comments/4aon2z/time_will_expose_you_as_a_fraud/',NULL);
+INSERT INTO `links` VALUES (3314,'rel','https://www.reddit.com/r/NoFap/comments/22rb7d/different_stages_of_nofap_withdrawals/',NULL);
+INSERT INTO `links` VALUES (3315,'rel','http://www.godswordimages.com/uploads/categories/self-control/large/1-corinthians-10_13.jpg',1);
+INSERT INTO `links` VALUES (3316,'rel','http://www.thequotepedia.com/images/02/you-build-on-failure-you-use-it-as-a-stepping-stone-close-the-door-on-the-past-you-don-t-try-to-johnny-cash.jpg',NULL);
+INSERT INTO `links` VALUES (3317,'rej','http://www.thequotepedia.com/images/02/you-build-on-failure-you-use-it-as-a-stepping-stone-close-the-door-on-the-past-you-don-t-try-to-johnny-cash.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2921,4 +2937,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-07-03 13:17:41
+-- Dump completed on 2016-08-09 15:05:21

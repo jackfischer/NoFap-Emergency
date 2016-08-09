@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" href="icons/touchicon.png">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/skins/line/grey.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.1/icheck.min.js"></script>
 
 <style>
@@ -29,15 +29,15 @@ body,html{text-align:center;height:100%;-webkit-user-select:none}
 #ios{background:#9fadae}#ios:hover{background:#ecf0f1}
 #android{background:#7f8c8d}#android:hover{background:#bdc3c7}
 .app-icon{max-width:135px;max-height:40px}
-.cross{height:50%;margin-right:5%;margin-bottom:2%}
+.cross{height:50%;margin-right:4%;margin-left:-2%;margin-bottom:3%}
 .nficon{height:50%}
-#footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color: #999999;z-index:4}
+#footer{text-wrap:unrestricted;padding-bottom:5px;font-size:1.05em;vertical-align:middle;color:#999999;z-index:4}
 #religious{position:fixed;right:20px;top:20px;z-index:3}
 #mobilereligious{display:none;}
 @media only screen and (max-width:768px){
     .pbutton{width:100%}
-    #emergency{height:40.5%}#rejection,#relapsed{height:15%}#depression{height:30%}
-    .cross{margin-right:4%}
+    #emergency{height:40%}#rejection,#relapsed{height:15%}#depression{height:30%}
+    .cross{height:40%;margin-right:3%}
     #hint,#religious,#ios,#android,#footer{display:none}
     #mobilereligious{position:fixed;top:8px;right:8px;display:inline;z-index:3}
 }
@@ -50,7 +50,7 @@ body,html{text-align:center;height:100%;-webkit-user-select:none}
 <button onclick="api('dep')" id="depression" class="pbutton col-sm-6 col-xs-12">Depression</button>
 <button onclick="api('rel')" id="relapsed" class="pbutton col-sm-3 col-xs-12">Relapsed</button>
 
-<button id="suggest" class="footer-button col-sm-3 col-xs-12"><img src="icons/redcross.png" class="cross">Submit</button>
+<button id="suggest" class="footer-button col-sm-3 col-xs-12">Submit</button>
 <button id="nofap" class="footer-button col-sm-3 col-xs-12"><img src="icons/nofap.png" class="nficon"></button>
 <button id="ios" class="footer-button col-sm-3 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" class="app-icon" src="icons/appstore.svg" /></a></button>
 <button id="android" class="footer-button col-sm-3 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" class="app-icon" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a></button>
