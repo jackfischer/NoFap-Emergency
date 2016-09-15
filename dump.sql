@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.50, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.52, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: posts
 -- ------------------------------------------------------
--- Server version	5.5.50-0ubuntu0.14.04.1
+-- Server version	5.5.52-0ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3318 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3325 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -372,16 +372,10 @@ INSERT INTO `links` VALUES (395,'rel','http://i.imgur.com/qsNgtt5.jpg?1',NULL);
 INSERT INTO `links` VALUES (396,'em','http://media.tumblr.com/d7e679ae67458b5c6c4db125f061f6a3/tumblr_inline_mx5atllhpo1rrc78e.gif',NULL);
 INSERT INTO `links` VALUES (397,'em','http://fapstronaut.files.wordpress.com/2013/01/copy-fapstronaut3.png',NULL);
 INSERT INTO `links` VALUES (401,'em','http://i.imgur.com/APWSKgB.png',NULL);
-INSERT INTO `links` VALUES (402,'em','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/life-goals.jpg',NULL);
-INSERT INTO `links` VALUES (403,'dep','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/life-goals.jpg',NULL);
-INSERT INTO `links` VALUES (404,'rej','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/life-goals.jpg',NULL);
 INSERT INTO `links` VALUES (405,'em','http://i.imgur.com/4uMQO.jpg',NULL);
 INSERT INTO `links` VALUES (406,'rel','http://i.imgur.com/4uMQO.jpg',NULL);
 INSERT INTO `links` VALUES (407,'em','http://i.imgur.com/z6iXSr8.jpg',NULL);
 INSERT INTO `links` VALUES (408,'rel','http://i.imgur.com/z6iXSr8.jpg',NULL);
-INSERT INTO `links` VALUES (409,'em','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/plato.jpg',NULL);
-INSERT INTO `links` VALUES (410,'rel','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/plato.jpg',NULL);
-INSERT INTO `links` VALUES (411,'rej','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/plato.jpg',NULL);
 INSERT INTO `links` VALUES (412,'em','http://i.imgur.com/usNaf.jpg',NULL);
 INSERT INTO `links` VALUES (413,'em','http://www.primermagazine.com/wp-content/uploads/2012/10/BetterMan/BetterMan_wall.jpg',NULL);
 INSERT INTO `links` VALUES (414,'rej','http://www.primermagazine.com/wp-content/uploads/2012/10/BetterMan/BetterMan_wall.jpg',NULL);
@@ -425,7 +419,6 @@ INSERT INTO `links` VALUES (467,'rel','http://cdn.builtlean.com/wp-content/uploa
 INSERT INTO `links` VALUES (468,'em','http://cdn.builtlean.com/wp-content/uploads/2013/04/motivational-images-10.jpg',NULL);
 INSERT INTO `links` VALUES (469,'dep','http://cdn.builtlean.com/wp-content/uploads/2013/04/motivational-images-10.jpg',NULL);
 INSERT INTO `links` VALUES (470,'rej','http://cdn.builtlean.com/wp-content/uploads/2013/04/motivational-images-10.jpg',NULL);
-INSERT INTO `links` VALUES (471,'em','http://www.nofap.org/wp-content/gallery/nofap-wallpapers/fire-fapstronaut.jpg',NULL);
 INSERT INTO `links` VALUES (472,'em','http://quotes.lifehack.org/media/quotes/quote-Muhammad-Ali-dont-count-the-days-make-the-days-80.png',NULL);
 INSERT INTO `links` VALUES (473,'rel','http://quotes.lifehack.org/media/quotes/quote-Muhammad-Ali-dont-count-the-days-make-the-days-80.png',NULL);
 INSERT INTO `links` VALUES (474,'dep','http://quotes.lifehack.org/media/quotes/quote-Muhammad-Ali-dont-count-the-days-make-the-days-80.png',NULL);
@@ -1393,7 +1386,6 @@ INSERT INTO `links` VALUES (1632,'em','https://www.youtube.com/watch?v=BirIEDYrw
 INSERT INTO `links` VALUES (1633,'em','http://youtu.be/3ZmdAWxI_J8?t=46s',NULL);
 INSERT INTO `links` VALUES (1634,'em','http://youtu.be/3ZmdAWxI_J8?t=46s',NULL);
 INSERT INTO `links` VALUES (1636,'rel','http://ldssmile.com/wp-content/uploads/2013/10/Motivational-inspirational-meme.jpg',NULL);
-INSERT INTO `links` VALUES (1639,'rel','http://blog.gyminsight.com/wp-content/uploads/2013/09/Motivational-Saying-e1380591759769.jpg',NULL);
 INSERT INTO `links` VALUES (1640,'em','http://i.imgur.com/iOHef.jpg',NULL);
 INSERT INTO `links` VALUES (1642,'rel','http://dailysnark.com/wp-content/gallery/10motivational/111689.jpg',NULL);
 INSERT INTO `links` VALUES (1644,'em','http://3.bp.blogspot.com/-HkJ19jdF7ho/UnOWGounUhI/AAAAAAAAAiw/DzZqvvl5NrQ/s1600/394410_641390695887494_2023634822_n.png',NULL);
@@ -2606,7 +2598,6 @@ INSERT INTO `links` VALUES (2992,'rel','http://40.media.tumblr.com/a54e2e5ad0fde
 INSERT INTO `links` VALUES (2993,'em','http://nofap.com/forum/index.php?threads/how-to-beat-laziness-and-do-things-that-feels-better-than-porn.49732/',NULL);
 INSERT INTO `links` VALUES (2994,'dep','http://nofap.com/forum/index.php?threads/how-to-beat-laziness-and-do-things-that-feels-better-than-porn.49732/',NULL);
 INSERT INTO `links` VALUES (2995,'dep','https://www.reddit.com/r/NoFap/comments/3q103o/5_superpowers_examined/',NULL);
-INSERT INTO `links` VALUES (2996,'rel','http://cmster.com/media/44Inp1iwdWeTi5cTgSRtPmjxa2Q6QTpXenVQLOX8bOy7iXsvezfcTaeQUTMxjlfK.jpg',1);
 INSERT INTO `links` VALUES (2997,'rel','http://40.media.tumblr.com/df76ca9abf7144457417c7799887c713/tumblr_mrtk48XqgE1sem4coo1_500.jpg',NULL);
 INSERT INTO `links` VALUES (2998,'dep','http://40.media.tumblr.com/df76ca9abf7144457417c7799887c713/tumblr_mrtk48XqgE1sem4coo1_500.jpg',NULL);
 INSERT INTO `links` VALUES (2999,'rej','http://40.media.tumblr.com/df76ca9abf7144457417c7799887c713/tumblr_mrtk48XqgE1sem4coo1_500.jpg',NULL);
@@ -2925,6 +2916,13 @@ INSERT INTO `links` VALUES (3314,'rel','https://www.reddit.com/r/NoFap/comments/
 INSERT INTO `links` VALUES (3315,'rel','http://www.godswordimages.com/uploads/categories/self-control/large/1-corinthians-10_13.jpg',1);
 INSERT INTO `links` VALUES (3316,'rel','http://www.thequotepedia.com/images/02/you-build-on-failure-you-use-it-as-a-stepping-stone-close-the-door-on-the-past-you-don-t-try-to-johnny-cash.jpg',NULL);
 INSERT INTO `links` VALUES (3317,'rej','http://www.thequotepedia.com/images/02/you-build-on-failure-you-use-it-as-a-stepping-stone-close-the-door-on-the-past-you-don-t-try-to-johnny-cash.jpg',NULL);
+INSERT INTO `links` VALUES (3318,'em','http://www.nofap.com/wp-content/gallery/nofap-wallpapers/life-goals.jpg',NULL);
+INSERT INTO `links` VALUES (3319,'dep','http://www.nofap.com/wp-content/gallery/nofap-wallpapers/life-goals.jpg',NULL);
+INSERT INTO `links` VALUES (3320,'rej','http://www.nofap.com/wp-content/gallery/nofap-wallpapers/life-goals.jpg',NULL);
+INSERT INTO `links` VALUES (3321,'em','https://www.nofap.com/wp-content/gallery/nofap-wallpapers/plato.jpg',NULL);
+INSERT INTO `links` VALUES (3322,'rel','https://www.nofap.com/wp-content/gallery/nofap-wallpapers/plato.jpg',NULL);
+INSERT INTO `links` VALUES (3323,'rej','https://www.nofap.com/wp-content/gallery/nofap-wallpapers/plato.jpg',NULL);
+INSERT INTO `links` VALUES (3324,'em','https://www.nofap.com/wp-content/gallery/nofap-wallpapers/fire-fapstronaut.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2937,4 +2935,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-08-09 15:05:21
+-- Dump completed on 2016-09-15 12:34:09
