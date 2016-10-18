@@ -15,23 +15,25 @@ if ($cat != "bookmarklet") {
     }
     else {
         $query = "select link from links where cat=:cat and religious is NULL order by RAND() limit 1";
-        $insert = "insert into events (cat, timestamp, platform, ip) values (:cat, CURRENT_TIMESTAMP, :platform, :ip)";
+        $insert = "insert into events (cat, timestamp, platform, ip, link) values (:cat, CURRENT_TIMESTAMP, :platform, :ip, :link)";
     }
+
+    $STH = $DBH->prepare($query);
+    $STH->execute(array(":cat" => $cat));
+    $outputlink = $STH->fetch()[0];
 
     $IH = $DBH->prepare($insert);
     $IH->execute(
         array(
             ":cat" => $cat, 
             ":platform" => $platform,
-            ":ip" => $_SERVER['REMOTE_ADDR']
+            ":ip" => $_SERVER['REMOTE_ADDR'],
+            ":link" => $outputlink
         )
     );
 
-    $STH = $DBH->prepare($query);
-    $STH->execute(array(":cat" => $cat));
-
     header("Access-Control-Allow-Origin: *");
-    echo $STH->fetch()[0];
+    echo $outputlink;
 }
 
 
