@@ -11,7 +11,7 @@ $platform = $_GET["platform"];
 if ($cat != "bookmarklet") {
     if($_GET["religious"] == "true") {
         $query = "select link from links where cat=:cat order by RAND() limit 1";
-        $insert = "insert into events (cat, timestamp, religious, platform, ip) values (:cat, CURRENT_TIMESTAMP, 1, :platform, :ip)";
+        $insert = "insert into events (cat, timestamp, religious, platform, ip, link) values (:cat, CURRENT_TIMESTAMP, 1, :platform, :ip, :link)";
     }
     else {
         $query = "select link from links where cat=:cat and religious is NULL order by RAND() limit 1";
