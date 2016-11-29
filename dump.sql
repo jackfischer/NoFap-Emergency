@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3349 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3377 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -758,7 +758,6 @@ INSERT INTO `links` VALUES (891,'em','http://www.reddit.com/r/NoFap/comments/2i2
 INSERT INTO `links` VALUES (892,'rel','http://www.reddit.com/r/NoFap/comments/2i2sgo/me_3_months_ago_vs_me_now/',NULL);
 INSERT INTO `links` VALUES (893,'em','https://www.facebook.com/HappyGoHappyGoLucky/photos/a.409020619188875.96083.406830599407877/713663012057966/',NULL);
 INSERT INTO `links` VALUES (895,'em','http://youtu.be/sIiTeYj0Ufc?t=4m40s',NULL);
-INSERT INTO `links` VALUES (896,'em','http://youtu.be/Vb4vileb-u4?t=3m35s',NULL);
 INSERT INTO `links` VALUES (897,'em','http://youtu.be/5TNhS81w4bM?t=1m30s',NULL);
 INSERT INTO `links` VALUES (901,'em','https://www.youtube.com/v/uAbUtrwYETg&end=92&autoplay=1',NULL);
 INSERT INTO `links` VALUES (902,'em','https://www.youtube.com/v/uAbUtrwYETg&end=92&autoplay=1',NULL);
@@ -1937,7 +1936,6 @@ INSERT INTO `links` VALUES (2279,'em','https://i.imgur.com/m2dkH6P.jpg',NULL);
 INSERT INTO `links` VALUES (2280,'dep','https://i.imgur.com/m2dkH6P.jpg',NULL);
 INSERT INTO `links` VALUES (2283,'em','http://cdn.geckoandfly.com/wp-content/uploads/2014/05/confucius-quotes16.jpg',NULL);
 INSERT INTO `links` VALUES (2284,'rel','http://cdn.geckoandfly.com/wp-content/uploads/2014/05/confucius-quotes16.jpg',NULL);
-INSERT INTO `links` VALUES (2285,'dep','http://www.theprospect.net/wp-content/uploads/2013/10/quote-Thomas-Paine-the-harder-the-conflict-the-more-glorious-39940.png',NULL);
 INSERT INTO `links` VALUES (2286,'rel','http://www.quotesvalley.com/images/64/the-will-to-win-the-desire-to-succeed-the-urge-to-reach-your-full-potential-these-are-the-keys-that-will-unlock-the-door-to-personal-excellence18.png',NULL);
 INSERT INTO `links` VALUES (2287,'rel','http://rahulkumarchoudhary.weebly.com/uploads/2/5/4/8/25483144/1395215556.jpg',NULL);
 INSERT INTO `links` VALUES (2288,'rej','http://rahulkumarchoudhary.weebly.com/uploads/2/5/4/8/25483144/1395215556.jpg',NULL);
@@ -2855,7 +2853,6 @@ INSERT INTO `links` VALUES (3275,'dep','https://s-media-cache-ak0.pinimg.com/736
 INSERT INTO `links` VALUES (3276,'em','http://1.bp.blogspot.com/-D0-BoVHAKY0/Tl8dHMdHCvI/AAAAAAAAC1U/LljPOHPYFn0/s1600/livelike.jpg',NULL);
 INSERT INTO `links` VALUES (3277,'em','http://i.imgur.com/2rqQKrT.png',NULL);
 INSERT INTO `links` VALUES (3278,'dep','http://i.imgur.com/2rqQKrT.png',NULL);
-INSERT INTO `links` VALUES (3279,'em','http://operationmotivation.com/wp-content/uploads/2014/01/20140105-112120.jpg',NULL);
 INSERT INTO `links` VALUES (3280,'em','https://www.reddit.com/r/NoFap/comments/3nz3ur/there_will_be_days_when_youre_ravaged_by/',NULL);
 INSERT INTO `links` VALUES (3281,'dep','https://www.reddit.com/r/NoFap/comments/3nz3ur/there_will_be_days_when_youre_ravaged_by/',NULL);
 INSERT INTO `links` VALUES (3282,'rel','https://www.reddit.com/r/NoFap/comments/3nz3ur/there_will_be_days_when_youre_ravaged_by/',NULL);
@@ -2925,6 +2922,34 @@ INSERT INTO `links` VALUES (3345,'rej','https://www.reddit.com/r/NoFap/comments/
 INSERT INTO `links` VALUES (3346,'rel','https://www.reddit.com/r/NoFap/comments/5b9105/quit_worrying_about_what_everyone_else_is_doing/',NULL);
 INSERT INTO `links` VALUES (3347,'rej','https://www.reddit.com/r/NoFap/comments/5aotqj/looking_into_her_eyes/',NULL);
 INSERT INTO `links` VALUES (3348,'dep','https://www.reddit.com/r/NoFap/comments/5aotqj/looking_into_her_eyes/',NULL);
+INSERT INTO `links` VALUES (3349,'em','https://www.reddit.com/r/NoFap/comments/5fbrcp/you_are_not_horny_you_are_just_bored/',NULL);
+INSERT INTO `links` VALUES (3350,'rel','https://www.reddit.com/r/NoFap/comments/5fbrcp/you_are_not_horny_you_are_just_bored/',NULL);
+INSERT INTO `links` VALUES (3351,'dep','https://www.reddit.com/r/NoFap/comments/5f4rjt/how_to_fail_at_nofap/',NULL);
+INSERT INTO `links` VALUES (3352,'rel','https://www.reddit.com/r/NoFap/comments/5f4rjt/how_to_fail_at_nofap/',NULL);
+INSERT INTO `links` VALUES (3353,'dep','https://www.reddit.com/r/NoFap/comments/5f4rjt/how_to_fail_at_nofap/',NULL);
+INSERT INTO `links` VALUES (3354,'rel','https://www.reddit.com/r/NoFap/comments/5fa7c2/since_you_liked_my_how_to_fail_heres_a_practical/',NULL);
+INSERT INTO `links` VALUES (3355,'rel','https://www.reddit.com/r/NoFap/comments/5ewudf/by_fapping_you_essentially_borrow_the_happiness/',NULL);
+INSERT INTO `links` VALUES (3356,'dep','https://www.reddit.com/r/NoFap/comments/5ewudf/by_fapping_you_essentially_borrow_the_happiness/',NULL);
+INSERT INTO `links` VALUES (3357,'em','https://www.reddit.com/r/NoFap/comments/5eiwyb/stop_thinking_like_you_live_twice/',NULL);
+INSERT INTO `links` VALUES (3358,'dep','https://www.reddit.com/r/NoFap/comments/5eiwyb/stop_thinking_like_you_live_twice/',NULL);
+INSERT INTO `links` VALUES (3359,'em','https://i.redditmedia.com/5w0b1KY9dIwTP0YWc6aY5jb-vUvCZ3bZZ3Pwxf_s4bM.jpg?w=750&s=7e438266e76e840078df922fe3303f2a',NULL);
+INSERT INTO `links` VALUES (3360,'rel','https://i.redditmedia.com/5w0b1KY9dIwTP0YWc6aY5jb-vUvCZ3bZZ3Pwxf_s4bM.jpg?w=750&s=7e438266e76e840078df922fe3303f2a',NULL);
+INSERT INTO `links` VALUES (3361,'dep','https://i.redditmedia.com/5w0b1KY9dIwTP0YWc6aY5jb-vUvCZ3bZZ3Pwxf_s4bM.jpg?w=750&s=7e438266e76e840078df922fe3303f2a',NULL);
+INSERT INTO `links` VALUES (3362,'dep','http://i.imgur.com/kQr2jYQ.jpg',NULL);
+INSERT INTO `links` VALUES (3363,'rel','http://i.imgur.com/kQr2jYQ.jpg',NULL);
+INSERT INTO `links` VALUES (3364,'rej','https://www.youtube.com/watch?v=Ibjq9C7nS94',NULL);
+INSERT INTO `links` VALUES (3365,'rel','https://www.youtube.com/watch?v=Ibjq9C7nS94',NULL);
+INSERT INTO `links` VALUES (3366,'dep','https://www.youtube.com/watch?v=Ibjq9C7nS94',NULL);
+INSERT INTO `links` VALUES (3367,'em','https://www.youtube.com/watch?v=PjP9r-HU4fk',NULL);
+INSERT INTO `links` VALUES (3368,'rel','https://www.youtube.com/watch?v=PjP9r-HU4fk',NULL);
+INSERT INTO `links` VALUES (3369,'rel','https://www.youtube.com/watch?v=PjP9r-HU4fk',NULL);
+INSERT INTO `links` VALUES (3370,'dep','https://www.youtube.com/watch?v=PjP9r-HU4fk',NULL);
+INSERT INTO `links` VALUES (3371,'dep','https://www.youtube.com/watch?v=PjP9r-HU4fk',NULL);
+INSERT INTO `links` VALUES (3372,'rej','https://www.youtube.com/watch?v=PjP9r-HU4fk',NULL);
+INSERT INTO `links` VALUES (3373,'rej','https://www.youtube.com/watch?v=PjP9r-HU4fk',NULL);
+INSERT INTO `links` VALUES (3374,'rel','https://www.reddit.com/r/NoFap/comments/4hmpdm/every_second_counts_what_matters_is_what_you_do/',NULL);
+INSERT INTO `links` VALUES (3375,'dep','https://www.reddit.com/r/NoFap/comments/4hmpdm/every_second_counts_what_matters_is_what_you_do/',NULL);
+INSERT INTO `links` VALUES (3376,'dep','http://s33.postimg.org/rrsssfvn3/IMG20160602_163149.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -2937,4 +2962,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-18 12:16:13
+-- Dump completed on 2016-11-29  9:49:45
