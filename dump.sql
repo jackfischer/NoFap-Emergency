@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3514 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3529 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3011,6 +3011,21 @@ INSERT INTO `links` VALUES (3510,'em','http://i.imgur.com/2cQ2YR4.jpg',NULL);
 INSERT INTO `links` VALUES (3511,'rel','http://youtu.be/rAKWqpPpIFM?t=14s',NULL);
 INSERT INTO `links` VALUES (3512,'dep','http://youtu.be/rAKWqpPpIFM?t=14s',NULL);
 INSERT INTO `links` VALUES (3513,'dep','https://twitter.com/nofap/status/609150790410833920',NULL);
+INSERT INTO `links` VALUES (3514,'rel','https://www.reddit.com/r/NoFap/comments/5jk09q/met_a_man_who_had_abstained_from_porn_and/',NULL);
+INSERT INTO `links` VALUES (3515,'rel','https://www.reddit.com/r/NoFap/comments/5jtvd1/advice_to_teenagers_and_young_adults/',NULL);
+INSERT INTO `links` VALUES (3516,'rej','https://www.reddit.com/r/NoFap/comments/5jtvd1/advice_to_teenagers_and_young_adults/',NULL);
+INSERT INTO `links` VALUES (3517,'rel','https://i.imgur.com/FU849kU.jpg',NULL);
+INSERT INTO `links` VALUES (3518,'dep','https://i.imgur.com/FU849kU.jpg',NULL);
+INSERT INTO `links` VALUES (3519,'em','http://i.imgur.com/ymHhSeL.jpg',NULL);
+INSERT INTO `links` VALUES (3520,'em','http://i.imgur.com/ymHhSeL.jpg',NULL);
+INSERT INTO `links` VALUES (3521,'em','http://i.imgur.com/ymHhSeL.jpg',NULL);
+INSERT INTO `links` VALUES (3522,'dep','https://www.youtube.com/watch?v=UNQhuFL6CWg',NULL);
+INSERT INTO `links` VALUES (3523,'rel','https://www.youtube.com/watch?v=UNQhuFL6CWg',NULL);
+INSERT INTO `links` VALUES (3524,'rel','http://blog.zerodean.com/wp-content/uploads/2013/05/success-is-not-final-failure-is-not-fatal-winston-churchill.gif',NULL);
+INSERT INTO `links` VALUES (3525,'rel','http://marketingtrw.com/blog/wp-content/uploads/2015/03/Winston-Churchill-Success-Failure-Courage.jpg',NULL);
+INSERT INTO `links` VALUES (3526,'rej','http://marketingtrw.com/blog/wp-content/uploads/2015/03/Winston-Churchill-Success-Failure-Courage.jpg',NULL);
+INSERT INTO `links` VALUES (3527,'rej','http://marketingtrw.com/blog/wp-content/uploads/2015/03/Winston-Churchill-Success-Failure-Courage.jpg',NULL);
+INSERT INTO `links` VALUES (3528,'rel','http://www.quotesvalley.com/images/73/success-is-not-final-failure-is-not-fatal-2.png',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -3023,4 +3038,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-12-16 19:14:33
+-- Dump completed on 2017-01-01 12:56:13
