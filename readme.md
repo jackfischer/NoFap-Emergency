@@ -1,5 +1,5 @@
-#Panic Button - NoFap Emergency
-##For Reddit's [r/NoFap](https://reddit.com/r/NoFap)
+# Panic Button - NoFap Emergency
+## For Reddit's [r/NoFap](https://reddit.com/r/NoFap)
 NoFap Emergency is to get you to the right content when you need it. Recently gave a [TEDx talk](https://www.youtube.com/watch?v=M9pPgIraoOM) at Binghamton about this.
 
 Also on [Android](https://github.com/csanonymus/NoFap-Android) and [iOS](https://github.com/danielx0328/NoFap), much thanks to [Daniel Romero](https://github.com/danielx0328) and our anonymous Android developer for their work.

@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3625 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3655 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -3074,6 +3074,36 @@ INSERT INTO `links` VALUES (3621,'dep','https://www.youtube.com/watch?v=9D05ej8u
 INSERT INTO `links` VALUES (3622,'dep','https://www.youtube.com/watch?v=9D05ej8u-gU',NULL);
 INSERT INTO `links` VALUES (3623,'dep','https://i.imgur.com/4XuPWJD.png',NULL);
 INSERT INTO `links` VALUES (3624,'dep','https://i.imgur.com/4XuPWJD.png',NULL);
+INSERT INTO `links` VALUES (3625,'dep','https://www.youtube.com/watch?v=nstQqaRaDEY',1);
+INSERT INTO `links` VALUES (3626,'rel','https://www.reddit.com/r/NoFap/comments/5s5avq/put_some_goddamn_pants_on/',NULL);
+INSERT INTO `links` VALUES (3627,'dep','https://www.reddit.com/r/NoFap/comments/5s5avq/put_some_goddamn_pants_on/',NULL);
+INSERT INTO `links` VALUES (3628,'rej','https://www.reddit.com/r/NoFap/comments/5s5avq/put_some_goddamn_pants_on/',NULL);
+INSERT INTO `links` VALUES (3629,'rej','https://www.reddit.com/r/NoFap/comments/5s5avq/put_some_goddamn_pants_on/',1);
+INSERT INTO `links` VALUES (3630,'dep','https://www.reddit.com/r/NoFap/comments/5skodk/the_main_cause_of_pmo_you_have_to_dig_deep/',1);
+INSERT INTO `links` VALUES (3631,'dep','https://www.reddit.com/r/NoFap/comments/5sp31c/94_days_here/',NULL);
+INSERT INTO `links` VALUES (3632,'em','https://www.reddit.com/r/NoFap/comments/5o5igo/think_this_way_and_youll_stop_pmo_forever_haha/',1);
+INSERT INTO `links` VALUES (3633,'rej','https://www.reddit.com/r/NoFap/comments/5o5igo/think_this_way_and_youll_stop_pmo_forever_haha/',NULL);
+INSERT INTO `links` VALUES (3634,'dep','https://dianteteagency.files.wordpress.com/2016/05/we-are-made-to-persist-thats-how-we-find-out-who-we-are.png',NULL);
+INSERT INTO `links` VALUES (3635,'rej','https://dianteteagency.files.wordpress.com/2016/05/we-are-made-to-persist-thats-how-we-find-out-who-we-are.png',NULL);
+INSERT INTO `links` VALUES (3636,'rel','https://dianteteagency.files.wordpress.com/2016/05/we-are-made-to-persist-thats-how-we-find-out-who-we-are.png',NULL);
+INSERT INTO `links` VALUES (3637,'rel','https://dianteteagency.files.wordpress.com/2016/05/we-are-made-to-persist-thats-how-we-find-out-who-we-are.png',1);
+INSERT INTO `links` VALUES (3638,'dep','https://dianteteagency.files.wordpress.com/2016/05/we-are-made-to-persist-thats-how-we-find-out-who-we-are.png',1);
+INSERT INTO `links` VALUES (3639,'rej','https://dianteteagency.files.wordpress.com/2016/05/we-are-made-to-persist-thats-how-we-find-out-who-we-are.png',1);
+INSERT INTO `links` VALUES (3640,'rej','https://dianteteagency.files.wordpress.com/2016/05/we-are-made-to-persist-thats-how-we-find-out-who-we-are.png',1);
+INSERT INTO `links` VALUES (3641,'em','http://quotes.lifehack.org/media/quotes/quote-Elbert-Hubbard-a-little-more-persistence-a-little-more-3112.png',NULL);
+INSERT INTO `links` VALUES (3642,'rel','http://quotes.lifehack.org/media/quotes/quote-Elbert-Hubbard-a-little-more-persistence-a-little-more-3112.png',NULL);
+INSERT INTO `links` VALUES (3643,'dep','http://quotemaster.org/images/a5/a5401e5aed72a4e817d8eedd3f98d37a.jpg',NULL);
+INSERT INTO `links` VALUES (3644,'rel','http://quotemaster.org/images/a5/a5401e5aed72a4e817d8eedd3f98d37a.jpg',NULL);
+INSERT INTO `links` VALUES (3645,'em','http://quotemaster.org/images/a5/a5401e5aed72a4e817d8eedd3f98d37a.jpg',NULL);
+INSERT INTO `links` VALUES (3646,'em','http://thequotes.in/wp-content/uploads/2016/03/Elbert-Hubbard-Quotes-4.jpg',NULL);
+INSERT INTO `links` VALUES (3647,'rel','http://thequotes.in/wp-content/uploads/2016/03/Elbert-Hubbard-Quotes-4.jpg',NULL);
+INSERT INTO `links` VALUES (3648,'dep','http://i.imgur.com/4ECoKTk.png',NULL);
+INSERT INTO `links` VALUES (3649,'dep','http://i.imgur.com/4ECoKTk.png',1);
+INSERT INTO `links` VALUES (3650,'dep','http://i.quoteaddicts.com/media/q4/524579.png',NULL);
+INSERT INTO `links` VALUES (3651,'em','http://data.whicdn.com/images/152103516/large.jpg',NULL);
+INSERT INTO `links` VALUES (3652,'dep','http://data.whicdn.com/images/152103516/large.jpg',NULL);
+INSERT INTO `links` VALUES (3653,'em','http://i.imgur.com/dx9TBdu.jpg',1);
+INSERT INTO `links` VALUES (3654,'dep','http://i.imgur.com/dx9TBdu.jpg',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -3086,4 +3116,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-03-08 20:34:38
+-- Dump completed on 2017-03-16 14:54:29
