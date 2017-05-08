@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.54, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.55, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: posts
 -- ------------------------------------------------------
--- Server version	5.5.54-0ubuntu0.14.04.1
+-- Server version	5.5.55-0ubuntu0.14.04.1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -28,7 +28,7 @@ CREATE TABLE `links` (
   `link` varchar(200) DEFAULT NULL,
   `religious` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3686 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3735 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1693,7 +1693,6 @@ INSERT INTO `links` VALUES (2122,'em','http://1.bp.blogspot.com/-aLF7U_LomQ8/U68
 INSERT INTO `links` VALUES (2123,'em','https://www.youtube.com/watch?v=cCeeTfsm8bk',NULL);
 INSERT INTO `links` VALUES (2124,'rel','https://www.youtube.com/watch?v=cCeeTfsm8bk',NULL);
 INSERT INTO `links` VALUES (2125,'rel','http://www.yourva.co.nz/wp-content/uploads/2014/06/Achieving-your-Smart-Goals.jpg',NULL);
-INSERT INTO `links` VALUES (2129,'em','http://quotesinfinite.com/wp-content/uploads/2014/05/you-can-chain-me-you-can-torture-me-you-can-even-destroy-this-body-but-you-will-never-imprison-my-mi-139955960048nkg.jpg',NULL);
 INSERT INTO `links` VALUES (2130,'em','http://izquotes.com/quotes-pictures/quote-you-can-chain-me-you-can-torture-me-you-can-even-destroy-this-body-but-you-will-never-imprison-mahatma-gandhi-68158.jpg',NULL);
 INSERT INTO `links` VALUES (2131,'em','http://www.inspirationboost.com/wp-content/uploads/2012/08/look-for-something-positive.png',1);
 INSERT INTO `links` VALUES (2132,'dep','http://www.inspirationboost.com/wp-content/uploads/2012/08/look-for-something-positive.png',1);
@@ -2848,7 +2847,6 @@ INSERT INTO `links` VALUES (3419,'rel','https://www.youtube.com/watch?v=jcVK_5nG
 INSERT INTO `links` VALUES (3420,'rej','https://www.youtube.com/watch?v=jcVK_5nGOcM',NULL);
 INSERT INTO `links` VALUES (3421,'dep','https://www.youtube.com/watch?v=jcVK_5nGOcM',NULL);
 INSERT INTO `links` VALUES (3422,'dep','https://www.reddit.com/r/NoFap/comments/53768m/lessons_from_a_day_70_relapse/',NULL);
-INSERT INTO `links` VALUES (3423,'rel','http://plusquotes.com/images/quotes-img/1-Motivational-Quotes.jpg',NULL);
 INSERT INTO `links` VALUES (3424,'dep','https://www.reddit.com/r/NoFap/comments/4jo905/the_most_eyeopening_quote_regarding_masturbation/',1);
 INSERT INTO `links` VALUES (3425,'em','https://s-media-cache-ak0.pinimg.com/736x/c6/ea/ca/c6eaca638dfda60ca905596b12646bb2.jpg',NULL);
 INSERT INTO `links` VALUES (3426,'rej','https://quotefancy.com/media/wallpaper/1600x900/12553-John-Wooden-Quote-The-true-test-of-a-man-s-character-is-what-he.jpg',NULL);
@@ -3105,6 +3103,55 @@ INSERT INTO `links` VALUES (3682,'rel','http://media-cache-ec0.pinimg.com/736x/f
 INSERT INTO `links` VALUES (3683,'em','https://s-media-cache-ak0.pinimg.com/originals/b2/00/b6/b200b6a33ca25ae958c04999bb530438.jpg',NULL);
 INSERT INTO `links` VALUES (3684,'dep','https://s-media-cache-ak0.pinimg.com/originals/b2/00/b6/b200b6a33ca25ae958c04999bb530438.jpg',NULL);
 INSERT INTO `links` VALUES (3685,'rel','https://s-media-cache-ak0.pinimg.com/originals/b2/00/b6/b200b6a33ca25ae958c04999bb530438.jpg',NULL);
+INSERT INTO `links` VALUES (3686,'em','https://www.reddit.com/r/NoFap/comments/65c0hw/muhammad_ali_i_hated_every_minute_of_training_but/',NULL);
+INSERT INTO `links` VALUES (3687,'dep','https://www.reddit.com/r/NoFap/comments/65c0hw/muhammad_ali_i_hated_every_minute_of_training_but/',NULL);
+INSERT INTO `links` VALUES (3688,'rel','https://www.reddit.com/r/NoFap/comments/64jcfm/get_this_right_you_dont_relapse_because_those/',NULL);
+INSERT INTO `links` VALUES (3689,'em','https://www.reddit.com/r/NoFap/comments/64jcfm/get_this_right_you_dont_relapse_because_those/',NULL);
+INSERT INTO `links` VALUES (3690,'rej','https://www.reddit.com/r/NoFap/comments/64jcfm/get_this_right_you_dont_relapse_because_those/',NULL);
+INSERT INTO `links` VALUES (3691,'dep','https://www.reddit.com/r/NoFap/comments/64jcfm/get_this_right_you_dont_relapse_because_those/',NULL);
+INSERT INTO `links` VALUES (3692,'em','https://www.reddit.com/r/NoFap/comments/687zh5/if_youve_got_time_to_mindlessly_browse_the_web/',NULL);
+INSERT INTO `links` VALUES (3693,'rel','https://www.reddit.com/r/NoFap/comments/687zh5/if_youve_got_time_to_mindlessly_browse_the_web/',NULL);
+INSERT INTO `links` VALUES (3694,'rel','https://www.reddit.com/r/NoFap/comments/687zh5/if_youve_got_time_to_mindlessly_browse_the_web/',NULL);
+INSERT INTO `links` VALUES (3695,'dep','https://www.reddit.com/r/NoFap/comments/687zh5/if_youve_got_time_to_mindlessly_browse_the_web/',NULL);
+INSERT INTO `links` VALUES (3696,'em','https://www.reddit.com/r/NoFap/comments/687zh5/if_youve_got_time_to_mindlessly_browse_the_web/',NULL);
+INSERT INTO `links` VALUES (3697,'em','https://www.reddit.com/r/NoFap/comments/698wal/saw_this_on_rgetmotivated_i_think_some_of_us_may/',NULL);
+INSERT INTO `links` VALUES (3698,'rej','https://www.reddit.com/r/NoFap/comments/698wal/saw_this_on_rgetmotivated_i_think_some_of_us_may/',NULL);
+INSERT INTO `links` VALUES (3699,'em','https://www.reddit.com/r/NoFap/comments/68ywkx/learn_to_enjoy_the_horniness/',NULL);
+INSERT INTO `links` VALUES (3700,'dep','https://www.reddit.com/r/NoFap/comments/68ywkx/learn_to_enjoy_the_horniness/',NULL);
+INSERT INTO `links` VALUES (3701,'em','https://www.reddit.com/r/NoFap/comments/68ywkx/learn_to_enjoy_the_horniness/',NULL);
+INSERT INTO `links` VALUES (3702,'em','https://www.reddit.com/r/NoFap/comments/666a94/guess_who_had_a_really_bad_day_but_didnt_fap/',NULL);
+INSERT INTO `links` VALUES (3703,'em','https://www.reddit.com/r/NoFap/comments/66e8zc/someone_tell_me_this_whole_thing_is_a_joke/',NULL);
+INSERT INTO `links` VALUES (3704,'dep','https://www.reddit.com/r/NoFap/comments/64zc6c/im_gonna_make_you_an_offer/',NULL);
+INSERT INTO `links` VALUES (3705,'em','https://www.reddit.com/r/NoFap/comments/64zc6c/im_gonna_make_you_an_offer/',NULL);
+INSERT INTO `links` VALUES (3706,'em','https://www.reddit.com/r/NoFap/comments/67gsb9/youre_not_horny_youre_bored/',NULL);
+INSERT INTO `links` VALUES (3707,'rel','https://www.reddit.com/r/NoFap/comments/67gsb9/youre_not_horny_youre_bored/',NULL);
+INSERT INTO `links` VALUES (3708,'rej','https://www.reddit.com/r/NoFap/comments/6474to/nofap_makes_girls_more_attractive_to_me_and_at/',NULL);
+INSERT INTO `links` VALUES (3709,'dep','https://www.reddit.com/r/NoFap/comments/64zc6c/im_gonna_make_you_an_offer/',NULL);
+INSERT INTO `links` VALUES (3710,'em','https://www.reddit.com/r/NoFap/comments/64zc6c/im_gonna_make_you_an_offer/',NULL);
+INSERT INTO `links` VALUES (3711,'em','https://www.reddit.com/r/NoFap/comments/69t9j7/nofap_will_make_you_feel_lonely_be_aware_of_that/',NULL);
+INSERT INTO `links` VALUES (3712,'dep','https://www.reddit.com/r/NoFap/comments/69t9j7/nofap_will_make_you_feel_lonely_be_aware_of_that/',NULL);
+INSERT INTO `links` VALUES (3713,'dep','https://www.reddit.com/r/NoFap/comments/69t9j7/nofap_will_make_you_feel_lonely_be_aware_of_that/',NULL);
+INSERT INTO `links` VALUES (3714,'rej','https://www.reddit.com/r/NoFap/comments/69t9j7/nofap_will_make_you_feel_lonely_be_aware_of_that/',NULL);
+INSERT INTO `links` VALUES (3715,'rel','https://www.reddit.com/r/NoFap/comments/69t9j7/nofap_will_make_you_feel_lonely_be_aware_of_that/',NULL);
+INSERT INTO `links` VALUES (3716,'em','https://www.reddit.com/r/NoFap/comments/67bbdp/desire_is_like_the_thirst_of_a_person_who_drinks/',1);
+INSERT INTO `links` VALUES (3717,'dep','https://www.reddit.com/r/NoFap/comments/67bbdp/desire_is_like_the_thirst_of_a_person_who_drinks/',1);
+INSERT INTO `links` VALUES (3718,'rel','https://cdn.motivationgrid.com/wp-content/uploads/2013/12/22.png',NULL);
+INSERT INTO `links` VALUES (3719,'rel','https://cdn.motivationgrid.com/wp-content/uploads/2013/12/994659_220656388106741_1799851959_n.jpg',NULL);
+INSERT INTO `links` VALUES (3720,'dep','https://cdn.motivationgrid.com/wp-content/uploads/2013/12/994659_220656388106741_1799851959_n.jpg',NULL);
+INSERT INTO `links` VALUES (3721,'rej','https://cdn.motivationgrid.com/wp-content/uploads/2013/12/994659_220656388106741_1799851959_n.jpg',NULL);
+INSERT INTO `links` VALUES (3722,'rej','https://cdn.motivationgrid.com/wp-content/uploads/2013/12/994659_220656388106741_1799851959_n.jpg',NULL);
+INSERT INTO `links` VALUES (3723,'rej','https://cdn.motivationgrid.com/wp-content/uploads/2013/12/994659_220656388106741_1799851959_n.jpg',NULL);
+INSERT INTO `links` VALUES (3724,'em','https://cdn.motivationgrid.com/wp-content/uploads/2013/12/7-Motivational-Quote-Image.jpg',NULL);
+INSERT INTO `links` VALUES (3725,'em','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3726,'em','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3727,'em','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3728,'em','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3729,'em','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3730,'rel','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3731,'rel','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3732,'rel','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3733,'rel','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
+INSERT INTO `links` VALUES (3734,'dep','https://www.reddit.com/r/NoFap/comments/53k7t9/a_list_of_all_the_bullshit_you_tell_yourself/',NULL);
 /*!40000 ALTER TABLE `links` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -3117,4 +3164,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-15 12:46:45
+-- Dump completed on 2017-05-08 18:59:25
