@@ -65,7 +65,6 @@ body,html{text-align:center;height:100%;-webkit-user-select:none}
 <button id="ios" class="footer-button col-sm-3 col-xs-12"><a href="https://appsto.re/us/9vp26.i" target="itunes_store"><img alt="App Store" class="app-icon" src="icons/appstore.svg" /></a></button>
 <button id="android" class="footer-button col-sm-3 col-xs-12"><a href="https://play.google.com/store/apps/details?id=org.nofap.emergency"><img alt="Google Play" class="app-icon" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" /></a></button>
 
-<div class="arrow animated bounce" id="hint"></div>
 <div id="mobilereligious"><input type="checkbox" onchange="religiousChange()"><label>Religious</label></div>
 <div id="religious"><input type="checkbox" onchange="religiousChange()"><label>Include Religious</label></div>
 
@@ -105,11 +104,6 @@ $(nofap).click(function(){window.location.href="https://nofap.com"});
 function getCookie(t){for(var n=t+"=",r=document.cookie.split(";"),e=0;e<r.length;e++){for(var i=r[e];" "==i.charAt(0);)i=i.substring(1);if(-1!=i.indexOf(n))return i.substring(n.length,i.length)}return""}
 
 var religiousCheck=getCookie("religious");
-if(religiousCheck===""){
-$('head').append($('<link rel="stylesheet" type="text/css"/>').attr('href','resources/arrow.css'));
-$(hint).click(function(){$("html, body").animate({scrollTop:$(document).height()},"fast")});
-$(hint).delay(4000).fadeOut("slow");
-}
 
 function setCookie(pref) {document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2024 12:00:00 UTC"}
 if(religiousCheck=="true"){$("input").iCheck("check")}else{setCookie("false");}
