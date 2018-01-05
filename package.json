@@ -1,0 +1,15 @@
+{
+  "name": "nfe",
+  "version": "1.0.0",
+  "description": "NoFap panic button API",
+  "main": "index.js",
+  "repository": "git@github.com:jackfischer/NoFap-Emergency.git",
+  "author": "Jack Fischer <jack.fischer11@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fast-csv": "^2.4.1",
+    "pg": "6",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.29.0"
+  }
+}
