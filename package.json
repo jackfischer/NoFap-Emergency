@@ -7,6 +7,7 @@
   "author": "Jack Fischer <jack.fischer11@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.2",
     "fast-csv": "^2.4.1",
     "pg": "6",
     "pg-hstore": "^2.3.2",
