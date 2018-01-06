@@ -21,3 +21,5 @@ function load_legacy_csv() {
   });
 }
 load_legacy_csv()
+
+//TODO: scan for down links, probably as a cron job

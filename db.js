@@ -37,6 +37,11 @@ module.exports.Link = sequelize.define('link', {
   rel: { type: Sequelize.INTEGER, allowNull: false, defaultValue: 0 },
   dep: { type: Sequelize.INTEGER, allowNull: false, defaultValue: 0 },
   rej: { type: Sequelize.INTEGER, allowNull: false, defaultValue: 0 },
+  down: {
+    type: Sequelize.BOOLEAN,
+    allowNull: false,
+    defaultValue: false
+  }
 });
 module.exports.Link.sync()
 
@@ -51,13 +56,17 @@ module.exports.Log = sequelize.define('log', {
   },
   platform: {
     type: Sequelize.STRING,
-    allowNull: false
+  },
+  category: {
+    type: Sequelize.STRING,
+    allowNull: false,
   },
   religious: {
     type: Sequelize.BOOLEAN,
     allowNull: false,
-  }
+  },
 });
+module.exports.Log.sync()
 
 module.exports.Suggestion = sequelize.define('suggestion', {
   ip: {
@@ -73,6 +82,5 @@ module.exports.Suggestion = sequelize.define('suggestion', {
     allowNull: false
   }
 });
-
-//call Model.sync() to add table
+module.exports.Suggestion.sync()
 

@@ -1,5 +1,6 @@
 const {Link, Suggestion, Log} = require('./db')
 const express = require('express')
+const cloudflare = require('cloudflare-express');
 
 // Load in-memory copy of links
 const categories = ['em', 'rel', 'dep', 'rej'];
@@ -20,6 +21,7 @@ Link.findAll().then(rows => {
 //TODO trigger to reload upon pg modification
 
 const app = express()
+app.use(cloudflare.restore());
 
 function nocache(req, res, next) {
   res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
@@ -28,13 +30,28 @@ function nocache(req, res, next) {
   next();
 }
 
-app.get('/', nocache, function (req, res) {
-  res.header('Access-Control-Allow-Origin', '*');
+function getlinkdata(req) {
   const religious = req.query.religious == true
-  const category = req.query.cat ? req.query.cat : "em"
+  const category = req.query.cat ? req.query.cat : 'em'
   const candidates = linkcache[religious][category]
-  res.send(candidates[Math.floor(Math.random() * candidates.length)])
+  const url = candidates[Math.floor(Math.random() * candidates.length)]
+  return {religious, category, url, platform: req.query.platform, ip: req.cf_ip}
+}
+
+app.get('/director.php', nocache, function(req, res) {
+  res.header('Access-Control-Allow-Origin', '*');
+  response_data = getlinkdata(req)
+  res.send(response_data.url)
+  Log.create(response_data)
+  // setTimeout(() => console.log("hello"), 2000);
+});
+
+app.get('/mobileapi.php', nocache, function (req, res) {
+  response_data = getlinkdata(req)
+  res.send(response_data.url)
+  Log.create(response_data)
 })
+
 
 // app.get('/db', nocache, function (req, res) {
 //   res.header('Access-Control-Allow-Origin', '*');
