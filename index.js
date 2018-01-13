@@ -1,5 +1,7 @@
 const {Link, Suggestion, Log} = require('./db')
 const express = require('express')
+const https = require('https');
+const fs = require('fs');
 const cloudflare = require('cloudflare-express')
 const Recaptcha = require('express-recaptcha')
 const {recaptcha_secret, recaptcha_id, raven_dsn} = require('./secrets')
@@ -85,8 +87,11 @@ app.get('/error', function(req,res) {
 
 
 app.use(Raven.errorHandler())
-app.listen(3000, () => console.log('App is listening'))
-
-
+const https_options = {
+  key: fs.readFileSync('ssl/private.key'),
+  cert: fs.readFileSync('ssl/cert.pem')
+}
+https.createServer(https_options, app).listen(8443);
+// app.listen(3000, () => console.log('App is listening'))
 
 
