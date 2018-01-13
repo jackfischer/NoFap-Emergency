@@ -2,15 +2,15 @@ const {Link, Suggestion, Log} = require('./db')
 const express = require('express')
 const cloudflare = require('cloudflare-express');
 const Recaptcha = require('express-recaptcha');
-const {recaptcha_secret} = require('./secrets')
-
+const {recaptcha_secret, raven_dsn} = require('./secrets')
+const Raven = require('raven');
 
 // Load in-memory copy of links
 const categories = ['em', 'rel', 'dep', 'rej'];
 const cat_o = {}
 categories.forEach(cat => cat_o[cat] = []);
 const linkcache = {true: cat_o, false: {...cat_o}};
-Link.findAll().then(rows => {
+Link.findAll({where: {down: false}}).then(rows => {
   rows.forEach((row) => {
     categories.forEach(category => {
       Array.from(Array(row[category])).forEach(() => {
@@ -24,7 +24,11 @@ Link.findAll().then(rows => {
 
 
 const app = express()
+Raven.config(raven_dsn).install();
+app.use(Raven.requestHandler());
+app.use(express.static('static'))
 app.use(cloudflare.restore());
+
 
 function nocache(req, res, next) {
   res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
@@ -41,12 +45,12 @@ function getlinkdata(req) {
   return {religious, category, url, platform: req.query.platform, ip: req.cf_ip}
 }
 
+
 app.get('/director.php', nocache, function(req, res) {
   res.header('Access-Control-Allow-Origin', '*');
   response_data = getlinkdata(req)
   res.send(response_data.url)
-  Log.create(response_data) //TODO append to an in memory queue
-  // process.nextTick(() => Log.create(response_data));
+  Log.create(response_data) //TODO append to an in memory queue instead
 });
 
 app.get('/mobileapi.php', nocache, function (req, res) {
@@ -59,9 +63,7 @@ const recaptcha = new Recaptcha("6LcboPoSAAAAAIH6t90C3ppYFQUnNLdvZwGc-eA3", reca
 app.get('/thankyou.php', nocache, recaptcha.middleware.verify, function(req, res) {
   if (!req.recaptcha.error) {
     Suggestion.create({
-      'url': req.query.link,
-      'comment': req.query.message,
-      'ip': req.cf_ip
+      url: req.query.link, comment: req.query.message, ip: req.cf_ip
     });
     res.json({"status":"success"})
   } else {
@@ -69,18 +71,18 @@ app.get('/thankyou.php', nocache, recaptcha.middleware.verify, function(req, res
   }
 });
 
-app.get('/noop', function(req,res) {
+
+app.get('/helloworld', function(req,res) {
   res.send("hello world");
 })
+app.get('/error', function(req,res) {
+  throw new Error('Broke!');
+});
 
+
+app.use(Raven.errorHandler());
 app.listen(3000, () => console.log('App is listening'))
 //TODO do logging correctly
-//TODO integrate sentry
-
-
-
-
-
 
 
 
