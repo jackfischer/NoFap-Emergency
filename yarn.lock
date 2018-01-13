@@ -7,8 +7,8 @@
   resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-1.0.6.tgz#3e02972728c69248c2af08d60a48cbb8680fffdf"
 
 "@types/node@*":
-  version "8.5.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.6.tgz#5cf96a225c7be86f72d3dde03c41399319bb8bdc"
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
 
 accepts@~1.3.4:
   version "1.3.4"
@@ -202,9 +202,13 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
 
-depd@1.1.1, depd@^1.1.0, depd@~1.1.1:
+depd@1.1.1, depd@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.1.tgz#5783b4e1c459f06fa5ca27f991f3d06e7a310359"
+
+depd@^1.1.0:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
 destroy@~1.0.4:
   version "1.0.4"
@@ -739,8 +743,8 @@ send@0.16.1:
     statuses "~1.3.1"
 
 sequelize@^4.29.0:
-  version "4.29.0"
-  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.29.0.tgz#d858dacda903a5e67b7239c600fa322b83db80f6"
+  version "4.31.0"
+  resolved "https://registry.yarnpkg.com/sequelize/-/sequelize-4.31.0.tgz#6826bc0e8d0b31571f927ca89d956999e612fa7c"
   dependencies:
     bluebird "^3.4.6"
     cls-bluebird "^2.0.1"
