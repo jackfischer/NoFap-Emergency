@@ -1,6 +1,9 @@
 const {Link, Suggestion, Log} = require('./db')
 const express = require('express')
 const cloudflare = require('cloudflare-express');
+const Recaptcha = require('express-recaptcha');
+const {recaptcha_secret} = require('./secrets')
+
 
 // Load in-memory copy of links
 const categories = ['em', 'rel', 'dep', 'rej'];
@@ -17,8 +20,8 @@ Link.findAll().then(rows => {
   });
   console.log("Loaded link cache successfully")
 });
-
 //TODO trigger to reload upon pg modification
+
 
 const app = express()
 app.use(cloudflare.restore());
@@ -42,8 +45,8 @@ app.get('/director.php', nocache, function(req, res) {
   res.header('Access-Control-Allow-Origin', '*');
   response_data = getlinkdata(req)
   res.send(response_data.url)
-  Log.create(response_data)
-  // setTimeout(() => console.log("hello"), 2000);
+  Log.create(response_data) //TODO append to an in memory queue
+  // process.nextTick(() => Log.create(response_data));
 });
 
 app.get('/mobileapi.php', nocache, function (req, res) {
@@ -52,13 +55,19 @@ app.get('/mobileapi.php', nocache, function (req, res) {
   Log.create(response_data)
 })
 
-
-// app.get('/db', nocache, function (req, res) {
-//   res.header('Access-Control-Allow-Origin', '*');
-//   const religious = req.query.religious == true
-//   const category = req.query.cat ? req.query.cat : "em"
-//   Link.findOne().then((data) => res.send(data.url))
-// })
+const recaptcha = new Recaptcha("6LcboPoSAAAAAIH6t90C3ppYFQUnNLdvZwGc-eA3", recaptcha_secret);
+app.get('/thankyou.php', nocache, recaptcha.middleware.verify, function(req, res) {
+  if (!req.recaptcha.error) {
+    Suggestion.create({
+      'url': req.query.link,
+      'comment': req.query.message,
+      'ip': req.cf_ip
+    });
+    res.json({"status":"success"})
+  } else {
+    res.status(401).json({"status": "error"})
+  }
+});
 
 app.get('/noop', function(req,res) {
   res.send("hello world");
@@ -67,3 +76,17 @@ app.get('/noop', function(req,res) {
 app.listen(3000, () => console.log('App is listening'))
 //TODO do logging correctly
 //TODO integrate sentry
+
+
+
+
+
+
+
+
+
+
+
+
+
+
