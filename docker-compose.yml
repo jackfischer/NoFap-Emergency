@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  pg:
+    image: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  node:
+    image: node
+    user: node
+    working_dir: /home/node
+    environment:
+      NODE_ENV: production
+    volumes:
+      ./src:/home/node
+    depends_on:
+      - pg
+    restart_policy:
+      condition: on-failure
+    ports:
+      - "443:8443"
+
+volumes:
+  db-data:
