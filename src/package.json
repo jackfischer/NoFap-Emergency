@@ -4,6 +4,9 @@
   "description": "NoFap panic button API",
   "main": "index.js",
   "repository": "git@github.com:jackfischer/NoFap-Emergency.git",
+  "scripts": {
+	  "start": "yarn && node index.js"
+  },
   "author": "Jack Fischer <jack.fischer11@gmail.com>",
   "license": "MIT",
   "dependencies": {

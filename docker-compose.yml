@@ -20,6 +20,7 @@ services:
       condition: on-failure
     ports:
       - "443:8443"
+    command: "npm start"
 
 volumes:
   db-data:
