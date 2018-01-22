@@ -8,16 +8,16 @@ services:
 
   node:
     image: node
-    user: node
-    working_dir: /home/node
+    working_dir: /src
     environment:
       NODE_ENV: production
     volumes:
-      ./src:/home/node
+      - ./src:/src
     depends_on:
       - pg
-    restart_policy:
-      condition: on-failure
+    deploy:
+      restart_policy:
+        condition: on-failure
     ports:
       - "443:8443"
     command: "npm start"
