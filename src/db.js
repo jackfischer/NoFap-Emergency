@@ -1,16 +1,18 @@
 //Create and verify database connection
 
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize(
-  'jack', '', '', //no username or password
-  {
-    host: 'localhost',
-    dialect: 'postgres',
-    logging: false,
-    freezeTableName: true,
-    operatorsAliases: false
-  }
-  );
+const connection_string = "postgresql://postgres@pg:5432/postgres"
+const sequelize = new Sequelize(connection_string)
+//const sequelize = new Sequelize(
+//  'jack', '', '', //no username or password
+//  {
+//    host: 'pg',
+//    dialect: 'postgres',
+//    logging: false,
+//    freezeTableName: true,
+//    operatorsAliases: false
+//  }
+//  );
 
 sequelize
   .authenticate()

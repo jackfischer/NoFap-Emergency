@@ -5,6 +5,8 @@ services:
     image: postgres
     volumes:
       - db-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
 
   node:
     image: node
@@ -15,9 +17,7 @@ services:
       - ./src:/src
     depends_on:
       - pg
-    deploy:
-      restart_policy:
-        condition: on-failure
+    restart: on-failure:5
     ports:
       - "443:8443"
     command: "npm start"
