@@ -32,7 +32,7 @@ function api(cat) {
     })
 }
 
-$(suggest).click(function(){window.location.href="suggestor.php"});
+$(suggest).click(function(){window.location.href="suggestor.html"});
 $(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
 $(nofap).click(function(){window.location.href="https://www.nofap.com"});
