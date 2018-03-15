@@ -49,6 +49,27 @@ function getCookie(t) {
 
 var religiousCheck = getCookie("religious");
 
+var urlParams;
+(window.onpopstate = function () {
+  var match,
+    pl     = /\+/g,  // Regex for replacing addition symbol with a space
+    search = /([^&=]+)=?([^&]*)/g,
+    decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+    query  = window.location.search.substring(1);
+
+  urlParams = {};
+  while (match = search.exec(query))
+   urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+if ("cat" in urlParams) {
+  var cat = urlParams["cat"]
+  if ("religious" in urlParams) {
+    religiousCheck = (urlParams["religious"] === "true");
+  }
+  api(cat);
+}
+
 function setCookie(pref) {
   document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2028 12:00:00 UTC"
 }
