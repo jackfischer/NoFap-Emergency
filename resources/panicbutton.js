@@ -95,15 +95,15 @@ function bkChange() {
     url += 'em';
   }
   if (rejection) {
-    if (num++ > 0) url += '+';
+    if (num++ > 0) url += '&cat=';
     url += 'rej';
   }
   if (depression) {
-    if (num++ > 0) url += '+';
+    if (num++ > 0) url += '&cat=';
     url += 'dep';
   }
   if (relapsed) {
-    if (num++ > 0) url += '+';
+    if (num++ > 0) url += '&cat=';
     url += 'rel';
   }
   if (religiousCheck === "true") {
