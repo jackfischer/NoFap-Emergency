@@ -79,7 +79,7 @@ $("#religious input, #mobilereligious input").on("ifUnchecked", function(e){
   setCookie("false");
 });
 $("input[type=checkbox]").on("ifChecked ifUnchecked", function (e) {
-  bkChange();
+  setTimeout(bkChange); // Run bkChange AFTER iCheck has changed the value
 });
 
 function bkChange() {
@@ -111,7 +111,9 @@ function bkChange() {
   } else {
     url += '&religious=false';
   }
-  console.log('asdf');
+  if (num === 0) {
+    url = "Please select at least 1 category";
+  }
   $('#bklink input').val(url);
 }
 
@@ -127,4 +129,4 @@ $(document).ready(function () {
   });
 
   bkChange();
-})
+});
