@@ -110,11 +110,68 @@ html {
   z-index: 4
 }
 
-#religious {
+#bookmark {
   position: fixed;
   right: 20px;
   top: 20px;
-  z-index: 3
+  z-index: 3;
+  background: #73716e;
+  padding: 3.5px 0;
+  padding-bottom: 7px;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+  width: 27px;
+  height: 27px;
+  overflow: hidden;
+
+  -webkit-transition: height 0.5s, width 0.5s ease 0.25s;
+  transition: height 0.5s, width 0.5s ease 0.25s;
+}
+
+#bookmark i {
+  position: relative;
+  left: 0;
+  padding: 0 7.5px;
+}
+
+#bookmark.hover {
+  background: #8B8986;
+  width: 152px;
+  height: 170px;
+
+  -webkit-transition: width 0.5s, height 0.5s ease 0.25s;
+  transition: width 0.5s, height 0.5s ease 0.25s;
+}
+
+#bookmark .bkcheck .icheckbox_line-grey {
+  border-radius: 0;
+}
+
+#bklink input {
+  background: #53514e;
+  border: none;
+  height: 27px;
+  padding: 10px;
+  font-size: 10px;
+  width: 100%;
+}
+
+#religious {
+  position: fixed;
+  right: 20px;
+  top: 47px;
+  z-index: 3;
+
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+
+#religious.bkhover {
+  top: 180px;
+
+  -webkit-transition: top 0.5s ease 0.25s;
+  transition: top 0.5s ease 0.25s;
 }
 
 #mobilereligious {

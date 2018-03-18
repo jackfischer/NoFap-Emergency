@@ -32,6 +32,18 @@ function api(cat) {
     })
 }
 
+$(bookmark).hover(function () {
+  if ($(this).attr('class') === undefined) {
+    $(this).attr('class', '');
+  }
+  if ($(this).is(":hover")) {
+    $(this).addClass('hover');
+    $(religious).addClass('bkhover');
+  } else if (!$('#religious:hover').length) {
+    $(this).removeClass('hover hovercomplete');
+    $(religious).removeClass('bkhover');
+  }
+});
 $(suggest).click(function(){window.location.href="suggestor.html"});
 $(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
@@ -49,47 +61,70 @@ function getCookie(t) {
 
 var religiousCheck = getCookie("religious");
 
-var urlParams;
-(window.onpopstate = function () {
-  var match,
-    pl     = /\+/g,  // Regex for replacing addition symbol with a space
-    search = /([^&=]+)=?([^&]*)/g,
-    decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-    query  = window.location.search.substring(1);
-
-  urlParams = {};
-  while (match = search.exec(query))
-   urlParams[decode(match[1])] = decode(match[2]);
-})();
-
-if ("cat" in urlParams) {
-  var cat = urlParams["cat"]
-  if ("religious" in urlParams) {
-    religiousCheck = (urlParams["religious"] === "true");
-  }
-  api(cat);
-}
-
 function setCookie(pref) {
   document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2028 12:00:00 UTC"
 }
 if (religiousCheck=="true") {
-  $("input").iCheck("check")
+  $("#religious input, #mobilereligious input").iCheck("check")
 } else {
   setCookie("false");
 }
 
-$("input").on("ifChecked", function(e){
+$("#religious input, #mobilereligious input").on("ifChecked", function(e){
   religiousCheck="true";
   setCookie("true");
 });
-$("input").on("ifUnchecked", function(e){ 
+$("#religious input, #mobilereligious input").on("ifUnchecked", function(e){ 
   religiousCheck="false";
   setCookie("false");
 });
+$("input[type=checkbox]").on("ifChecked ifUnchecked", function (e) {
+  bkChange();
+});
+
+function bkChange() {
+  var emergency = $("#bkemergency .icheckbox_line-grey.checked").length > 0;
+  var rejection = $("#bkrejection .icheckbox_line-grey.checked").length > 0;
+  var depression = $("#bkdepression .icheckbox_line-grey.checked").length > 0;
+  var relapsed = $("#bkrelapsed .icheckbox_line-grey.checked").length > 0;
+
+  var url = 'https://emergency.nofap.com/redirect?cat=';
+  var num = 0;
+  if (emergency) {
+    num++;
+    url += 'em';
+  }
+  if (rejection) {
+    if (num++ > 0) url += '+';
+    url += 'rej';
+  }
+  if (depression) {
+    if (num++ > 0) url += '+';
+    url += 'dep';
+  }
+  if (relapsed) {
+    if (num++ > 0) url += '+';
+    url += 'rel';
+  }
+  if (religiousCheck === "true") {
+    url += '&religious=true';
+  } else {
+    url += '&religious=false';
+  }
+  console.log('asdf');
+  $('#bklink input').val(url);
+}
 
 $(function() {
  $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true})
 })
 
-$(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
+$(document).ready(function () {
+  $("input[type=checkbox]").each(function () { var e = $(this), t = e.next(), n = t.text(); t.remove(); e.iCheck({ checkboxClass: "icheckbox_line-grey", radioClass: "iradio_line-grey", insert: '<div class="icheck_line-icon"></div>' + n }) });
+
+  $('.iCheck-helper').on('mouseleave', function (e) {
+    $(bookmark).trigger(e.type);
+  });
+
+  bkChange();
+})
