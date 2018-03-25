@@ -83,38 +83,15 @@ $("input[type=checkbox]").on("ifChecked ifUnchecked", function (e) {
 });
 
 function bkChange() {
-  var emergency = $("#bkemergency .icheckbox_line-grey.checked").length > 0;
-  var rejection = $("#bkrejection .icheckbox_line-grey.checked").length > 0;
-  var depression = $("#bkdepression .icheckbox_line-grey.checked").length > 0;
-  var relapsed = $("#bkrelapsed .icheckbox_line-grey.checked").length > 0;
-
-  var url = 'https://emergency.nofap.com/redirect?cat=';
-  var num = 0;
-  if (emergency) {
-    num++;
-    url += 'em';
-  }
-  if (rejection) {
-    if (num++ > 0) url += '&cat=';
-    url += 'rej';
-  }
-  if (depression) {
-    if (num++ > 0) url += '&cat=';
-    url += 'dep';
-  }
-  if (relapsed) {
-    if (num++ > 0) url += '&cat=';
-    url += 'rel';
-  }
-  if (religiousCheck === "true") {
-    url += '&religious=true';
-  } else {
-    url += '&religious=false';
-  }
-  if (num === 0) {
-    url = "Please select at least 1 category";
-  }
-  $('#bklink input').val(url);
+  const queryString = ['em', 'rej', 'dep', 'rel'].reduce((prev, curr) => {
+    if ($(`#bk${curr} .icheckbox_line-grey.checked`).length > 0)
+      return prev + `&cat=${curr}`
+    else
+      return prev
+  }, '')
+  const base = `https://emergency.nofap.com/redirect?religious=${religiousCheck === true}`
+  const output = queryString ? base + queryString : "Please select at least 1 category"
+  $('#bklink input').val(output);
 }
 
 $(function() {
