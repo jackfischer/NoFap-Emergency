@@ -110,16 +110,19 @@ html {
   z-index: 4
 }
 
-#bookmark {
+#bookmark-container {
   position: fixed;
   right: 20px;
-  top: 20px;
+  top: 47px;
   z-index: 3;
+}
+
+#bookmark {
   background: #73716e;
   padding: 3.5px 0;
   padding-bottom: 7px;
   color: #fff;
-  border-radius: 3px 3px 0 0;
+  border-radius: 0 0 3px 3px;
   cursor: pointer;
   width: 27px;
   height: 27px;
@@ -129,16 +132,25 @@ html {
   transition: height 0.5s, width 0.5s ease 0.25s;
 }
 
-#bookmark i {
+#bookmark > i {
   position: relative;
   left: 0;
-  padding: 0 7.5px;
+  padding: 7.5px;
+  padding-top: 0;
+}
+
+#bookmark.hover > i {
+  width: 100%;
+}
+
+#bookmark:hover {
+  background: #8B8986;
 }
 
 #bookmark.hover {
   background: #8B8986;
   width: 152px;
-  height: 170px;
+  height: 163px;
 
   -webkit-transition: width 0.5s, height 0.5s ease 0.25s;
   transition: width 0.5s, height 0.5s ease 0.25s;
@@ -148,30 +160,81 @@ html {
   border-radius: 0;
 }
 
-#bklink input {
+#religious .icheckbox_line-grey {
+  border-radius: 3px 3px 0 3px;
+}
+
+#religious.bkhover .icheckbox_line-grey {
+  border-radius: 3px 3px 0 0;
+}
+
+#bklink {
   background: #53514e;
-  border: none;
-  height: 27px;
-  padding: 10px;
-  font-size: 10px;
+  height: 28px;
   width: 100%;
+}
+
+#bklink a {
+  margin-right: 20px;
+}
+
+/* Hide original link text, to have different link text vs bookmark text.
+Also a hacky fix for Vivaldi's link text select (instead of drag) 'feature' */
+
+#bklink a span {
+  display: none;
+}
+
+#bklink a::after {
+  content: "NF";
+  display:inline-block;
+  text-decoration: none;
+  margin-top: 2px;
+  background: #244b78;
+  color: white;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+#bklink a:hover::after {
+  background: #0e345e;
+}
+
+#bklink a.invalid::after {
+  background: #e74c3c;
+}
+
+#bklink a.invalid:hover::after {
+  background: red;
+}
+
+#bkhelp {
+  padding: 5px;
+}
+
+#bkhelp:hover {
+  color: #c9c9c9;
+}
+
+#bklink .dialog {
+  display: none;
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  z-index: 20;
+  padding: 10px;
+  overflow-x: visible;
+
+  background: #63615e; 
+  border-radius: 5px;
+  color: white !important;
 }
 
 #religious {
   position: fixed;
   right: 20px;
-  top: 47px;
+  top: 20px;
   z-index: 3;
-
-  -webkit-transition: top 0.5s;
-  transition: top 0.5s;
-}
-
-#religious.bkhover {
-  top: 180px;
-
-  -webkit-transition: top 0.5s ease 0.25s;
-  transition: top 0.5s ease 0.25s;
 }
 
 #mobilereligious {
@@ -197,6 +260,7 @@ html {
   }
   #hint,
   #religious,
+  #bookmark-container,
   #ios,
   #android,
   #footer {

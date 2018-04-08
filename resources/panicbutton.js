@@ -40,9 +40,13 @@ $(bookmark).hover(function () {
     $(this).addClass('hover');
     $(religious).addClass('bkhover');
   } else if (!$('#religious:hover').length) {
-    $(this).removeClass('hover hovercomplete');
+    $(this).removeClass('hover');
     $(religious).removeClass('bkhover');
+    $('#bklink .dialog').hide();
   }
+});
+$('#bookmark #bklink').click(function (event) {
+  event.preventDefault();
 });
 $(suggest).click(function(){window.location.href="suggestor.html"});
 $(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
@@ -82,6 +86,7 @@ $("input[type=checkbox]").on("ifChecked ifUnchecked", function (e) {
   setTimeout(bkChange); // Run bkChange AFTER iCheck has changed the value
 });
 
+$("#bkem").iCheck("check")
 function bkChange() {
   const queryString = ['em', 'rej', 'dep', 'rel'].reduce((prev, curr) => {
     if ($(`#bk${curr} .icheckbox_line-grey.checked`).length > 0)
@@ -90,9 +95,21 @@ function bkChange() {
       return prev
   }, '')
   const base = `https://emergency.nofap.com/redirect?religious=${religiousCheck === true}`
-  const output = queryString ? base + queryString : "Please select at least 1 category"
-  $('#bklink input').val(output);
+  if (queryString) {
+    $('#bklink a span').text('NF Emergency');
+    $('#bklink a').removeClass('invalid').attr('href', base + queryString);
+  } else {
+    $('#bklink a span').text('INVALID LINK please select at least 1 category');
+    $('#bklink a').addClass('invalid').attr('href', '');
+  }
 }
+
+$('#bklink a').click(false);
+
+$('#bkhelp').hover(
+  function() { $('#bklink .dialog').fadeIn(100); },
+  function() { $('#bklink .dialog').fadeOut(100); }
+);
 
 $(function() {
  $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true})
@@ -106,4 +123,5 @@ $(document).ready(function () {
   });
 
   bkChange();
+
 });

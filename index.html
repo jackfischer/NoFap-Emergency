@@ -55,18 +55,25 @@
     </a>
   </button>
 
-  <div id="bookmark">
-    <i class="fa fa-external-link-square" aria-hidden="true"></i>
-    <div id="bklink">
-      <input type="text" value="" onClick="this.select();" readonly>
-    </div>
-    <div id="bkem" class="bkcheck"><input type="checkbox"><label>Emergency</label></div>
-    <div id="bkrej" class="bkcheck"><input type="checkbox"><label>Rejection</label></div>
-    <div id="bkdep" class="bkcheck"><input type="checkbox"><label>Depression</label></div>
-    <div id="bkrel" class="bkcheck"><input type="checkbox"><label>Relapsed</label></div>
-  </div>
   <div id="mobilereligious"><input type="checkbox" onchange="religiousChange()"><label>Religious</label></div>
   <div id="religious"><input type="checkbox" onchange="religiousChange()"><label>Include Religious</label></div>
+  <div id="bookmark-container">
+    <div id="bookmark">
+      <i class="fa fa-external-link-square" aria-hidden="true"></i>
+      <div id="bklink">
+        <a href="" style="user-select: none !important"><span>NF Emergency</span></a>
+        <span id="bkhelp" ><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+        <div class="dialog">
+          To generate a bookmark, select the desired categories (at least 1) and toggle the religious option as desired.
+          Then, drag the "NF" button to your bookmarks bar.
+        </div>
+      </div>
+      <div id="bkem" class="bkcheck"><input type="checkbox"><label>Emergency</label></div>
+      <div id="bkrej" class="bkcheck"><input type="checkbox"><label>Rejection</label></div>
+      <div id="bkdep" class="bkcheck"><input type="checkbox"><label>Depression</label></div>
+      <div id="bkrel" class="bkcheck"><input type="checkbox"><label>Relapsed</label></div>
+    </div>
+  </div>
 
   <span id="footer">
     If you are experiencing a mental health crisis, contact a prevention hotline, your therapist, or your local authorities immediately.<br>
