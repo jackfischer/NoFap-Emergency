@@ -186,7 +186,7 @@ Also a hacky fix for Vivaldi's link text select (instead of drag) 'feature' */
 }
 
 #bklink a::after {
-  content: "NF";
+  content: "Bookmark";
   display:inline-block;
   text-decoration: none;
   margin-top: 2px;
