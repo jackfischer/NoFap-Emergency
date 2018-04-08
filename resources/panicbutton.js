@@ -32,6 +32,22 @@ function api(cat) {
     })
 }
 
+$(bookmark).hover(function () {
+  if ($(this).attr('class') === undefined) {
+    $(this).attr('class', '');
+  }
+  if ($(this).is(":hover")) {
+    $(this).addClass('hover');
+    $(religious).addClass('bkhover');
+  } else if (!$('#religious:hover').length) {
+    $(this).removeClass('hover');
+    $(religious).removeClass('bkhover');
+    $('#bklink .dialog').hide();
+  }
+});
+$('#bookmark #bklink').click(function (event) {
+  event.preventDefault();
+});
 $(suggest).click(function(){window.location.href="suggestor.html"});
 $(ios).click(function(){window.location.href="https://appsto.re/us/9vp26.i"});
 $(android).click(function(){window.location.href="https://play.google.com/store/apps/details?id=org.nofap.emergency"});
@@ -53,22 +69,59 @@ function setCookie(pref) {
   document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2028 12:00:00 UTC"
 }
 if (religiousCheck=="true") {
-  $("input").iCheck("check")
+  $("#religious input, #mobilereligious input").iCheck("check")
 } else {
   setCookie("false");
 }
 
-$("input").on("ifChecked", function(e){
+$("#religious input, #mobilereligious input").on("ifChecked", function(e){
   religiousCheck="true";
   setCookie("true");
 });
-$("input").on("ifUnchecked", function(e){ 
+$("#religious input, #mobilereligious input").on("ifUnchecked", function(e){ 
   religiousCheck="false";
   setCookie("false");
 });
+$("input[type=checkbox]").on("ifChecked ifUnchecked", function (e) {
+  setTimeout(bkChange); // Run bkChange AFTER iCheck has changed the value
+});
+
+$("#bkem").iCheck("check")
+function bkChange() {
+  const queryString = ['em', 'rej', 'dep', 'rel'].reduce((prev, curr) => {
+    if ($(`#bk${curr} .icheckbox_line-grey.checked`).length > 0)
+      return prev + `&cat=${curr}`
+    else
+      return prev
+  }, '')
+  const base = `https://emergency.nofap.com/redirect?religious=${religiousCheck === true}`
+  if (queryString) {
+    $('#bklink a span').text('NF Emergency');
+    $('#bklink a').removeClass('invalid').attr('href', base + queryString);
+  } else {
+    $('#bklink a span').text('INVALID LINK please select at least 1 category');
+    $('#bklink a').addClass('invalid').attr('href', '');
+  }
+}
+
+$('#bklink a').click(false);
+
+$('#bkhelp').hover(
+  function() { $('#bklink .dialog').fadeIn(100); },
+  function() { $('#bklink .dialog').fadeOut(100); }
+);
 
 $(function() {
  $.smartbanner({title:"NoFap",author:"Official NoFap App",hideOnInstall:true})
 })
 
-$(document).ready(function(){$("input").each(function(){var e=$(this),t=e.next(),n=t.text();t.remove();e.iCheck({checkboxClass:"icheckbox_line-grey",radioClass:"iradio_line-grey",insert:'<div class="icheck_line-icon"></div>'+n})})})
+$(document).ready(function () {
+  $("input[type=checkbox]").each(function () { var e = $(this), t = e.next(), n = t.text(); t.remove(); e.iCheck({ checkboxClass: "icheckbox_line-grey", radioClass: "iradio_line-grey", insert: '<div class="icheck_line-icon"></div>' + n }) });
+
+  $('.iCheck-helper').on('mouseleave', function (e) {
+    $(bookmark).trigger(e.type);
+  });
+
+  bkChange();
+
+});
