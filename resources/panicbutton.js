@@ -63,23 +63,23 @@ function getCookie(t) {
   return ""
 }
 
-var religiousCheck = getCookie("religious");
+var religiousCheck = (getCookie("religious") == "true");
 
 function setCookie(pref) {
   document.cookie="religious=" + pref +";expires=Mon, 1 Jan 2028 12:00:00 UTC"
 }
-if (religiousCheck=="true") {
+if (religiousCheck) {
   $("#religious input, #mobilereligious input").iCheck("check")
 } else {
   setCookie("false");
 }
 
 $("#religious input, #mobilereligious input").on("ifChecked", function(e){
-  religiousCheck="true";
+  religiousCheck = true;
   setCookie("true");
 });
 $("#religious input, #mobilereligious input").on("ifUnchecked", function(e){ 
-  religiousCheck="false";
+  religiousCheck = false;
   setCookie("false");
 });
 $("input[type=checkbox]").on("ifChecked ifUnchecked", function (e) {
@@ -94,7 +94,7 @@ function bkChange() {
     else
       return prev
   }, '')
-  const base = `https://emergency.nofap.com/redirect?religious=${religiousCheck === true}`
+  const base = `https://emergency.nofap.com/redirect?religious=${religiousCheck}`
   if (queryString) {
     $('#bklink a span').text('NF Emergency');
     $('#bklink a').removeClass('invalid').attr('href', base + queryString);
