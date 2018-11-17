@@ -4,6 +4,5 @@ NoFap Emergency is to get you to the right content when you need it. Recently ga
 
 The API has since been rolled into other NF services so this repo now just contains the UI. Also on [Android](https://github.com/csanonymus/NoFap-Android) and [iOS](https://github.com/danielx0328/NoFap), much thanks to [Daniel Romero](https://github.com/danielx0328) and our anonymous Android developer for their work. [Suggest a link](https://emergency.nofap.com/suggestor.php) or report any broken links if you see them. If you're interested in using this as an API or something, [email me](mailto:jack.fischer11@gmail.com) or [Alexander Rhodes](mailto:rhodes@nofap.com).
 
-I'll occasionally comment as [u/catholic3652](https://www.reddit.com/user/catholic3652).
 This is under the [MIT License](http://jackfischer.mit-license.org/).
 [NoFap®](https://www.nofap.com) is a registered service mark owned by [Alexander Rhodes](https://www.alexanderrhodes.net) and NoFap LLC.
